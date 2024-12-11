@@ -114,7 +114,7 @@ html {
     cursor: pointer;
     font-weight: 700;
     border-bottom: 2px solid white;
-    width: 73px;
+    width: 85px;
 }
 
 
@@ -163,6 +163,9 @@ html {
         height: 25px;
         transition: .3s;
     }
+    .btn-2 {
+        width: 73px;
+    }
 }
 
 @media (min-width:375px) and (max-width: 424px) {
@@ -204,6 +207,9 @@ html {
         width: 150px;
         height: 25px;
         transition: .3s;
+    }
+    .btn-2 {
+        width: 73px;
     }
 }
 
@@ -253,6 +259,9 @@ html {
         height: 100%;
         padding-left: 20px;
     }
+    .btn-2 {
+        width: 73px;
+    }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
@@ -265,76 +274,5 @@ html {
 
     .btn-2 {
         width: 75px;
-    }
-}
-
-@media (min-width: 1441px) {
-    .container-box {
-        transform: translate(-50%, 50%);
-        padding: 10px;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .btn-2 {
-        width: 78px;
-    }
-
-    .data-box2-h1 {
-        font-size: 70px;
-        font-weight: 650;
-    }
-
-    .data-box2-con {
-        font-size: 20px;
-        font-weight: 450;
-    }
-
-    .data-box1 {
-        width: 250px;
-        height: 50px;
-        border: 2px solid blue;
-        margin: 5px;
-        border-radius: 10px;
-        cursor: pointer;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .btn-1 {
-        font-size: 20px;
-    }
-
-    .data-box1:hover {
-        width: 150px;
-        height: 25px;
-        transition: .3s;
-    }
-
-    .data-box4 {
-        border-left: 3px solid blue;
-        height: 100%;
-        padding-left: 20px;
-    }
-
-    .data-box2-con {
-        font-size: 40px;
-        font-weight: 500;
-        display: flex;
-        justify-content: center;
-        text-align: left;
-    }
-
-    .btn-2 {
-        display: flex;
-        justify-content: start;
-        text-align: left;
-        cursor: pointer;
-        font-weight: 700;
-        border-bottom: 3px solid white;
-        width: 130px;
-        font-size: 25px;
     }
 }
