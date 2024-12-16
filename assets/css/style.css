@@ -11,6 +11,7 @@
     --description-color-rgb : 52, 52, 52;
     --body-bg : #f7f5e8;
     --body-bg-rgb : 247, 245, 232;
+    --white : #ffffff;
     --ff : 'Manrope';
     --secondary-ff : 'Fraunces';
     --fw: 600;
@@ -29,4 +30,49 @@ a{
 }
 ol,ul{
     list-style: none;
+}
+
+/* Header */
+header{
+    padding: 20px 30px;
+    background-color: black;
+}
+.logo img{
+    height: 80px;
+    width: 80%;
+}
+.navbar-nav > li{
+    margin: 15px 20px;
+}
+.navbar-nav > li > .nav-link{
+    color: var(--white) !important;
+    padding: 8px 20px !important;
+    border-radius: 7px;
+    position: relative;
+    z-index: 1;
+}
+.slide, .slide2, .slide3, .slide4, .slide5, .slide6{
+    width: 120px;
+    position: absolute;
+    height: calc(100% - 30px);
+    background-color: var(--main-color);
+    border-radius: 10px;
+    left: 18px;
+    transform: translateY(8px);
+    transition: all .3s ease-in-out;
+}
+.navbar-nav > li:nth-child(2):hover ~ .slide {
+    left: 140px;
+}
+.navbar-nav > li:nth-child(3):hover ~ .slide {
+    left: 260px;
+}
+.navbar-nav > li:nth-child(4):hover ~ .slide {
+    left: 390px;
+}
+.navbar-nav > li:nth-child(5):hover ~ .slide {
+    left: 525px;
+}
+.navbar-nav > li:nth-child(6):hover ~ .slide {
+    left: 670px;
 }
