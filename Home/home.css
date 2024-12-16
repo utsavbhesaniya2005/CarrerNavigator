@@ -1,22 +1,26 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 .main {
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-.video {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-video {
+.video video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
-    z-index: 1;
 }
 
 .overlay {
@@ -25,31 +29,250 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.555); 
-    z-index: 2;
+    background: rgba(0, 0, 0, 0.575);
+    z-index: 1;
 }
 
-.data {
+.container-box {
     position: absolute;
-    z-index: 3; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    z-index: 2;
     color: white;
-    font-size: 3rem;
-    top: 10%;
-    left: 10%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: left;
+    margin: 10px;
+    padding: 20px;
 }
 
-.container {
+.data-box1 {
+    width: 200px;
+    height: 35px;
+    border: 2px solid blue;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.data-box1:hover {
+    width: 200px;
+    height: 35px;
+    border: 2px solid blue;
+    color: rgb(255, 255, 255);
+    background-color: rgb(34, 0, 255);
+    margin: 5px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.data-box2 {
+    text-align: left;
+    margin: 10px;
+}
+
+.data-box2-h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.border-box2 {
     position: relative;
-    z-index: 3;
-    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
-.data {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: rgba(206, 195, 195, 0.934); 
-    border-radius: 8px;
+.data-box4 {
+    border-left: 3px solid blue;
+    height: 105px;
+    padding-left: 20px;
+}
+
+.data-box2-con {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.data-box4 {
+    margin-top: auto;
+    text-align: end;
+}
+
+.btn-2 {
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    cursor: pointer;
+    font-weight: 700;
+    border-bottom: 2px solid white;
+    width: 85px;
+}
+
+
+
+@media (min-width:0px) and (max-width:374px) {
+    .container-box {
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .data-box4 {
+        height: 125px;
+    }
+
+    .data-box2-h1 {
+        font-size: 30px;
+        font-weight: 650;
+    }
+
+    .data-box2-con {
+        font-size: 20px;
+        font-weight: 450;
+    }
+
+    .data-box1 {
+        width: 150px;
+        height: 25px;
+        border: 2px solid blue;
+        margin: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 2px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn-1 {
+        font-size: 13px;
+    }
+
+    .data-box1:hover {
+        width: 150px;
+        height: 25px;
+        transition: .3s;
+    }
+    .btn-2 {
+        width: 73px;
+    }
+}
+
+@media (min-width:375px) and (max-width: 424px) {
+    .container-box {
+        transform: translate(-50%, -30%);
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .data-box2-h1 {
+        font-size: 30px;
+        font-weight: 650;
+    }
+
+    .data-box2-con {
+        font-size: 20px;
+        font-weight: 450;
+    }
+
+    .data-box1 {
+        width: 150px;
+        height: 25px;
+        border: 2px solid blue;
+        margin: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 2px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn-1 {
+        font-size: 13px;
+    }
+
+    .data-box1:hover {
+        width: 150px;
+        height: 25px;
+        transition: .3s;
+    }
+    .btn-2 {
+        width: 73px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 1024px) {
+    .container-box {
+        transform: translate(-50%, -0%);
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .data-box2-h1 {
+        font-size: 30px;
+        font-weight: 650;
+    }
+
+    .data-box2-con {
+        font-size: 20px;
+        font-weight: 450;
+    }
+
+    .data-box1 {
+        width: 150px;
+        height: 25px;
+        border: 2px solid blue;
+        margin: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 2px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn-1 {
+        font-size: 13px;
+    }
+
+    .data-box1:hover {
+        width: 150px;
+        height: 25px;
+        transition: .3s;
+    }
+
+    .data-box4 {
+        border-left: 3px solid blue;
+        height: 100%;
+        padding-left: 20px;
+    }
+    .btn-2 {
+        width: 73px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .container-box {
+        transform: translate(-50%, -00%);
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .btn-2 {
+        width: 75px;
+    }
 }
