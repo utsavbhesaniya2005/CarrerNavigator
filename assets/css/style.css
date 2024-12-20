@@ -31,6 +31,79 @@ a{
 ol,ul{
     list-style: none;
 }
+.btn1{
+    display: inline-flex;
+    color: var(--white);
+    padding: 20px 24px;
+    border: 1px solid #1a6945;
+    border-radius: 18px;
+    text-align: left;
+    background-image: unset;
+    text-transform: uppercase;
+    background-color: #094227;
+    width: 200px;
+    letter-spacing: 1px;
+    position: relative;
+}  
+.box{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 44px;
+    text-align: center;
+    height: 44px;
+    width: 44px;
+    font-size: 18px;
+    color: var(--white);
+    background: linear-gradient(140deg, #1f4e38, #316a4f, #1a6945);
+    right: 8px;
+    top: 10px;
+    background-size: 250%;
+    background-position: top left;
+    overflow: hidden;
+    border-radius: 13px;
+    transition: background-position 0.3s ease;
+}
+.arrow-cross{
+    overflow: hidden;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+}
+.box .arrow-cross i{
+    transform: rotate(45deg) translateY(0);
+    transition: opacity 0.3s ease;
+}
+.btn1:hover .box{
+    background-position: bottom right;
+}
+.btn1:hover .box .arrow-cross i{
+    animation: move-up-arrow 1 .2s linear forwards;
+    opacity: 1;
+} 
+@keyframes move-up-arrow {
+    0% {
+        transform: rotate(45deg) translateY(0); 
+        opacity: 1;
+    }
+    25% {
+        transform: rotate(45deg) translateY(-30px);
+        opacity: 0;
+    }
+    50% {
+        transform: rotate(45deg) translateY(50px); 
+        opacity: 0;
+    }
+    75% {
+        transform: rotate(45deg) translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(45deg) translateY(0); 
+        opacity: 1;
+    }
+}
 
 /* Header */
 header{
@@ -57,7 +130,7 @@ header{
     height: calc(100% - 30px);
     background-color: var(--main-color);
     border-radius: 10px;
-    left: 18px;
+    left: 12px;
     transform: translateY(8px);
     transition: all .3s ease-in-out;
 }
@@ -74,5 +147,5 @@ header{
     left: 525px;
 }
 .navbar-nav > li:nth-child(6):hover ~ .slide {
-    left: 670px;
+    left: 672px;
 }
