@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainBg{
+    background-image: url('/assets/images/breadcrumb-img.jpg');
+    width: 100%;
+    height: auto;
+}
