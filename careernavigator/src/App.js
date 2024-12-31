@@ -2,11 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './Components/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Contactus from './Components/Contactus';
 
 function App() {
   return (
     <>
-      <Home></Home>
+      {/* <Home></Home> */}
+      <Contactus></Contactus>
     </>
   );
 }
