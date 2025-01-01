@@ -3,7 +3,14 @@
     padding: 0;
 }
 .mainBg{
-    background-image: url('/assets/images/breadcrumb-img.jpg');
+    background-image: url('../assets/images/breadcrumb-img.jpg');
     width: 100%;
-    height: auto;
+    height: 330px;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+.colorGradiant{
+    background-color: rgba(0,0,0,.3);
+    z-index: 1;
 }
