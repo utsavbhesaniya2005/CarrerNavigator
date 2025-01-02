@@ -10,14 +10,14 @@ html {
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .main {
     position: relative;
     width: 100%;
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .video video {
@@ -127,7 +127,7 @@ html {
 
 @media (min-width:0px) and (max-width:374px) {
     .container-box {
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -20%);
         padding: 10px;
         font-size: 14px;
         text-align: center;
@@ -143,8 +143,12 @@ html {
     }
 
     .data-box2-con {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 450;
+    }
+
+    .data-box4 {
+        border: none;
     }
 
     .data-box1 {
@@ -189,7 +193,7 @@ html {
     }
 
     .data-box2-con {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 450;
     }
 
@@ -216,6 +220,11 @@ html {
         transition: .3s;
     }
 
+    .data-box4 {
+        border: none;
+        padding-left: 20px;
+    }
+
     .btn-2 {
         width: 73px;
     }
@@ -223,7 +232,7 @@ html {
 
 @media (min-width: 425px) and (max-width: 1024px) {
     .container-box {
-        transform: translate(-50%, -0%);
+        transform: translate(-50%, -25%);
         padding: 10px;
         font-size: 14px;
         text-align: center;
@@ -232,11 +241,6 @@ html {
     .data-box2-h1 {
         font-size: 30px;
         font-weight: 650;
-    }
-
-    .data-box2-con {
-        font-size: 20px;
-        font-weight: 450;
     }
 
     .data-box1 {
@@ -266,6 +270,11 @@ html {
         border-left: 3px solid blue;
         height: 100%;
         padding-left: 20px;
+    }
+
+    .data-box2-con {
+        font-size: 18px;
+        font-weight: 450;
     }
 
     .btn-2 {

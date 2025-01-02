@@ -16,11 +16,21 @@ const Home = () => {
                             <Row className="text-center">
                                 <Col md={8} lg={8}>
                                     <div className="data-main-box">
-                                        <div className="data-box1">
-                                            <h6 className="m-0 btn-1">The New Era Of HR</h6>
-                                        </div>
-                                        <div className="data-box2">
-                                            <h1 className="data-box2-h1">Transforming HR: Inspiring Change, Driving Results</h1>
+                                        <div
+
+                                            data-aos="zoom-in-right"
+                                            data-aos-offset="200"
+                                            data-aos-duration="1000"
+                                            data-aos-easing="ease-in-out"
+                                            data-aos-mirror="true"
+                                            data-aos-once="false"
+                                        >
+                                            <div className="data-box1">
+                                                <h6 className="m-0 btn-1">The New Era Of HR</h6>
+                                            </div>
+                                            <div className="data-box2">
+                                                <h1 className="data-box2-h1">Transforming HR: Inspiring Change, Driving Results</h1>
+                                            </div>
                                         </div>
                                     </div>
                                 </Col>
@@ -36,7 +46,21 @@ const Home = () => {
                         </Container>
                     </div>
                 </div>
-            </main>
+            </main >
+            <Container>
+                <div class="col-2">
+                    <div class="get-started-btn">
+                        <a type="button" href="#" class="btn1">
+                            <span>Get Started</span>
+                            <div class="box">
+                                <div class="arrow-cross">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </Container>
         </>
     );
 };
