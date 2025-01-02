@@ -1,28 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-}
-
-:root {
-    --main-color: #1f4e38;
-    --main-color-rgb: 31, 78, 56;
-    --secondary-color: #b1df56;
-    --secondary-color-rgb: 177, 223, 86;
-    --description-color: #343434;
-    --description-color-rgb: 52, 52, 52;
-    --body-bg: #f7f5e8;
-    --body-bg-rgb: 247, 245, 232;
-    --white: #ffffff;
-    --ff: 'Manrope';
-    --secondary-ff: 'Fraunces';
-    --fw: 600;
-}
-
-body {
-    /* font-family: var(--secondary-ff); */
-    background-color: var(--body-bg);
-    color: var(--description-color);
-    font-weight: var(--fw);
+    padding: 0;
 }
 
 body,

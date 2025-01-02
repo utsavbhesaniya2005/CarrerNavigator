@@ -3,7 +3,6 @@ import { Navbar, Nav, Container, Button, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/Home.css';
 import video from './Video/home1.mp4';
-
 const Home = () => {
     return (
         <>
@@ -30,7 +29,7 @@ const Home = () => {
                                         <h1 className="data-box2-con">
                                             Curabitur ornare ac viverra cubilia amet at nibh nullam. Magna eleifend sagittis sit arcu vitae ad commodo.
                                         </h1>
-                                    <div className="btn-2">Read More</div>  
+                                        <div className="btn-2">Read More</div>
                                     </div>
                                 </Col>
                             </Row>
