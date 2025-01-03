@@ -55,25 +55,21 @@ const Home = () => {
                     </div>
                 </div>
             </main >
-            <Container style={{ padding: "0px", margin: "20px auto" }}>
+            <Container style={{margin: "20px auto",padding:"20px 10px",overflow:"hidden"}}>
                 <div className="emp-expr flex">Empolyee Experience <i class="fa-solid fa-arrow-right" style={{marginLeft:"8px"}}></i></div>
-                <Row>
-                    <Col>
-                        <h1 style={{textTransform:"capitalize"}}>Strategies to Enhance Engagement and Well-Being</h1>
+                <Row className=''>
+                    <Col lg={7} md={7} sm={12} xm={12} >
+                        <h1 style={{textTransform:"capitalize",fontWeight:"700",letterSpacing:"2px",fontSize:"50px"}}>Strategies to Enhance Engagement and Well-Being</h1>
                     </Col>
-                    <Col>
-                    <div class="col-2">
-                    <div class="get-started-btn">
-                        <a type="button" href="#" class="btn1">
+                    <Col lg={5} md={5} sm={12} xm={12} className='second-cl'>
+                        <a type="button" href="#" className="btn1">
                             <span>Get Started</span>
-                            <div class="box">
-                                <div class="arrow-cross">
-                                    <i class="fa-solid fa-arrow-up"></i>
+                            <div className="box">
+                                <div className="arrow-cross">
+                                    <i className="fa-solid fa-arrow-up"></i>
                                 </div>
                             </div>
                         </a>
-                    </div>
-                </div>
                     </Col>
                 </Row>
             </Container>
