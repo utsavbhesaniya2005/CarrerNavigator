@@ -9,7 +9,7 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     /* overflow: hidden; */
 }
 
@@ -120,7 +120,7 @@ html {
     cursor: pointer;
     font-weight: 700;
     border-bottom: 2px solid white;
-    width: 85px;
+    width: 200px;
 }
 
 
@@ -284,7 +284,7 @@ html {
 
 @media (min-width: 1025px) and (max-width: 1440px) {
     .container-box {
-        transform: translate(-50%, -00%);
+        transform: translate(-50%, -30%);
         padding: 10px;
         font-size: 14px;
         text-align: center;
@@ -293,4 +293,20 @@ html {
     .btn-2 {
         width: 75px;
     }
+}
+
+
+.emp-expr {
+    width: 13rem;
+    height: 1.5rem;
+    border: 1px solid rgba(18, 104, 251, .3);
+    border-radius: 7px;
+    color: #1268fb;
+    font-weight: 500;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

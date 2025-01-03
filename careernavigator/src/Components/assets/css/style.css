@@ -19,10 +19,12 @@
 }
 
 body {
-    background-color: var(--body-bg);
+    /* background-color: var(--body-bg); */
     color: var(--description-color);
+    /* font-family: "Merienda", serif; */
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -42,7 +44,19 @@ a{
     position: relative;
 }
 
-.box {
+.btn2,
+.btn3 {
+    display: inline-flex;
+    padding: 20px 24px;
+    border-radius: 18px;
+    text-align: left;
+    background-image: unset;
+    position: relative;
+}
+
+.box,
+.box1,
+.box2 {
     position: absolute;
     display: flex;
     align-items: center;
@@ -63,7 +77,8 @@ a{
     transition: background-position 0.3s ease;
 }
 
-.arrow-cross {
+.arrow-cross,
+.arrow-cross-left-side {
     overflow: hidden;
     height: 20px;
     width: 20px;
@@ -75,12 +90,37 @@ a{
     transition: opacity 0.3s ease;
 }
 
-.btn1:hover .box {
+.box1 .arrow-cross i {
+    transform: rotate(45deg) translateY(0);
+    transition: opacity 0.3s ease;
+}
+
+.box2 .arrow-cross-left-side i {
+    transform: rotate(-45deg) translateY(0);
+    transition: opacity 0.3s ease;
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn:hover .box,
+.box1,
+.box2 {
     background-position: bottom right;
 }
 
+
 .btn1:hover .box .arrow-cross i {
     animation: move-up-arrow 1 .2s linear forwards;
+    opacity: 1;
+}
+
+.btn2:hover .box1 .arrow-cross i {
+    animation: move-up-arrow 1 .2s linear forwards;
+    opacity: 1;
+}
+
+.btn3:hover .box2 .arrow-cross-left-side i {
+    animation: move-left-arrow 1 .2s linear forwards;
     opacity: 1;
 }
 
@@ -115,3 +155,64 @@ a{
         opacity: 1;
     }
 }
+
+@keyframes move-left-arrow {
+    0% {
+        transform: rotate(-45deg) translateY(0);
+        opacity: 1;
+    }
+
+    25% {
+        transform: rotate(-45deg) translateY(-30px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: rotate(-45deg) translateY(50px);
+        opacity: 0;
+    }
+
+    75% {
+        transform: rotate(-45deg) translateY(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(-45deg) translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+/* <Container>
+                <div class="col-2">
+                    <div class="get-started-btn">
+                        <a type="button" href="#" class="btn1">
+                            <span>Get Started</span>
+                            <div class="box">
+                                <div class="arrow-cross">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a type="button" href="#" class="btn2">
+                    <div class="box1">
+                        <div class="arrow-cross">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </div>
+                    </div>
+                </a>
+                <a type="button" href="#" class="btn3">
+                    <div class="box2">
+                        <div class="arrow-cross-left-side">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </div>
+                    </div>
+                </a> 
+</Container>*/

@@ -5,7 +5,7 @@ import './css/Home.css';
 import video from './Video/home1.mp4';
 const Home = () => {
     return (
-        <>
+        <div style={{ backgroundColor: "#D9F1FF" }}>
             {/* Main Content */}
             <main className="main">
                 <div className="content-val">
@@ -39,7 +39,15 @@ const Home = () => {
                                         <h1 className="data-box2-con">
                                             Curabitur ornare ac viverra cubilia amet at nibh nullam. Magna eleifend sagittis sit arcu vitae ad commodo.
                                         </h1>
-                                        <div className="btn-2">Read More</div>
+                                        <div className="btn-2">Read More 
+                                            {/* <a type="button" href="#" class="read-more">
+                                                <div class="box-read-more">
+                                                    <div class="arrow-cross-read-more">
+                                                        <i class="fa-solid fa-arrow-up"></i>
+                                                    </div>
+                                                 </div>
+                                            </a>  */}
+                                        </div>
                                     </div>
                                 </Col>
                             </Row>
@@ -47,8 +55,14 @@ const Home = () => {
                     </div>
                 </div>
             </main >
-            <Container>
-                <div class="col-2">
+            <Container style={{ padding: "0px", margin: "20px auto" }}>
+                <div className="emp-expr flex">Empolyee Experience <i class="fa-solid fa-arrow-right" style={{marginLeft:"8px"}}></i></div>
+                <Row>
+                    <Col>
+                        <h1 style={{textTransform:"capitalize"}}>Strategies to Enhance Engagement and Well-Being</h1>
+                    </Col>
+                    <Col>
+                    <div class="col-2">
                     <div class="get-started-btn">
                         <a type="button" href="#" class="btn1">
                             <span>Get Started</span>
@@ -60,8 +74,10 @@ const Home = () => {
                         </a>
                     </div>
                 </div>
+                    </Col>
+                </Row>
             </Container>
-        </>
+        </div>
     );
 };
 
