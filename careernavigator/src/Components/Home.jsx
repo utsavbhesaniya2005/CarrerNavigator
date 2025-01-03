@@ -40,13 +40,13 @@ const Home = () => {
                                             Curabitur ornare ac viverra cubilia amet at nibh nullam. Magna eleifend sagittis sit arcu vitae ad commodo.
                                         </h1>
                                         <div className="btn-2">Read More 
-                                            {/* <a type="button" href="#" class="read-more">
+                                            <a type="button" href="#" class="read-more">
                                                 <div class="box-read-more">
                                                     <div class="arrow-cross-read-more">
-                                                        <i class="fa-solid fa-arrow-up"></i>
+                                                        <i class="fa-solid fa-arrow-up read-arrow" style={{marginLeft:"6px",color:"white"}}></i>
                                                     </div>
                                                  </div>
-                                            </a>  */}
+                                            </a> 
                                         </div>
                                     </div>
                                 </Col>
@@ -55,7 +55,7 @@ const Home = () => {
                     </div>
                 </div>
             </main >
-            <Container style={{ padding: "0px", margin: "20px auto" }}>
+            {/* <Container style={{ padding: "0px", margin: "20px auto" }}>
                 <div className="emp-expr flex">Empolyee Experience <i class="fa-solid fa-arrow-right" style={{marginLeft:"8px"}}></i></div>
                 <Row>
                     <Col>
@@ -76,7 +76,7 @@ const Home = () => {
                 </div>
                     </Col>
                 </Row>
-            </Container>
+            </Container> */}
         </div>
     );
 };

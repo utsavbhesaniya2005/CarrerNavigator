@@ -10,14 +10,14 @@ html {
     padding: 0;
     width: 100%;
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .main {
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .video video {
@@ -120,12 +120,78 @@ html {
     cursor: pointer;
     font-weight: 700;
     border-bottom: 2px solid white;
-    width: 200px;
+    width: 100px;
 }
 
+.btn-2:hover {
+    animation: move-border .4s linear ease-in-out;
+}
 
+.read-arrow {
+    transform: rotate(45deg) translateY(0);
+    transition: opacity .3s ease;
+}
 
-@media (min-width:0px) and (max-width:374px) {
+.btn-2:hover .read-more .box-read-more .arrow-cross-read-more i {
+    animation: move-arrow 1 .3s linear forwards;
+    opacity: 1;
+}
+
+@keyframes move-arrow {
+    0% {
+        transform: rotate(45deg) translateY(0);
+        opacity: 1;
+    }
+
+    25% {
+        transform: rotate(45deg) translateY(-30px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: rotate(45deg) translateY(50px);
+        opacity: 0;
+    }
+
+    75% {
+        transform: rotate(45deg) translateY(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(45deg) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes move-border {
+    0% {
+        border-bottom: 1px solid white;
+        width: 100px;
+    }
+
+    25% {
+        border-bottom: 1px solid white;
+        width: 75px;
+    }
+
+    50% {
+        border-bottom: 1px solid white;
+        width: 50px;
+    }
+
+    75% {
+        border-bottom: 1px solid white;
+        width: 25px;
+    }
+
+    100% {
+        border-bottom: 1px solid white;
+        width: 0px;
+    }
+}
+
+@media (min-width:250px) and (max-width:373px) {
     .container-box {
         transform: translate(-50%, -20%);
         padding: 10px;
@@ -138,13 +204,13 @@ html {
     }
 
     .data-box2-h1 {
-        font-size: 30px;
-        font-weight: 650;
+        font-size: 27px;
+        font-weight: 500;
     }
 
     .data-box2-con {
         font-size: 15px;
-        font-weight: 450;
+        font-weight: 370;
     }
 
     .data-box4 {
@@ -175,11 +241,11 @@ html {
     }
 
     .btn-2 {
-        width: 73px;
+        width: 89px;
     }
 }
 
-@media (min-width:375px) and (max-width: 424px) {
+@media (min-width:374px) and (max-width: 424px) {
     .container-box {
         transform: translate(-50%, -30%);
         padding: 10px;
@@ -226,11 +292,11 @@ html {
     }
 
     .btn-2 {
-        width: 73px;
+        width: 89px;
     }
 }
 
-@media (min-width: 425px) and (max-width: 1024px) {
+@media (min-width: 425px) and (max-width: 1023px) {
     .container-box {
         transform: translate(-50%, -25%);
         padding: 10px;
@@ -239,7 +305,7 @@ html {
     }
 
     .data-box2-h1 {
-        font-size: 30px;
+        font-size: 35px;
         font-weight: 650;
     }
 
@@ -267,22 +333,22 @@ html {
     }
 
     .data-box4 {
-        border-left: 3px solid blue;
-        height: 100%;
+        border: none;
+        height: 100px;
         padding-left: 20px;
     }
 
     .data-box2-con {
-        font-size: 18px;
-        font-weight: 450;
+        font-size: 15px;
+        font-weight: 300;
     }
 
     .btn-2 {
-        width: 73px;
+        width: 89px;
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
     .container-box {
         transform: translate(-50%, -30%);
         padding: 10px;
@@ -291,10 +357,19 @@ html {
     }
 
     .btn-2 {
-        width: 75px;
+        width: 89px;
     }
-}
 
+    .data-box2-h1 {
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .data-box2-con {
+        font-weight: 350;
+    }
+
+}
 
 .emp-expr {
     width: 13rem;
