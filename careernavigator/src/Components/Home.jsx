@@ -59,7 +59,7 @@ const Home = () => {
                 <div className="emp-expr flex">Empolyee Experience <i class="fa-solid fa-arrow-right" style={{marginLeft:"8px"}}></i></div>
                 <Row className=''>
                     <Col lg={7} md={7} sm={12} xm={12} >
-                        <h1 style={{textTransform:"capitalize",fontWeight:"700",letterSpacing:"2px",fontSize:"50px"}}>Strategies to Enhance Engagement and Well-Being</h1>
+                        <h1 style={{textTransform:"capitalize",fontWeight:"700",letterSpacing:"2px"}} className='col-h1'>Strategies to Enhance Engagement and Well-Being</h1>
                     </Col>
                     <Col lg={5} md={5} sm={12} xm={12} className='second-cl'>
                         <a type="button" href="#" className="btn1">

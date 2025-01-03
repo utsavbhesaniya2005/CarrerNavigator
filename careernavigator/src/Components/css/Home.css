@@ -354,7 +354,7 @@ a {
     }
 }
 
-@media (min-width: 425px) and (max-width: 1023px) {
+@media (min-width: 425px) and (max-width: 991px) {
     .container-box {
         transform: translate(-50%, -25%);
         padding: 10px;
@@ -393,6 +393,58 @@ a {
     .data-box4 {
         border: none;
         height: 100px;
+        padding-left: 20px;
+    }
+
+    .data-box2-con {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .btn-2 {
+        width: 89px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+    .container-box {
+        transform: translate(-50%, -25%);
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .data-box2-h1 {
+        font-size: 35px;
+        font-weight: 650;
+    }
+
+    .data-box1 {
+        width: 150px;
+        height: 25px;
+        border: 2px solid blue;
+        margin: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 2px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn-1 {
+        font-size: 13px;
+    }
+
+    .data-box1:hover {
+        width: 150px;
+        height: 25px;
+        transition: .3s;
+    }
+
+    .data-box4 {
+        /* border: none; */
+        height: 90px;
         padding-left: 20px;
     }
 
@@ -611,16 +663,49 @@ a {
         opacity: 1;
     }
 }
-.emp-expr{
+
+.emp-expr {
     margin-bottom: 10vh;
 }
-@media(max-width:768px){
-    .emp-expr{
+
+@media(max-width:768px) {
+    .emp-expr {
         margin-bottom: 6vh;
     }
 }
-.second-cl{
+
+.second-cl {
     display: flex;
     align-items: end;
     justify-content: end;
+}
+
+.btn1 {
+    margin-top: 10vh;
+}
+
+.col-h1 {
+    font-size: 50px;
+}
+
+@media(min-width:250px) and (max-width:1023px) {
+    .col-h1 {
+        font-size: 30px;
+    }
+
+    .second-cl {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .btn1 {
+        margin-top: 6vh;
+    }
+}
+
+@media(min-width:1024px) and (max-width:1439px) {
+    .col-h1 {
+        font-size: 40px;
+    }
 }
