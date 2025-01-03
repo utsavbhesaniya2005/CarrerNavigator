@@ -55,7 +55,7 @@ const Home = () => {
                     </div>
                 </div>
             </main >
-            {/* <Container style={{ padding: "0px", margin: "20px auto" }}>
+            <Container style={{ padding: "0px", margin: "20px auto" }}>
                 <div className="emp-expr flex">Empolyee Experience <i class="fa-solid fa-arrow-right" style={{marginLeft:"8px"}}></i></div>
                 <Row>
                     <Col>
@@ -76,7 +76,7 @@ const Home = () => {
                 </div>
                     </Col>
                 </Row>
-            </Container> */}
+            </Container>
         </div>
     );
 };

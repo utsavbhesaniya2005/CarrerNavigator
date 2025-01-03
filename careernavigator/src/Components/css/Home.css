@@ -10,7 +10,6 @@ html {
     padding: 0;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
 }
 
 .main {
@@ -54,7 +53,6 @@ html {
 
 .data-box1 {
     width: 200px;
-    height: 35px;
     border: 2px solid blue;
     margin: 5px;
     border-radius: 10px;
@@ -67,7 +65,6 @@ html {
 
 .data-box1:hover {
     width: 200px;
-    height: 35px;
     border: 2px solid blue;
     color: rgb(255, 255, 255);
     background-color: rgb(34, 0, 255);
@@ -119,12 +116,24 @@ html {
     text-align: left;
     cursor: pointer;
     font-weight: 700;
-    border-bottom: 2px solid white;
     width: 100px;
+    position: relative;
 }
 
-.btn-2:hover {
-    animation: move-border .4s linear ease-in-out;
+.btn-2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform-origin: left;
+    transition: transform .5s ease-out;
+}
+
+.btn-2:hover::after {
+    transform: scaleX(0);
 }
 
 .read-arrow {
@@ -161,33 +170,6 @@ html {
     100% {
         transform: rotate(45deg) translateY(0);
         opacity: 1;
-    }
-}
-
-@keyframes move-border {
-    0% {
-        border-bottom: 1px solid white;
-        width: 100px;
-    }
-
-    25% {
-        border-bottom: 1px solid white;
-        width: 75px;
-    }
-
-    50% {
-        border-bottom: 1px solid white;
-        width: 50px;
-    }
-
-    75% {
-        border-bottom: 1px solid white;
-        width: 25px;
-    }
-
-    100% {
-        border-bottom: 1px solid white;
-        width: 0px;
     }
 }
 
@@ -350,7 +332,7 @@ html {
 
 @media (min-width: 1024px) and (max-width: 1440px) {
     .container-box {
-        transform: translate(-50%, -30%);
+        transform: translate(-50%, -0%);
         padding: 10px;
         font-size: 14px;
         text-align: center;
@@ -369,8 +351,11 @@ html {
         font-weight: 350;
     }
 
-}
+    .data-box4 {
+        height: 105px;
+    }
 
+}
 .emp-expr {
     width: 13rem;
     height: 1.5rem;

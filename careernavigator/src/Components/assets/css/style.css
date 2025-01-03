@@ -21,7 +21,7 @@
 body {
     /* background-color: var(--body-bg); */
     color: var(--description-color);
-    /* font-family: "Merienda", serif; */
+    font-family: "Philosopher", serif;
 }
 
 a {
