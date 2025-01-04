@@ -132,6 +132,24 @@ a {
     text-align: end;
 }
 
+.video-des-col {
+    display: flex;
+    align-items: center;
+}
+
+.video-des {
+    height: 100%;
+    border-left: 3px solid blue;
+    padding-left: 20px;
+}
+
+.data-box2-con-2 {
+    font-size: 20px;
+    display: flex;
+    text-align: left;
+    color: gray;
+}
+
 .btn-2 {
     display: flex;
     justify-content: start;
@@ -140,6 +158,17 @@ a {
     font-weight: 700;
     width: 100px;
     position: relative;
+}
+
+.btn-2-2 {
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    cursor: pointer;
+    font-weight: 600;
+    width: 141px;
+    position: relative;
+    font-size: 13px;
 }
 
 .btn-2::after {
@@ -154,7 +183,23 @@ a {
     transition: transform .5s ease-out;
 }
 
+.btn-2-2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    transform-origin: left;
+    transition: transform .5s ease-out;
+}
+
 .btn-2:hover::after {
+    transform: scaleX(0);
+}
+
+.btn-2-2:hover::after {
     transform: scaleX(0);
 }
 
@@ -166,6 +211,27 @@ a {
 .btn-2:hover .read-more .box-read-more .arrow-cross-read-more i {
     animation: move-arrow 1 .3s linear forwards;
     opacity: 1;
+}
+
+.btn-2-2:hover .read-more .box-read-more .arrow-cross-read-more i {
+    animation: move-arrow 1 .3s linear forwards;
+    opacity: 1;
+}
+
+.hub_img {
+    background-image: url('../assets/images/Hrhub-icon-img.png');
+    width: 220px;
+    height: 70px;
+    background-size: cover;
+    position: center;
+    margin-right: 10px;
+}
+
+.video-h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
 }
 
 @keyframes move-arrow {
@@ -202,6 +268,142 @@ a {
     border-radius: 7px;
     color: #1268fb;
     font-weight: 500;
+}
+
+.emp-expr-2 {
+    width: 15rem;
+    height: 1.6rem;
+    border: 1px solid rgba(18, 104, 251, .3);
+    border-radius: 7px;
+    color: #1268fb;
+    font-weight: 500;
+    background-color: #D9F1FF;
+
+}
+
+.video-box {
+    width: 100%;
+    height: 90vh;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.poster {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)),
+        url("../assets/images/free-career-guidance.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+
+.play-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* Full viewport height */
+    background: transparent;
+    /* No background needed here */
+}
+
+/* Play Button */
+.play-button {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(145deg, #007bff, #0056b3);
+    /* Blue gradient */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    animation: zoom-in-out 2s infinite ease-in-out;
+    /* Continuous zoom animation */
+    animation-play-state: running;
+    /* Initially run the animation */
+}
+
+/* Hover effect: Pause the animation */
+.play-button:hover {
+    animation-play-state: paused;
+    /* Pause the animation when hovering */
+}
+
+.play-button i {
+    color: white;
+    font-size: 24px;
+    z-index: 2;
+    position: relative;
+}
+
+.play-button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: ripple 1.5s infinite;
+    z-index: 1;
+    /* Ensures the ripple is visible */
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+/* Keyframes for zooming in and out */
+@keyframes zoom-in-out {
+
+    0%,
+    100% {
+        transform: scale(1);
+        /* Default size */
+    }
+
+    50% {
+        transform: scale(1.2);
+        /* Zoom out to 1.2x */
+    }
+}
+
+.videoContent {
+    width: 100%;
+    height: 100%;
+    display: none;
+    /* Initially hidden */
+    background-size: cover;
+    position: relative;
 }
 
 .flex {
@@ -379,16 +581,156 @@ a {
     font-size: 50px;
 }
 
-.icon-1{
+.icon-1 {
     width: 40px;
     height: 40px;
-    background-color: rgba(18, 104, 251,1);
+    background-color: rgba(18, 104, 251, 1);
     border-radius: 50%;
 }
-.percentage-achive{
+
+.percentage-achive {
     font-size: 80px;
     margin-bottom: 5vh;
     font-weight: 900;
+}
+
+
+
+
+/* Fourth Page cSS */
+
+.emp-expr-3 {
+    width: 9rem;
+    height: 1.6rem;
+    border: 1px solid rgba(18, 104, 251, 1);
+    border-radius: 7px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.col-2-h1 {
+    font-size: 37px;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    font-weight: 700;
+    color: white;
+}
+
+.forthpage-Para {
+    color: rgba(186, 183, 183, 0.821);
+    font-size: 17px;
+}
+
+.icon-check {
+    color: #0056b3;
+    margin-right: 9px;
+}
+
+.btn1-know-2 {
+    display: inline-flex;
+    color: var(--white);
+    padding: 16px 20px;
+    border: 1px solid #263f9b;
+    border-radius: 18px;
+    text-align: left;
+    background-image: unset;
+    text-transform: uppercase;
+    background-color: #0c4ed0;
+    width: 175px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.box-know-more {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 44px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+    color: var(--white);
+    background: linear-gradient(140deg, #160345, #100d7a, #402b96);
+    right: 5px;
+    top: 8px;
+    background-size: 250%;
+    background-position: top left;
+    overflow: hidden;
+    border-radius: 13px;
+    transition: background-position 0.3s ease;
+}
+
+.arrow-cross-know-more {
+    overflow: hidden;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+}
+
+.box-know-more .arrow-cross-know-more i {
+    transform: rotate(45deg) translateY(0);
+    transition: opacity 0.3s ease;
+}
+
+.btn1-know-2 .box-know-more {
+    background-position: bottom right;
+}
+
+
+.btn1-know-2:hover .box-know-more .arrow-cross-know-more i {
+    animation: move-up-arrow 1 .2s linear forwards;
+    opacity: 1;
+}
+
+.icon-analystics {
+    color: #007bff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.Heading-anal {
+    font-size: 30px;
+    color: white;
+    line-height: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.Heading-anal:hover {
+    color: gray;
+    transition: .4s;
+}
+
+.para-anal {
+    color: rgba(189, 178, 178, 0.751);
+    margin-bottom: 20px;
+}
+
+.border-2nd-box {
+    padding: 20px;
+}
+
+.border-1st-box {
+    padding: 20px;
+}
+
+.border-3rd-box {
+    padding: 20px;
+}
+
+.border-4th-box {
+    padding: 20px;
+
+}
+
+.center-responsive {
+    margin-bottom: 20px;
+}
+
+.All-in-one {
+    font-size: 20px;
 }
 
 @media (min-width:0px) and (max-width:250px) {
@@ -461,8 +803,64 @@ a {
     .btn1 {
         margin-top: 6vh;
     }
-    .percentage-achive{
+
+    .percentage-achive {
         font-size: 50px;
+    }
+
+    .video-h1 {
+        font-size: 35px;
+    }
+
+    .happy-hiring {
+        padding-top: 30px;
+    }
+
+    .hub_img {
+        margin-bottom: 30px;
+    }
+
+    .center-responsive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .All-in-one {
+        text-align: center;
+    }
+
+    .paragraph-forth {
+        text-align: center;
+    }
+
+    .check-data {
+        padding: 0px 0px 0px 20px;
+    }
+
+    .know-more-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .border-1st-box {
+        border: none;
+    }
+
+    .border-3rd-box {
+        border: none;
+    }
+
+    .border-4th-box {
+        border: none;
+    }
+
+    .icon-analystics,
+    .Heading-anal,
+    .para-anal {
+        text-align: center;
     }
 }
 
@@ -536,8 +934,64 @@ a {
     .btn1 {
         margin-top: 6vh;
     }
-    .percentage-achive{
+
+    .percentage-achive {
         font-size: 60px;
+    }
+
+    .video-h1 {
+        font-size: 35px;
+    }
+
+    .happy-hiring {
+        padding-top: 30px;
+    }
+
+    .hub_img {
+        margin-bottom: 30px;
+    }
+
+    .center-responsive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .All-in-one {
+        text-align: center;
+    }
+
+    .paragraph-forth {
+        text-align: center;
+    }
+
+    .check-data {
+        padding: 0px 0px 0px 20px;
+    }
+
+    .know-more-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .border-1st-box {
+        border: none;
+    }
+
+    .border-3rd-box {
+        border: none;
+    }
+
+    .border-4th-box {
+        border: none;
+    }
+
+    .icon-analystics,
+    .Heading-anal,
+    .para-anal {
+        text-align: center;
     }
 }
 
@@ -608,12 +1062,68 @@ a {
     .btn1 {
         margin-top: 6vh;
     }
-    .percentage-achive{
+
+    .percentage-achive {
         font-size: 60px;
+    }
+
+    .video-h1 {
+        font-size: 35px;
+    }
+
+    .happy-hiring {
+        padding-top: 30px;
+    }
+
+    .hub_img {
+        margin-bottom: 30px;
+    }
+
+    .center-responsive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .All-in-one {
+        text-align: center;
+    }
+
+    .paragraph-forth {
+        text-align: center;
+    }
+
+    .check-data {
+        padding: 0px 0px 0px 20px;
+    }
+
+    .know-more-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .border-1st-box {
+        border: none;
+    }
+
+    .border-3rd-box {
+        border: none;
+    }
+
+    .border-4th-box {
+        border: none;
+    }
+
+    .icon-analystics,
+    .Heading-anal,
+    .para-anal {
+        text-align: center;
     }
 }
 
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 425px) and (max-width: 576px) {
     .container-box {
         transform: translate(-50%, -25%);
         padding: 10px;
@@ -681,8 +1191,193 @@ a {
     .btn1 {
         margin-top: 6vh;
     }
-    .percentage-achive{
+
+    .percentage-achive {
         font-size: 70px;
+    }
+
+    .video-h1 {
+        font-size: 35px;
+    }
+
+    .happy-hiring {
+        padding-top: 30px;
+    }
+
+    .hub_img {
+        margin-bottom: 30px;
+    }
+
+    .center-responsive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .All-in-one {
+        text-align: center;
+    }
+
+    .paragraph-forth {
+        text-align: center;
+    }
+
+    .check-data {
+        padding: 0px 0px 0px 20px;
+    }
+
+    .know-more-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .border-1st-box {
+        border: none;
+    }
+
+    .border-3rd-box {
+        border: none;
+    }
+
+    .border-4th-box {
+        border: none;
+    }
+
+    .icon-analystics,
+    .Heading-anal,
+    .para-anal {
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .container-box {
+        transform: translate(-50%, -25%);
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .data-box2-h1 {
+        font-size: 35px;
+        font-weight: 650;
+    }
+
+    .data-box1 {
+        width: 150px;
+        height: 25px;
+        border: 2px solid blue;
+        margin: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 2px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn-1 {
+        font-size: 13px;
+    }
+
+    .data-box1:hover {
+        width: 150px;
+        height: 25px;
+        transition: .3s;
+    }
+
+    .data-box4 {
+        border: none;
+        height: 100px;
+        padding-left: 20px;
+    }
+
+    .data-box2-con {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .btn-2 {
+        width: 89px;
+    }
+
+    .emp-expr {
+        margin-bottom: 6vh;
+    }
+
+    .col-h1 {
+        font-size: 30px;
+    }
+
+    .second-cl {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .btn1 {
+        margin-top: 6vh;
+    }
+
+    .percentage-achive {
+        font-size: 70px;
+    }
+
+    .video-h1 {
+        font-size: 35px;
+    }
+
+    .happy-hiring {
+        padding-top: 30px;
+    }
+
+    .hub_img {
+        margin-bottom: 30px;
+    }
+
+    .center-responsive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .All-in-one {
+        text-align: center;
+    }
+
+    .paragraph-forth {
+        text-align: center;
+    }
+
+    .check-data {
+        padding: 0px 0px 0px 20px;
+    }
+
+    .know-more-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .border-1st-box {
+        border: none;
+    }
+
+    .border-3rd-box {
+        border: none;
+    }
+
+    .border-4th-box {
+        border: none;
+    }
+
+    .icon-analystics,
+    .Heading-anal,
+    .para-anal {
+        text-align: center;
     }
 }
 
@@ -750,6 +1445,44 @@ a {
     .btn1 {
         margin-top: 6vh;
     }
+
+    .video-h1 {
+        font-size: 35px;
+    }
+
+    .happy-hiring {
+        padding-top: 30px;
+    }
+
+    .hub_img {
+        margin-bottom: 30px;
+    }
+
+    .center-responsive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .All-in-one {
+        text-align: center;
+    }
+
+    .paragraph-forth {
+        text-align: center;
+    }
+
+    .check-data {
+        padding: 0px 0px 0px 20px;
+    }
+
+    .know-more-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
@@ -816,6 +1549,16 @@ a {
     .btn1 {
         margin-top: 6vh;
     }
+
+    .happy-hiring {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .set-content {
+        width: 100%;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
@@ -847,6 +1590,12 @@ a {
         font-size: 40px;
     }
 
+    .happy-hiring {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
 }
 
 @media (min-width: 1440px) {
@@ -855,5 +1604,11 @@ a {
         padding: 10px;
         font-size: 14px;
         text-align: center;
+    }
+
+    .happy-hiring {
+        display: flex;
+        align-items: center;
+        justify-content: end;
     }
 }
