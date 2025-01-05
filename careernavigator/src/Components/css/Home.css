@@ -732,6 +732,38 @@ a {
 .All-in-one {
     font-size: 20px;
 }
+.marquee-p{
+    font-size: 10px;
+    font-weight: bolder;
+    margin-right: 40px;
+}
+.workplace-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.workplac-btn{
+    width: 103px;
+}
+.workplace-h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.workplace-h4,.workplace-h2{
+    margin: 0px;
+}
+.work-main-box{
+    height: 100px;
+}
+
+
+
+
+
 
 @media (min-width:0px) and (max-width:250px) {
     .container-box {

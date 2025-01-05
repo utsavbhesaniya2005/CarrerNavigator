@@ -535,6 +535,129 @@ const Home = () => {
                 </Col>
               </Row>
             </Col>
+            <Col></Col>
+          </Row>
+        </Container>
+        <marquee
+          behavior="scroll"
+          direction="right"
+          loop="infinite"
+          scrollamount="7"
+          bgcolor="blue"
+          height="55px"
+          width="100%"
+          style={{ display: "flex", alignItems: "center" }}
+        >
+          <div className="flex">
+            <p style={{ margin: "0px 20px", color: "white" }}>
+              <span className="marquee-p">
+                <i className="fa-regular fa-circle-check"></i>
+              </span>
+              Empowering Talent, Transforming Organizations
+            </p>
+            <p style={{ margin: "0px 20px", color: "white" }}>
+              <span className="marquee-p">
+                <i className="fa-regular fa-circle-check"></i>
+              </span>
+              Navigating Change, Fostering Success
+            </p>
+            <p style={{ margin: "0px 20px", color: "white" }}>
+              <span className="marquee-p">
+                <i className="fa-regular fa-circle-check"></i>
+              </span>
+              Innovative HR Solutions for a Thriving Workforce
+            </p>
+            <p style={{ margin: "0px 20px", color: "white" }}>
+              <span className="marquee-p">
+                <i className="fa-regular fa-circle-check"></i>
+              </span>
+              Unlocking Potential, Driving Growth Together
+            </p>
+            <p style={{ margin: "0px 20px", color: "white" }}>
+              <span className="marquee-p">
+                <i className="fa-regular fa-circle-check"></i>
+              </span>
+              Your Success, Our Commitment to Excellence
+            </p>
+          </div>
+        </marquee>
+      </div>
+      <div style={{ backgroundColor: "var(--body-bg)" }}>
+        <Container
+          style={{
+            margin: "0px auto",
+            padding: "80px 20px",
+            overflow: "hidden",
+          }}
+        >
+          <Row>
+            <Col
+              className="flex"
+              md={12}
+              lg={12}
+              sm={12}
+              xm={12}
+              style={{ marginBottom: "20px" }}
+            >
+              <div className="emp-expr-2 flex">
+                <i
+                  class="fa-solid fa-arrow-left"
+                  style={{ marginRight: "8px" }}
+                ></i>
+                Transforming Workplaces{" "}
+                <i
+                  class="fa-solid fa-arrow-right"
+                  style={{ marginLeft: "8px" }}
+                ></i>
+              </div>
+            </Col>
+            <Col
+              md={12}
+              lg={12}
+              sm={12}
+              xm={12}
+              className="flex"
+              style={{ marginBottom: "40px" }}
+            >
+              <div
+                data-aos="zoom-in"
+                data-aos-offset="200"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+              >
+                <h1 className="video-h1">
+                  What drives us: Passion for <br /> People, Dedication to
+                  Results
+                </h1>
+              </div>
+            </Col>
+            <Col lg={12} md={12} sm={12} xm={12}>
+              <div className="work-main-box">
+                  <div className="workplace-box">
+                    <h4 className="workplace-h4">01</h4>
+                    <h2 className="workplace-h2">Recruitment Staffing</h2>
+                    <div className="btn-2-2 workplac-btn">
+                      VIEW DETAILS
+                      <a type="button" href="#" class="read-more">
+                        <div class="box-read-more">
+                          <div class="arrow-cross-read-more">
+                            <i
+                              class="fa-solid fa-arrow-up read-arrow"
+                              style={{ marginLeft: "6px", color: "black" }}
+                            ></i>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+              </div>
+            </Col>
+            <Col lg={12} md={12} sm={12} xm={12}></Col>
+            <Col lg={12} md={12} sm={12} xm={12}></Col>
+            <Col lg={12} md={12} sm={12} xm={12}></Col>
+            <Col lg={12} md={12} sm={12} xm={12}></Col>
           </Row>
         </Container>
       </div>
