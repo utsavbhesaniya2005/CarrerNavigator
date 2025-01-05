@@ -1,8 +1,8 @@
 import React from 'react';
 import '../Components/css/contactus.css';
-import { FaArrowsAltH } from "react-icons/fa";
+// import { FaArrowsAltH } from "react-icons/fa";
 import { Col, Container, Row } from 'react-bootstrap';
-import { FaLongArrowAltRight } from "react-icons/fa";
+// import { FaLongArrowAltRight } from "react-icons/fa";
 
 function Contactus() {
   return (
@@ -14,7 +14,7 @@ function Contactus() {
               <h3 style={{ color: "white", fontSize: "45px", margin: "0px" }} className='Content-h3'>Contact Us</h3>
               <div className="make-btn">
                 <span style={{ marginRight: "5px", cursor: "pointer" }}>Home</span>
-                <FaArrowsAltH />
+                {/* <FaArrowsAltH /> */}
                 <span style={{ marginLeft: "5px" }}>Contact Us</span>
               </div>
             </div>
@@ -25,7 +25,8 @@ function Contactus() {
         <Row>
           <Col lg={6} md={12} sm={12} xs={12}>
             <div className="make-btn2">
-              <span style={{ marginRight: "7px" }}>Conatct Us</span><FaLongArrowAltRight />
+              <span style={{ marginRight: "7px" }}>Conatct Us</span>
+              {/* <FaLongArrowAltRight /> */}
             </div>
             <h2 style={{ fontSize: '50px', padding: "1rem 0rem" }}>Don't Hesitate To Ask Any Questions</h2>
             <p>Volutpat ex vehicula ridiculus magnis a facilisi vulputate id.</p>
