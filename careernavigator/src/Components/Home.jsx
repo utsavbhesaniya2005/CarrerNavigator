@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Navbar, Nav, Container, Button, Row, Col } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
+
 import "./css/Home.css";
 import img from "./assets/images/Hrhub-icon-img.png";
 import video from "./Video/home1.mp4";
