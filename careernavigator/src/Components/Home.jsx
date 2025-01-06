@@ -92,7 +92,7 @@ const Home = () => {
         "Metus torquent platea aenean orci ridiculus potenti feugiat ultricies.",
     },
     {
-      iconClass: "fa-solid fa-people-group",
+      iconClass: "fa-solid fa-users",
       title: "Training & Development",
       targetPercentage: 90,
       description:
@@ -106,7 +106,7 @@ const Home = () => {
         "Tellus lacus conubia donec curabitur class nulla lorem torquent.",
     },
     {
-      iconClass: "fa-solid fa-person-circle-check",
+      iconClass: "fa-regular fa-heart",
       title: "Employee Relations",
       targetPercentage: 58,
       description:
@@ -141,7 +141,13 @@ const Home = () => {
                       data-aos-once="false"
                     >
                       <div className="data-box1">
-                        <h6 className="m-0 btn-1">The New Era Of HR</h6>
+                        <h6 className="m-0 btn-1">
+                          The New Era Of HR
+                          <i
+                            class="fa-solid fa-arrow-right"
+                            style={{ marginLeft: "8px" }}
+                          ></i>
+                        </h6>
                       </div>
                       <div className="data-box2">
                         <h1 className="data-box2-h1">
@@ -262,7 +268,7 @@ const Home = () => {
                   class="fa-solid fa-arrow-left"
                   style={{ marginRight: "8px" }}
                 ></i>
-                Empolyee Experience{" "}
+                Transforming Workplaces{" "}
                 <i
                   class="fa-solid fa-arrow-right"
                   style={{ marginLeft: "8px" }}
@@ -636,23 +642,23 @@ const Home = () => {
             </Col>
             <Col lg={12} md={12} sm={12} xm={12}>
               <div className="work-main-box">
-                  <div className="workplace-box">
-                    <h4 className="workplace-h4">01</h4>
-                    <h2 className="workplace-h2">Recruitment Staffing</h2>
-                    <div className="btn-2-2 workplac-btn">
-                      VIEW DETAILS
-                      <a type="button" href="#" class="read-more">
-                        <div class="box-read-more">
-                          <div class="arrow-cross-read-more">
-                            <i
-                              class="fa-solid fa-arrow-up read-arrow"
-                              style={{ marginLeft: "6px", color: "black" }}
-                            ></i>
-                          </div>
+                <div className="workplace-box">
+                  <h4 className="workplace-h4">01</h4>
+                  <h2 className="workplace-h2">Recruitment Staffing</h2>
+                  <div className="btn-2-2 workplac-btn">
+                    VIEW DETAILS
+                    <a type="button" href="#" class="read-more">
+                      <div class="box-read-more">
+                        <div class="arrow-cross-read-more">
+                          <i
+                            class="fa-solid fa-arrow-up read-arrow"
+                            style={{ marginLeft: "6px", color: "black" }}
+                          ></i>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
+                </div>
               </div>
             </Col>
             <Col lg={12} md={12} sm={12} xm={12}></Col>
