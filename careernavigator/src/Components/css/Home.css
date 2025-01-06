@@ -732,12 +732,14 @@ a {
 .All-in-one {
     font-size: 20px;
 }
-.marquee-p{
+
+.marquee-p {
     font-size: 10px;
     font-weight: bolder;
     margin-right: 40px;
 }
-.workplace-box{
+
+.workplace-box {
     width: 100%;
     display: flex;
     align-items: center;
@@ -746,20 +748,26 @@ a {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
-.workplac-btn{
+
+.workplac-btn {
     width: 103px;
 }
-.workplace-h2{
+
+.workplace-h2 {
     font-size: 40px;
     font-weight: bold;
 }
-.workplace-h4,.workplace-h2{
+
+.workplace-h4,
+.workplace-h2 {
     margin: 0px;
 }
-.work-main-box{
+
+.work-main-box {
     height: 100px;
 }
-.tranforming-p{
+
+.tranforming-p {
     margin: 0px;
 }
 
@@ -896,10 +904,31 @@ a {
     .para-anal {
         text-align: center;
     }
-    .tranforming-p{
+
+    .tranforming-p {
         font-size: 13px;
     }
-    
+
+    .workplace-h2 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .workplac-btn {
+        width: 96px;
+        font-size: 10px;
+    }
+
+    .workplace-h4 {
+        font-size: 10px;
+    }
+
+}
+
+@media (min-width:250px) and (max-width:260px) {
+    .tranforming-p {
+        font-size: 13px;
+    }
 }
 
 @media (min-width:250px) and (max-width:373px) {
@@ -1031,6 +1060,21 @@ a {
     .para-anal {
         text-align: center;
     }
+
+    .workplace-h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .workplac-btn {
+        width: 101px;
+        font-size: 12px;
+    }
+
+    .workplace-h4 {
+        font-size: 15px;
+    }
+
 }
 
 @media (min-width:373px) and (max-width: 425px) {
