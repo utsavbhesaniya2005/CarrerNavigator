@@ -611,7 +611,7 @@ const Home = () => {
                   class="fa-solid fa-arrow-left"
                   style={{ marginRight: "8px" }}
                 ></i>
-                Transforming Workplaces{" "}
+                <p className="tranforming-p">Transforming Workplaces</p>{" "}
                 <i
                   class="fa-solid fa-arrow-right"
                   style={{ marginLeft: "8px" }}

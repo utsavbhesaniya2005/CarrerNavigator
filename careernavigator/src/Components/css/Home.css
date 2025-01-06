@@ -759,7 +759,9 @@ a {
 .work-main-box{
     height: 100px;
 }
-
+.tranforming-p{
+    margin: 0px;
+}
 
 
 
@@ -894,6 +896,10 @@ a {
     .para-anal {
         text-align: center;
     }
+    .tranforming-p{
+        font-size: 13px;
+    }
+    
 }
 
 @media (min-width:250px) and (max-width:373px) {
