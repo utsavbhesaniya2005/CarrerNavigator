@@ -641,6 +641,7 @@ const Home = () => {
               </div>
             </Col>
             <Col lg={12} md={12} sm={12} xm={12}>
+              <div className="horizontal"></div>
               <div className="work-main-box">
                 <div className="workplace-box">
                   <h4 className="workplace-h4">01</h4>
@@ -650,10 +651,7 @@ const Home = () => {
                     <a type="button" href="#" class="read-more">
                       <div class="box-read-more">
                         <div class="arrow-cross-read-more">
-                          <i
-                            class="fa-solid fa-arrow-up read-arrow"
-                            style={{ marginLeft: "6px", color: "black" }}
-                          ></i>
+                          <i class="fa-solid fa-arrow-up read-arrow white-brd"></i>
                         </div>
                       </div>
                     </a>
@@ -661,10 +659,79 @@ const Home = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={12} md={12} sm={12} xm={12}></Col>
-            <Col lg={12} md={12} sm={12} xm={12}></Col>
-            <Col lg={12} md={12} sm={12} xm={12}></Col>
-            <Col lg={12} md={12} sm={12} xm={12}></Col>
+
+            <Col lg={12} md={12} sm={12} xm={12}>
+              <div className="work-main-box  work-main-box2">
+                <div className="workplace-box">
+                  <h4 className="workplace-h4">02</h4>
+                  <h2 className="workplace-h2 set-h2-box2">Compensation Management</h2>
+                  <div className="btn-2-2 workplac-btn">
+                    VIEW DETAILS
+                    <a type="button" href="#" class="read-more">
+                      <div class="box-read-more">
+                        <div class="arrow-cross-read-more">
+                          <i class="fa-solid fa-arrow-up read-arrow white-brd"></i>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col lg={12} md={12} sm={12} xm={12}>
+              <div className="work-main-box  work-main-box3 ">
+                <div className="workplace-box">
+                  <h4 className="workplace-h4">03</h4>
+                  <h2 className="workplace-h2 set-h2-box3">Training Development</h2>
+                  <div className="btn-2-2 workplac-btn">
+                    VIEW DETAILS
+                    <a type="button" href="#" class="read-more">
+                      <div class="box-read-more">
+                        <div class="arrow-cross-read-more">
+                          <i class="fa-solid fa-arrow-up read-arrow white-brd"></i>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col lg={12} md={12} sm={12} xm={12}>
+              <div className="work-main-box work-main-box4">
+                <div className="workplace-box">
+                  <h4 className="workplace-h4">04</h4>
+                  <h2 className="workplace-h2 set-h2-box4">Performance Management</h2>
+                  <div className="btn-2-2 workplac-btn">
+                    VIEW DETAILS
+                    <a type="button" href="#" class="read-more">
+                      <div class="box-read-more">
+                        <div class="arrow-cross-read-more">
+                          <i class="fa-solid fa-arrow-up read-arrow white-brd"></i>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col lg={12} md={12} sm={12} xm={12}>
+              <div className="work-main-box work-main-box5">
+                <div className="workplace-box">
+                  <h4 className="workplace-h4">05</h4>
+                  <h2 className="workplace-h2 set-h2-box5">Employee Relations</h2>
+                  <div className="btn-2-2 workplac-btn">
+                    VIEW DETAILS
+                    <a type="button" href="#" class="read-more">
+                      <div class="box-read-more">
+                        <div class="arrow-cross-read-more">
+                          <i class="fa-solid fa-arrow-up read-arrow white-brd"></i>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </Col>
           </Row>
         </Container>
       </div>
