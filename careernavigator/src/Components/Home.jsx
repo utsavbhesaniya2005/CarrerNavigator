@@ -664,7 +664,9 @@ const Home = () => {
               <div className="work-main-box  work-main-box2">
                 <div className="workplace-box">
                   <h4 className="workplace-h4">02</h4>
-                  <h2 className="workplace-h2 set-h2-box2">Compensation Management</h2>
+                  <h2 className="workplace-h2 set-h2-box2">
+                    Compensation Management
+                  </h2>
                   <div className="btn-2-2 workplac-btn">
                     VIEW DETAILS
                     <a type="button" href="#" class="read-more">
@@ -682,7 +684,9 @@ const Home = () => {
               <div className="work-main-box  work-main-box3 ">
                 <div className="workplace-box">
                   <h4 className="workplace-h4">03</h4>
-                  <h2 className="workplace-h2 set-h2-box3">Training Development</h2>
+                  <h2 className="workplace-h2 set-h2-box3">
+                    Training Development
+                  </h2>
                   <div className="btn-2-2 workplac-btn">
                     VIEW DETAILS
                     <a type="button" href="#" class="read-more">
@@ -700,7 +704,9 @@ const Home = () => {
               <div className="work-main-box work-main-box4">
                 <div className="workplace-box">
                   <h4 className="workplace-h4">04</h4>
-                  <h2 className="workplace-h2 set-h2-box4">Performance Management</h2>
+                  <h2 className="workplace-h2 set-h2-box4">
+                    Performance Management
+                  </h2>
                   <div className="btn-2-2 workplac-btn">
                     VIEW DETAILS
                     <a type="button" href="#" class="read-more">
@@ -718,7 +724,9 @@ const Home = () => {
               <div className="work-main-box work-main-box5">
                 <div className="workplace-box">
                   <h4 className="workplace-h4">05</h4>
-                  <h2 className="workplace-h2 set-h2-box5">Employee Relations</h2>
+                  <h2 className="workplace-h2 set-h2-box5">
+                    Employee Relations
+                  </h2>
                   <div className="btn-2-2 workplac-btn">
                     VIEW DETAILS
                     <a type="button" href="#" class="read-more">
@@ -731,6 +739,62 @@ const Home = () => {
                   </div>
                 </div>
               </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div style={{ backgroundColor: "#D9F1FF" }}>
+        <Container
+          style={{
+            margin: "  0px auto",
+            padding: "80px 10px",
+            overflow: "hidden",
+          }}
+        >
+          <div className="emp-expr flex">
+            Empolyee Experience{" "}
+            <i
+              class="fa-solid fa-arrow-right"
+              style={{ marginLeft: "8px" }}
+            ></i>
+          </div>
+          <Row className="">
+            <Col lg={7} md={7} sm={12} xm={12} className="second-cl">
+              {/* <div
+                data-aos="zoom-in"
+                data-aos-offset="200"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+              > */}
+              <h1
+                style={{
+                  textTransform: "capitalize",
+                  fontWeight: "700",
+                  letterSpacing: "-1px",
+                }}
+                className="col-h1"
+              >
+                Empowering Growth With Strategic Solutions View Services
+              </h1>
+              {/* </div> */}
+            </Col>
+            <Col lg={5} md={5} sm={12} xm={12} className="second-cl">
+              <a type="button" href="#" className="btn1">
+                <span>View Services</span>
+                <div className="box">
+                  <div className="arrow-cross">
+                    <i className="fa-solid fa-arrow-up"></i>
+                  </div>
+                </div>
+              </a>
+            </Col>
+            <Col lg={5} md={5}>
+                <div className="slider-main-box">
+                  <div className="slider-img"></div>
+                  <div className="slider-img2"></div>
+                </div>
             </Col>
           </Row>
         </Container>

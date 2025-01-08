@@ -765,10 +765,7 @@ a {
     font-weight: bold;
     cursor: pointer;
 }
-.workplace-h2:hover{
-    color: gray;
-    transition: .3s ease-in-out;
-}
+
 .white-brd {
     margin-left: 6px;
     color: black;
@@ -806,7 +803,7 @@ a {
     transition: 0.3s ease-in-out;
 }
 
-.work-main-box {
+.work .work-main-box {
     height: 150px;
     transition: 0.3s ease-in-out;
 }
@@ -866,14 +863,10 @@ a {
     transform: translate(-70%, 90%);
     color: white;
 }
-.workplace-h2:hover{
-    color: gray;
-    transition: .3s ease-in-out;
+
+.work-main-box:hover .workplace-h2:hover {
+    color: rgb(189, 183, 183);
 }
-/* .work-main-box:hover .set-h2-box2 {
-    transform: translate(70%, 0%);
-    color: white;
-} */
 
 
 .work-main-box:hover .workplace-h4 {
@@ -895,7 +888,32 @@ a {
     color: white;
 }
 
+/* Slider Box Css */
 
+
+.slider-main-box{
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.slider-img{
+    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=900&h=500&s=1');
+    background-size: cover;
+    position: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border-radius: 10px;
+}
+.slider-img2{
+    background-image: url('https://dreamlandadventuretourism.com/wp-content/uploads/2023/12/img-world-ticket-from-dream.webp');
+    background-size: cover;
+    position: center;
+}
 
 
 
@@ -2228,6 +2246,7 @@ a {
         transform: translate(-30%, 220%);
         color: white;
     }
+
     .work-main-box:hover .set-h2-box2 {
         transform: translate(-37%, 90%);
     }
@@ -2264,6 +2283,7 @@ a {
         transform: translate(-98%, 220%);
         color: white;
     }
+
     .work-main-box:hover .set-h2-box2 {
         transform: translate(-57%, 90%);
     }
