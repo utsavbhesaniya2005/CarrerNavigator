@@ -893,21 +893,35 @@ a {
 
 .slider-main-box{
     width: 100%;
-    height: 200px;
-    border: 1px solid black;
+    height: auto;
+    /* border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(3,1fr);
+    border-radius: 15px; */
 }
 .slider-img{
-    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=900&h=500&s=1');
-    background-size: cover;
-    position: center;
-    grid-column-start: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden; 
+    border-radius: 8px; 
+}
+.slider-img a{
+    display: block; 
+    width: 100%;
+    overflow: hidden; 
+    border-radius: 8px; 
+}
+.slider-img a img{
+    width: 100%;
+    border-radius: 8px;
+    clip-path: polygon(0% 100%, 0% 0%, 0% 0%, 100% 0%, 100% calc(100% - 80px), calc(100% - 80px) calc(100% - 80px), calc(100% - 80px) 100%);
+    /* grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 4;
-    border-radius: 10px;
+    border-radius: 10px; */
 }
 .slider-img2{
     background-image: url('https://dreamlandadventuretourism.com/wp-content/uploads/2023/12/img-world-ticket-from-dream.webp');

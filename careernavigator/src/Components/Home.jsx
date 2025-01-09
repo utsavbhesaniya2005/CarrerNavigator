@@ -341,7 +341,7 @@ const Home = () => {
                   </h1>
                   <div className="btn-2-2">
                     TALK WITH EXPERTS
-                    <a type="button" href="#" class="read-more">
+                    <a type="button" href="#" className="read-more">
                       <div class="box-read-more">
                         <div class="arrow-cross-read-more">
                           <i
@@ -669,7 +669,7 @@ const Home = () => {
                   </h2>
                   <div className="btn-2-2 workplac-btn">
                     VIEW DETAILS
-                    <a type="button" href="#" class="read-more">
+                    <a type="button" href="#" className="read-more">
                       <div class="box-read-more">
                         <div class="arrow-cross-read-more">
                           <i class="fa-solid fa-arrow-up read-arrow white-brd"></i>
@@ -689,7 +689,7 @@ const Home = () => {
                   </h2>
                   <div className="btn-2-2 workplac-btn">
                     VIEW DETAILS
-                    <a type="button" href="#" class="read-more">
+                    <a type="button" href="#" className="read-more">
                       <div class="box-read-more">
                         <div class="arrow-cross-read-more">
                           <i class="fa-solid fa-arrow-up read-arrow white-brd"></i>
@@ -709,7 +709,7 @@ const Home = () => {
                   </h2>
                   <div className="btn-2-2 workplac-btn">
                     VIEW DETAILS
-                    <a type="button" href="#" class="read-more">
+                    <a type="button" href="#" className="read-more">
                       <div class="box-read-more">
                         <div class="arrow-cross-read-more">
                           <i class="fa-solid fa-arrow-up read-arrow white-brd"></i>
@@ -792,7 +792,11 @@ const Home = () => {
             </Col>
             <Col lg={5} md={5}>
                 <div className="slider-main-box">
-                  <div className="slider-img"></div>
+                  <div className="slider-img">
+                      <a href="#">
+                          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=900&h=500&s=1" alt="" />
+                      </a>
+                  </div>
                   <div className="slider-img2"></div>
                 </div>
             </Col>
