@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Navbar, Nav, Container, Button, Row, Col } from "react-bootstrap";
-// import "bootstrap/dist/css/bootstrap.min.css";
-
 import "./css/Home.css";
 import img from "./assets/images/Hrhub-icon-img.png";
 import video from "./Video/home1.mp4";
@@ -746,8 +744,8 @@ const Home = () => {
       <div style={{ backgroundColor: "#D9F1FF" }}>
         <Container
           style={{
-            margin: "  0px auto",
-            padding: "80px 10px",
+            margin: "0px auto",
+            padding: "80px 0px 80px 10px",
             overflow: "hidden",
           }}
         >
@@ -790,6 +788,7 @@ const Home = () => {
                 </div>
               </a>
             </Col>
+<<<<<<< HEAD
             <Col lg={5} md={5}>
                 <div className="slider-main-box">
                   <div className="slider-img">
@@ -798,7 +797,57 @@ const Home = () => {
                       </a>
                   </div>
                   <div className="slider-img2"></div>
+=======
+            <Col lg={12} md={12} className="main-slider">
+              <div class="slider slider-1 col-5">
+                <div class="slider-main-box"></div>
+                <div class="slider-heading">
+                  <h3 class="slider-h3">Monthly Innovation Idea Days</h3>
+>>>>>>> a4e9534b49d034fd76a4f4c09a7873b3c8c226ab
                 </div>
+                <div class="slider-paragraph">
+                  <p class="slider-p">
+                    Venenatis phasellus in dapibus nostra eros sociosqu cursus
+                    ut.
+                  </p>
+                </div>
+              </div>
+
+              <div class="slider slider-2 col-5">
+                <div class="slider-main-box"></div>
+                <div class="slider-heading">
+                  <h3 class="slider-h3">Tailored Employee Growth Plans</h3>
+                </div>
+                <div class="slider-paragraph">
+                  <p class="slider-p">
+                    Venenatis phasellus in dapibus nostra eros sociosqu cursus
+                    ut.
+                  </p>
+                </div>
+              </div>
+
+              <div class="slider slider-3 col-5">
+                <div class="slider-main-box"></div>
+                <div class="slider-heading">
+                  <h3 class="slider-h3">Dynamic Flexible Work</h3>
+                </div>
+                <div class="slider-paragraph">
+                  <p class="slider-p">
+                    Habitant hac habitasse augue dictum dui nec cursus.
+                  </p>
+                </div>
+              </div>
+              <div class="slider slider-4 col-5">
+                <div class="slider-main-box"></div>
+                <div class="slider-heading">
+                  <h3 class="slider-h3">Dynamic Flexible Work</h3>
+                </div>
+                <div class="slider-paragraph">
+                  <p class="slider-p">
+                    Habitant hac habitasse augue dictum dui nec cursus.
+                  </p>
+                </div>
+              </div>
             </Col>
           </Row>
         </Container>
