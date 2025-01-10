@@ -889,30 +889,68 @@ a {
 }
 
 /* Slider Box Css */
+.main-slider {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between; 
+}
 
+.slider {
+    flex: 1;
+    padding: 0px 25px; 
+    position: relative; 
+}
 
-.slider-main-box{
+.slider:nth-child(2) .slider-main-box {
+    margin-top: 50px;
+}
+
+.slider-main-box-half {
+    height: 230px;
+    width: 100%; /* Adjust based on the col-2 size */
+    overflow: hidden;
+    background-image: url('../assets/images/home-1-slider-03.jpg');
+    background-size: cover;
+    background-position: center left; /* Show left half of the image */
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+}
+
+.slider-main-box {
     width: 100%;
-    height: 200px;
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(3,1fr);
-}
-.slider-img{
-    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=900&h=500&s=1');
+    height: 230px; 
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+    background-image: url('../assets/images/home-1-slider-03.jpg');
     background-size: cover;
-    position: center;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    border-radius: 10px;
+    background-position: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
 }
-.slider-img2{
-    background-image: url('https://dreamlandadventuretourism.com/wp-content/uploads/2023/12/img-world-ticket-from-dream.webp');
-    background-size: cover;
-    position: center;
+
+.slider-h3 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0px;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.slider-h3:hover {
+    color: #007bff;
+    transition: 0.3s ease-in-out;
+}
+
+.slider-p {
+    color: rgb(116, 112, 112);
+    transition: 0.3s ease-in-out;
+    font-weight: 160;
+    margin-bottom: 20px;
+}
+
+.slider-paragraph {
+    border-bottom: 1px solid rgb(116, 112, 112);
 }
 
 

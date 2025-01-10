@@ -1,137 +1,191 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="../src/Components/assets/swiper-bunlel.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="../src/Components/assets/css/slider.css">
+
+      <title>Responsive card slider - Bedimcode</title>
+   </head>
+   <body>
+      <section class="container">
+         <div class="card__container swiper">
+            <div class="card__content">
+               <div class="swiper-wrapper">
+                <div class="slider slider-1 col-5">
+                  <div class="slider-main-box"></div>
+                  <div class="slider-heading">
+                    <h3 class="slider-h3">Monthly Innovation Idea Days</h3>
+                  </div>
+                  <div class="slider-paragraph">
+                    <p class="slider-p">
+                      Venenatis phasellus in dapibus nostra eros sociosqu cursus
+                      ut.
+                    </p>
+                  </div>
+                </div>
+      
+                  <article class="card__article swiper-slide">
+                     <div class="card__image">
+                        <img src="assets/img/avatar-2.png" alt="image" class="card__img">
+                        <div class="card__shadow"></div>
+                     </div>
+      
+                     <div class="card__data">
+                        <h3 class="card__name">Lotw Fox</h3>
+                        <p class="card__description">
+                           Passionate about development and design, 
+                           I carry out projects at the request of users.
+                        </p>
+      
+                        <a href="#" class="card__button">View More</a>
+                     </div>
+                  </article>
+      
+                  <article class="card__article swiper-slide">
+                     <div class="card__image">
+                        <img src="assets/img/avatar-3.png" alt="image" class="card__img">
+                        <div class="card__shadow"></div>
+                     </div>
+      
+                     <div class="card__data">
+                        <h3 class="card__name">Sara Mit</h3>
+                        <p class="card__description">
+                           Passionate about development and design, 
+                           I carry out projects at the request of users.
+                        </p>
+      
+                        <a href="#" class="card__button">View More</a>
+                     </div>
+                  </article>
+      
+                  <article class="card__article swiper-slide">
+                     <div class="card__image">
+                        <img src="assets/img/avatar-4.png" alt="image" class="card__img">
+                        <div class="card__shadow"></div>
+                     </div>
+      
+                     <div class="card__data">
+                        <h3 class="card__name">Jenny Wert</h3>
+                        <p class="card__description">
+                           Passionate about development and design, 
+                           I carry out projects at the request of users.
+                        </p>
+      
+                        <a href="#" class="card__button">View More</a>
+                     </div>
+                  </article>
+
+                  <article class="card__article swiper-slide">
+                     <div class="card__image">
+                        <img src="assets/img/avatar-5.png" alt="image" class="card__img">
+                        <div class="card__shadow"></div>
+                     </div>
+      
+                     <div class="card__data">
+                        <h3 class="card__name">Lexa Kin</h3>
+                        <p class="card__description">
+                           Passionate about development and design, 
+                           I carry out projects at the request of users.
+                        </p>
+      
+                        <a href="#" class="card__button">View More</a>
+                     </div>
+                  </article>
+               </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next">
+               <i class="ri-arrow-right-s-line"></i>
+            </div>
+            
+            <div class="swiper-button-prev">
+               <i class="ri-arrow-left-s-line"></i>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+         </div>
+      </section>
+      
+      <!--=============== SWIPER JS ===============-->
+
+      <!--=============== MAIN JS ===============-->
+      <script src="../src/Components/assets/js/swiper-bundle.min.js"></script>
+      <script src="../src/Components/assets/js/main.js"></script>
+
+   </body>
+</html>
 
 
 
 
 
-.horizontal {
-    border-top: 1px solid black;
-    padding: 0 20px;
-}
-
-.workplace-box {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 150px;
-    border-bottom: 1px solid black;
-    transition: 0.3s ease-in-out;
-    margin: 10px 0;
-}
-
-.workplace-h2 {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.white-brd {
-    margin-left: 6px;
-    color: black;
-}
-
-.workplac-btn {
-    display: flex;
-    justify-content: start;
-    text-align: left;
-    cursor: pointer;
-    font-weight: 600;
-    width: 102px;
-    position: relative;
-    font-size: 13px;
-    transition: 0.3s ease-in-out;
-    color: rgb(0, 0, 0);
-}
-
-.work-main-box:hover .workplac-btn::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color: rgb(255, 255, 255);
-    transform-origin: left;
-    transition: transform .5s ease-out;
-}
 
 
-.workplace-h4,
-.workplace-h2 {
-    margin: 0;
-    transition: 0.3s ease-in-out;
-}
 
-.work-main-box {
-    height: 150px;
-    transition: 0.3s ease-in-out;
-}
 
-.work-main-box:hover {
-    background-image:
-        linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-        url('../assets/images/Home-1-flex-banner-img-01.jpg');
-    border-radius: 20px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 0.3s ease-in-out;
-}
-.work-main-box2:hover{
-    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),url('../assets/images/home-1-service-image-01.jpg');
-    border-radius: 20px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 0.3s ease-in-out;
-}
-.wwork-main-box3:hover{
-    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),url('../assets/images/home-1-service-image-02.jpg');
-    border-radius: 20px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 0.3s ease-in-out;
-}
-.work-main-box4:hover{
-    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),url('../assets/images/home-1-service-image-03.jpg');
-    border-radius: 20px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 0.3s ease-in-out;
-}
-.work-main-box5:hover{
-    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),url('../assets/images/home-1-service-image-04.jpg');
-    border-radius: 20px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 0.3s ease-in-out;
-}
 
-.work-main-box:hover .workplace-h2 {
-    transform: translate(-70%, 90%);
-    color: white;
-}
 
-.work-main-box:hover .workplace-h4 {
-    transform: translate(20%, 70%);
-    color: rgb(153, 149, 149);
-    font-size: 50px;
-}
 
-.work-main-box:hover .workplace-box {
-    border-bottom: none;
-}
 
-.work-main-box:hover .workplac-btn {
-    transform: translate(-20%, 270%);
-    color: white;
-}
 
-.work-main-box:hover .white-brd {
-    color: white;
-}
+
+
+<div class="slider slider-1 col-5">
+                <div class="slider-main-box"></div>
+                <div class="slider-heading">
+                  <h3 class="slider-h3">Monthly Innovation Idea Days</h3>
+                </div>
+                <div class="slider-paragraph">
+                  <p class="slider-p">
+                    Venenatis phasellus in dapibus nostra eros sociosqu cursus
+                    ut.
+                  </p>
+                </div>
+              </div>
+
+              <div class="slider slider-2 col-5">
+                <div class="slider-main-box"></div>
+                <div class="slider-heading">
+                  <h3 class="slider-h3">Tailored Employee Growth Plans</h3>
+                </div>
+                <div class="slider-paragraph">
+                  <p class="slider-p">
+                    Venenatis phasellus in dapibus nostra eros sociosqu cursus
+                    ut.
+                  </p>
+                </div>
+              </div>
+
+              <div class="slider slider-3 col-5">
+                <div class="slider-main-box"></div>
+                <div class="slider-heading">
+                  <h3 class="slider-h3">Dynamic Flexible Work</h3>
+                </div>
+                <div class="slider-paragraph">
+                  <p class="slider-p">
+                    Habitant hac habitasse augue dictum dui nec cursus.
+                  </p>
+                </div>
+              </div>
+              <div class="slider slider-4 col-5">
+                <div class="slider-main-box"></div>
+                <div class="slider-heading">
+                  <h3 class="slider-h3">Dynamic Flexible Work</h3>
+                </div>
+                <div class="slider-paragraph">
+                  <p class="slider-p">
+                    Habitant hac habitasse augue dictum dui nec cursus.
+                  </p>
+                </div>
+              </div>
