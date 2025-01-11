@@ -111,7 +111,11 @@ const Home = () => {
         "Ornare tortor vitae litora velit ipsum eleifend dis eget placerat nullam.",
     },
   ];
+  const [isOn, setIsOn] = useState(false);
 
+  const toggleSwitch = () => {
+    setIsOn(!isOn);
+  };
   return (
     <div>
       {/* Main Content */}
@@ -741,7 +745,7 @@ const Home = () => {
           </Row>
         </Container>
       </div>
-      <div style={{ backgroundColor: "#D9F1FF" }}>
+      {/* <div style={{ backgroundColor: "#D9F1FF" }}>
         <Container
           style={{
             margin: "0px auto",
@@ -758,14 +762,6 @@ const Home = () => {
           </div>
           <Row className="">
             <Col lg={7} md={7} sm={12} xm={12} className="second-cl">
-              {/* <div
-                data-aos="zoom-in"
-                data-aos-offset="200"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false"
-              > */}
               <h1
                 style={{
                   textTransform: "capitalize",
@@ -776,7 +772,6 @@ const Home = () => {
               >
                 Empowering Growth With Strategic Solutions View Services
               </h1>
-              {/* </div> */}
             </Col>
             <Col lg={5} md={5} sm={12} xm={12} className="second-cl">
               <a type="button" href="#" className="btn1">
@@ -788,7 +783,6 @@ const Home = () => {
                 </div>
               </a>
             </Col>
-<<<<<<< HEAD
             <Col lg={5} md={5}>
                 <div className="slider-main-box">
                   <div className="slider-img">
@@ -797,13 +791,11 @@ const Home = () => {
                       </a>
                   </div>
                   <div className="slider-img2"></div>
-=======
             <Col lg={12} md={12} className="main-slider">
               <div class="slider slider-1 col-5">
                 <div class="slider-main-box"></div>
                 <div class="slider-heading">
                   <h3 class="slider-h3">Monthly Innovation Idea Days</h3>
->>>>>>> a4e9534b49d034fd76a4f4c09a7873b3c8c226ab
                 </div>
                 <div class="slider-paragraph">
                   <p class="slider-p">
@@ -849,8 +841,145 @@ const Home = () => {
                 </div>
               </div>
             </Col>
+            </div></Col>
           </Row>
         </Container>
+      </div> */}
+      <div className="card-background">
+        {/* <Container
+          style={{
+            padding: "80px 20px",
+            overflow: "hidden",
+          }}
+        > */}
+        <Row>
+          <Col
+            className="flex content-wrapper"
+            md={12}
+            lg={12}
+            sm={12}
+            xm={12}
+            style={{ marginBottom: "20px" }}
+          >
+            <div className="emp-expr-2 flex choice-back">
+              <i
+                class="fa-solid fa-arrow-left"
+                style={{ marginRight: "8px" }}
+              ></i>
+              <p className="tranforming-p">Optimal Pricing Choice</p>{" "}
+              <i
+                class="fa-solid fa-arrow-right"
+                style={{ marginLeft: "8px" }}
+              ></i>
+            </div>
+          </Col>
+          <Col md={12} lg={12} sm={12} xm={12} className="flex content-wrapper">
+            <h1 className="video-h1 price-h1">Pick The Best Pricing Plan</h1>
+          </Col>
+          <div className="pricing-table">
+            <div className="pricing-header">
+              <label>
+                <input type="radio" name="billing" /> Billed Monthly
+              </label>
+              <label>
+                <input type="radio" name="billing" /> Billed Annually
+              </label>
+            </div>
+            <div className="app-container">
+              <p style={{ marginBottom: "0px", marginRight: "10px" }}>
+                Billed Monthly
+              </p>
+              <div
+                className={`toggle-container ${isOn ? "on" : "off"}`}
+                onClick={toggleSwitch}
+              >
+                <div className={`switch ${isOn ? "on" : "off"}`}></div>
+              </div>
+              <p style={{ marginBottom: "0px", marginLeft: "10px" }}>
+                Billed Annualy
+              </p>
+            </div>
+            <div className="card-main-class">
+              <div className="pricing-plans basic-plan">
+                {/* Basic Plan */}
+                <div className="pricing-card basic">
+                  <div className="card-header">
+                      <h6 className="plan-name">Basic</h6>
+                    <h3 className="basic-plan-h3">Basic HR Plan</h3>
+                    <p>
+                      Parturient elementum in, rutrum tristique inceptos sit
+                      suspendisse faucibus velit.
+                    </p>
+                  </div>
+                  <div className="card-price">
+                    <h2>$369.99</h2>
+                    <span>/mo</span>
+                  </div>
+                  <button className="action-button">Boost your Profit</button>
+                  <ul className="features">
+                    <li>24/7 Customer support</li>
+                    <li>On-site training and workshops</li>
+                    <li>Complete recruiting and talent acquisition</li>
+                    <li>Customized benefits Programs</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="pricing-plans pro-plan">
+                {/* Pro Plan */}
+                <div className="pricing-card pro">
+                  <div className="card-header">
+                    <h3>Pro HR Plan</h3>
+                    <p>
+                      Parturient elementum in, rutrum tristique inceptos sit
+                      suspendisse faucibus velit.
+                    </p>
+                    <span className="badge popular">Popular</span>
+                  </div>
+                  <div className="card-price">
+                    <h2>$889.99</h2>
+                    <span>/mo</span>
+                  </div>
+                  <button className="action-button">Elevate your Growth</button>
+                  <ul className="features">
+                    <li>24/7 Customer support</li>
+                    <li>On-site training and workshops</li>
+                    <li>Complete recruiting and talent acquisition</li>
+                    <li>Customized benefits Programs</li>
+                    <li>Access to advanced HRIS</li>
+                    <li>Legal support for conflicts</li>
+                    <li>Leadership training programs</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="pricing-plans recomand-plan">
+                {/* Enterprise Plan */}
+                <div className="pricing-card enterprise">
+                  <div className="card-header">
+                    <h3>Enterprise HR Plan</h3>
+                    <p>
+                      Parturient elementum in, rutrum tristique inceptos sit
+                      suspendisse faucibus velit.
+                    </p>
+                    <span className="badge recommended">Recommended</span>
+                  </div>
+                  <div className="card-price">
+                    <h2>$1120.99</h2>
+                    <span>/mo</span>
+                  </div>
+                  <button className="action-button">Improve progression</button>
+                  <ul className="features">
+                    <li>Leadership training programs</li>
+                    <li>Legal support for conflicts</li>
+                    <li>Customized benefits Programs</li>
+                    <li>Complete recruiting and talent acquisition</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Row>
+        {/* </Container> */}
       </div>
     </div>
   );

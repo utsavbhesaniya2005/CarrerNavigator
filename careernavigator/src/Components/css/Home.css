@@ -892,13 +892,13 @@ a {
 .main-slider {
     display: flex;
     padding-top: 40px;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .slider {
     flex: 1;
-    padding: 0px 25px; 
-    position: relative; 
+    padding: 0px 25px;
+    position: relative;
 }
 
 .slider:nth-child(2) .slider-main-box {
@@ -907,18 +907,19 @@ a {
 
 .slider-main-box-half {
     height: 230px;
-    width: 100%; /* Adjust based on the col-2 size */
+    width: 100%;
+    /* Adjust based on the col-2 size */
     overflow: hidden;
     background-image: url('../assets/images/home-1-slider-03.jpg');
     background-size: cover;
-    background-position: center left; /* Show left half of the image */
+    background-position: center left;
+    /* Show left half of the image */
     border-radius: 20px;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
 }
 
 .slider-main-box {
     width: 100%;
-<<<<<<< HEAD
     height: auto;
     /* border: 1px solid black;
     display: grid;
@@ -926,20 +927,23 @@ a {
     grid-template-rows: repeat(3,1fr);
     border-radius: 15px; */
 }
-.slider-img{
+
+.slider-img {
     width: 100%;
     height: 100%;
     position: relative;
-    overflow: hidden; 
-    border-radius: 8px; 
+    overflow: hidden;
+    border-radius: 8px;
 }
-.slider-img a{
-    display: block; 
+
+.slider-img a {
+    display: block;
     width: 100%;
-    overflow: hidden; 
-    border-radius: 8px; 
+    overflow: hidden;
+    border-radius: 8px;
 }
-.slider-img a img{
+
+.slider-img a img {
     width: 100%;
     border-radius: 8px;
     clip-path: polygon(0% 100%, 0% 0%, 0% 0%, 100% 0%, 100% calc(100% - 80px), calc(100% - 80px) calc(100% - 80px), calc(100% - 80px) 100%);
@@ -948,8 +952,8 @@ a {
     grid-row-start: 1;
     grid-row-end: 4;
     border-radius: 10px; */
-=======
-    height: 230px; 
+
+    height: 230px;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
     background-image: url('../assets/images/home-1-slider-03.jpg');
     background-size: cover;
@@ -957,7 +961,7 @@ a {
     border-radius: 20px;
     margin-bottom: 20px;
     transition: 0.3s ease-in-out;
->>>>>>> a4e9534b49d034fd76a4f4c09a7873b3c8c226ab
+
 }
 
 .slider-h3 {
@@ -984,6 +988,256 @@ a {
 .slider-paragraph {
     border-bottom: 1px solid rgb(116, 112, 112);
 }
+
+/* ---------------------------------------------Pricing Css ------------------------ */
+
+.card-background {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+}
+
+.card-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(1, 14, 55, 0.7), rgba(1, 14, 55, 0.7));
+    z-index: 2;
+}
+
+.card-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../assets/images/Hrhub-pricing-bg-img.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: blur(1px);
+    z-index: 1;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+}
+
+.price-h1 {
+    font-weight: 550;
+    font-size: 40px;
+}
+
+.choice-back {
+    background: rgba(0, 0, 0, 0.9);
+    font-size: 14px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+
+.app-container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* ToggleButton.css */
+.toggle-container {
+    width: 60px;
+    height: 31px;
+    background-color: #ccc;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid blue;
+}
+
+.toggle-container.on {
+    background-color: #060117;
+}
+
+.toggle-container.off {
+    background-color: #0f0319;
+}
+
+.switch {
+
+    width: 26px;
+    height: 26px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    transition: left 0.3s ease;
+}
+
+.switch.on {
+    left: 30px;
+    /* Moves the switch to the right */
+}
+
+.switch.off {
+    left: 2px;
+    /* Moves the switch to the left */
+}
+
+
+.pricing-table {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.pricing-header label {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.card-main-class {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.basic-plan {
+    transform: translateX(13%);
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    border: 1px solid blue;
+}
+
+.pro-plan {
+    position: relative;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 30px;
+    border: 1px solid blue;
+}
+
+.recomand-plan {
+    transform: translateX(-13%);
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    border: 1px solid blue;
+}
+
+.pricing-plans {}
+
+.pricing-card {
+    border-radius: 30px;
+    padding: 30px;
+    width: 370px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.basic {
+    padding: 60px 60px 60px 30px;
+    width: 400px;
+}
+
+.enterprise {
+    width: 400px;
+    padding: 60px 30px 60px 60px;
+}
+.plan-name{
+    border: 1px solid blue;
+    padding: 5px;
+    width: 60px;
+    height: 30px;
+    border-radius: 7px;
+    margin: 0px auto 20px;
+    font-size: 15px;
+
+}
+.basic-plan-h3{
+    font-weight: 800;
+}
+.card-header h3 {
+    margin: 0;
+}
+
+.card-header p {
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.card-price {
+    margin: 20px 0;
+}
+
+.card-price h2 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #00d1ff;
+}
+
+.card-price span {
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.action-button {
+    background-color: #0078ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.features li {
+    margin: 10px 0;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.popular {
+    background-color: #ff0078;
+}
+
+.recommended {
+    background-color: #ff8c00;
+}
+
 
 
 
