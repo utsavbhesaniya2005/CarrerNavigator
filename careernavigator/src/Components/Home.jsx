@@ -845,7 +845,7 @@ const Home = () => {
           </Row>
         </Container>
       </div> */}
-      <div className="card-background">
+      <div className="card-background" style={{ padding: "70px 0px" }}>
         {/* <Container
           style={{
             padding: "80px 20px",
@@ -877,14 +877,6 @@ const Home = () => {
             <h1 className="video-h1 price-h1">Pick The Best Pricing Plan</h1>
           </Col>
           <div className="pricing-table">
-            <div className="pricing-header">
-              <label>
-                <input type="radio" name="billing" /> Billed Monthly
-              </label>
-              <label>
-                <input type="radio" name="billing" /> Billed Annually
-              </label>
-            </div>
             <div className="app-container">
               <p style={{ marginBottom: "0px", marginRight: "10px" }}>
                 Billed Monthly
@@ -904,75 +896,239 @@ const Home = () => {
                 {/* Basic Plan */}
                 <div className="pricing-card basic">
                   <div className="card-header">
-                      <h6 className="plan-name">Basic</h6>
+                    <h6 className="plan-name">Basic</h6>
                     <h3 className="basic-plan-h3">Basic HR Plan</h3>
                     <p>
                       Parturient elementum in, rutrum tristique inceptos sit
                       suspendisse faucibus velit.
                     </p>
                   </div>
-                  <div className="card-price">
-                    <h2>$369.99</h2>
-                    <span>/mo</span>
+                  <div className="card-price flex">
+                    <h2>
+                      <span>
+                        <sup className="doller-Sym">$</sup>
+                      </span>
+                      369.99
+                    </h2>
+                    <span className="price-duration">
+                      <sub style={{ marginBottom: "0px" }}>/mo</sub>
+                    </span>
                   </div>
-                  <button className="action-button">Boost your Profit</button>
+                  <div
+                    className="know-more-center"
+                    style={{ marginBottom: "15px" }}
+                  >
+                    <div>
+                      <a
+                        type="button"
+                        href="#"
+                        className="btn1-know-2 btn-size-100"
+                      >
+                        <p className="btn-content">
+                          Boost Your Profit <br />{" "}
+                          <span className="btn-child-content">
+                            Vestibulum dignissim.
+                          </span>{" "}
+                        </p>
+
+                        <div className="box-know-more btn-price-position">
+                          <div className="arrow-cross-know-more arrow-size">
+                            <i className="fa-solid fa-arrow-up"></i>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
                   <ul className="features">
-                    <li>24/7 Customer support</li>
-                    <li>On-site training and workshops</li>
-                    <li>Complete recruiting and talent acquisition</li>
-                    <li>Customized benefits Programs</li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <span className="list-card">24/7 Customer support</span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <span className="list-card">
+                        On-site training and workshops
+                      </span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <span className="list-card">
+                        Complete recruiting and talent acquisition
+                      </span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <span className="list-card">
+                        Customized benefits Programs
+                      </span>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div className="pricing-plans pro-plan">
                 {/* Pro Plan */}
+                <div className="popular-bedge">Popular</div>
                 <div className="pricing-card pro">
                   <div className="card-header">
-                    <h3>Pro HR Plan</h3>
+                    <h6 className="plan-name pro-h6">Pro</h6>
+                    <h3 className="basic-plan-h3">Pro HR Plan</h3>
                     <p>
                       Parturient elementum in, rutrum tristique inceptos sit
                       suspendisse faucibus velit.
                     </p>
-                    <span className="badge popular">Popular</span>
                   </div>
-                  <div className="card-price">
-                    <h2>$889.99</h2>
-                    <span>/mo</span>
+                  <div className="card-price flex">
+                    <h2>
+                      <span>
+                        <sup className="doller-Sym">$</sup>
+                      </span>
+                      889.99
+                    </h2>
+                    <span className="price-duration">
+                      <sub style={{ marginBottom: "0px" }}>/mo</sub>
+                    </span>
                   </div>
-                  <button className="action-button">Elevate your Growth</button>
+                  <div
+                    className="know-more-center"
+                    style={{ marginBottom: "15px" }}
+                  >
+                    <div>
+                      <a
+                        type="button"
+                        href="#"
+                        className="btn1-know-2 btn-size-100 pro-btn-back"
+                      >
+                        <p className="btn-content">
+                          Elevate Your Growth
+                          <br />{" "}
+                          <span className="btn-child-content">
+                            Vestibulum nisi em dignissi ultrices.
+                          </span>{" "}
+                        </p>
+
+                        <div className="box-know-more btn-price-position pro-price-position">
+                          <div className="arrow-cross-know-more arrow-size">
+                            <i className="fa-solid fa-arrow-up"></i>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
                   <ul className="features">
-                    <li>24/7 Customer support</li>
-                    <li>On-site training and workshops</li>
-                    <li>Complete recruiting and talent acquisition</li>
-                    <li>Customized benefits Programs</li>
-                    <li>Access to advanced HRIS</li>
-                    <li>Legal support for conflicts</li>
-                    <li>Leadership training programs</li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <span className="list-card">24/7 Customer support</span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <span className="list-card">
+                        On-site training and workshops
+                      </span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <span className="list-card">
+                        Complete recruiting and talent acquisition
+                      </span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <span className="list-card">
+                        Customized benefits Programs
+                      </span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <span className="list-card">Access to advanced HRIS</span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <span className="list-card">
+                        Legal support for conflicts
+                      </span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <span className="list-card">
+                        Leadership training programs
+                      </span>
+                    </li>
                   </ul>
                 </div>
               </div>
 
               <div className="pricing-plans recomand-plan">
                 {/* Enterprise Plan */}
-                <div className="pricing-card enterprise">
+                <div className="pricing-card basic enterprise">
                   <div className="card-header">
-                    <h3>Enterprise HR Plan</h3>
+                    <h6 className="plan-name recommended">Recommended</h6>
+                    <h3 className="basic-plan-h3">Enterprise HR Plan</h3>
                     <p>
                       Parturient elementum in, rutrum tristique inceptos sit
                       suspendisse faucibus velit.
                     </p>
-                    <span className="badge recommended">Recommended</span>
                   </div>
-                  <div className="card-price">
-                    <h2>$1120.99</h2>
-                    <span>/mo</span>
+                  <div className="card-price flex">
+                    <h2>
+                      <span>
+                        <sup className="doller-Sym">$</sup>
+                      </span>
+                      1120.99
+                    </h2>
+                    <span className="price-duration">
+                      <sub style={{ marginBottom: "0px" }}>/mo</sub>
+                    </span>
                   </div>
-                  <button className="action-button">Improve progression</button>
+                  <div
+                    className="know-more-center"
+                    style={{ marginBottom: "15px" }}
+                  >
+                    <div>
+                      <a
+                        type="button"
+                        href="#"
+                        className="btn1-know-2 btn-size-100"
+                      >
+                        <p className="btn-content">
+                          Boost Your Profit <br />{" "}
+                          <span className="btn-child-content">
+                            Vestibulum dignissim.
+                          </span>{" "}
+                        </p>
+
+                        <div className="box-know-more btn-price-position">
+                          <div className="arrow-cross-know-more arrow-size">
+                            <i className="fa-solid fa-arrow-up"></i>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
                   <ul className="features">
-                    <li>Leadership training programs</li>
-                    <li>Legal support for conflicts</li>
-                    <li>Customized benefits Programs</li>
-                    <li>Complete recruiting and talent acquisition</li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <span className="list-card">
+                        Leadership training programs
+                      </span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <span className="list-card">
+                        Legal support for conflicts
+                      </span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <span className="list-card">
+                        Customized benefits Progarams
+                      </span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <span className="list-card">
+                        Complete recruiting and talent acquisition
+                      </span>
+                    </li>
                   </ul>
                 </div>
               </div>

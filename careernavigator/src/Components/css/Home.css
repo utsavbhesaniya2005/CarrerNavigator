@@ -1020,7 +1020,7 @@ a {
     background-image: url('../assets/images/Hrhub-pricing-bg-img.jpg');
     background-position: center;
     background-size: cover;
-    filter: blur(1px);
+    filter: blur(5px);
     z-index: 1;
 }
 
@@ -1053,10 +1053,9 @@ a {
     width: 100%;
 }
 
-/* ToggleButton.css */
 .toggle-container {
     width: 60px;
-    height: 31px;
+    height: 32px;
     background-color: #ccc;
     border-radius: 30px;
     position: relative;
@@ -1086,12 +1085,10 @@ a {
 
 .switch.on {
     left: 30px;
-    /* Moves the switch to the right */
 }
 
 .switch.off {
     left: 2px;
-    /* Moves the switch to the left */
 }
 
 
@@ -1139,9 +1136,6 @@ a {
     border-radius: 30px;
     border: 1px solid blue;
 }
-
-.pricing-plans {}
-
 .pricing-card {
     border-radius: 30px;
     padding: 30px;
@@ -1151,10 +1145,10 @@ a {
 }
 
 .basic {
-    padding: 60px 60px 60px 30px;
+    padding: 60px 80px 30px 30px;
     width: 400px;
+    transition: .3s ease-in-out;
 }
-
 .enterprise {
     width: 400px;
     padding: 60px 30px 60px 60px;
@@ -1165,80 +1159,136 @@ a {
     width: 60px;
     height: 30px;
     border-radius: 7px;
-    margin: 0px auto 20px;
+    margin: 0px auto 13px;
     font-size: 15px;
-
+    transition: .4s ease-in-out;
 }
 .basic-plan-h3{
-    font-weight: 800;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 13px;
 }
-.card-header h3 {
-    margin: 0;
-}
-
 .card-header p {
     font-size: 0.9em;
     color: #aaa;
 }
-
+.doller-Sym{
+    font-size: 20px;
+    color: #1268fb;
+    margin-right: 3px;
+    font-weight: bold;
+}
 .card-price {
     margin: 20px 0;
 }
-
 .card-price h2 {
-    font-size: 2.5em;
+    font-size: 2em;
     margin: 0;
     color: #00d1ff;
 }
-
-.card-price span {
-    font-size: 0.9em;
-    color: #aaa;
+.price-duration{
+    display: flex;
+    align-items: end;
+    margin-bottom: 0px;
+    margin-left: 3px;
+}
+.btn-size-100 {
+    width: 100%;
+    background: linear-gradient(to right, rgb(19, 64, 143) 50%, rgba(0, 0, 0, 1) 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.6s ease-in-out;
 }
 
-.action-button {
-    background-color: #0078ff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    transition: background-color 0.3s;
+.basic:hover .btn-size-100 {
+    background-position: left; 
 }
-
-.action-button:hover {
-    background-color: #0056b3;
+.btn-price-position{
+    width: 50px;
+    height: 50px;
+    right: 11px;
+    top: 11px;
 }
-
-.features {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.basic:hover{
+    background-color: #01010e;
+    transition: .3s ease-in-out;
+}
+.basic:hover .plan-name{
+    background-color: #007bff;
+    transition: .6s ease-in-out;
+}
+.basic:hover .btn-price-position{
+    background: linear-gradient(140deg, #160345, #050336, #03000f);
+    transition: background-position 0.6s ease-in-out;
+}
+.arrow-size i{
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn-content{
+    margin-bottom: 0px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.btn-child-content{
+    font-size:10px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.list-card{
+    color: gray;
+    font-size: 13px;
+    margin-left: 5px;
+}
+.features li{
     text-align: left;
 }
-
-.features li {
-    margin: 10px 0;
+.features li i{
+    color:#0056b3;
+    font-size: 13px;
 }
-
-.badge {
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.8em;
-    margin-top: 10px;
+.pro{
+    padding: 40px 30px 20px;
+    transition: .3s ease-in-out;
 }
-
-.popular {
-    background-color: #ff0078;
+.pro-h6{
+    background-color: #0056b3;
+    width: 40px;
 }
-
-.recommended {
-    background-color: #ff8c00;
+.pro-btn-back {
+    width: 100%;
+    background: linear-gradient(to right, rgb(9, 47, 112) 50%, rgb(29, 16, 210) 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.6s ease-in-out;
 }
-
-
+.pro-price-position{
+    background: linear-gradient(140deg, #160345, #050336, #03000f);
+    transition: background-position 0.6s ease-in-out;
+}
+.popular-bedge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    background-color: blue;
+    transform: rotate(270deg);
+    border-top-left-radius : 20px;
+    padding:5px;
+    top: 30px;
+    right: -280px;
+    position: relative;
+}
+.enterprise{
+    padding: 60px 30px 30px 80px;
+    width: 400px;
+    transition: .3s ease-in-out;
+}
+.recommended{
+    width: 120px;
+}
 
 
 
