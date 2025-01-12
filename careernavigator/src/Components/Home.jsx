@@ -114,8 +114,9 @@ const Home = () => {
   const [isOn, setIsOn] = useState(false);
 
   const toggleSwitch = () => {
-    setIsOn(!isOn);
+    setIsOn((prev) => !prev);
   };
+
   return (
     <div>
       {/* Main Content */}
@@ -882,17 +883,19 @@ const Home = () => {
                 Billed Monthly
               </p>
               <div
-                className={`toggle-container ${isOn ? "on" : "off"}`}
-                onClick={toggleSwitch}
-              >
-                <div className={`switch ${isOn ? "on" : "off"}`}></div>
+         className={`toggle-container ${isOn ? 'on' : 'off'}`}
+         onClick={toggleSwitch}
+        >
+          <div className="switch"></div>
               </div>
               <p style={{ marginBottom: "0px", marginLeft: "10px" }}>
-                Billed Annualy
+                Billed Annually
               </p>
             </div>
             <div className="card-main-class">
-              <div className="pricing-plans basic-plan">
+              <div
+                  className={`card-main-class pricing-plans basic-plan ${isOn ? 'animateX' : 'animateY'}`}
+              >
                 {/* Basic Plan */}
                 <div className="pricing-card basic">
                   <div className="card-header">
@@ -908,7 +911,7 @@ const Home = () => {
                       <span>
                         <sup className="doller-Sym">$</sup>
                       </span>
-                      369.99
+                      {isOn ? '369.99' : '69.99'}
                     </h2>
                     <span className="price-duration">
                       <sub style={{ marginBottom: "0px" }}>/mo</sub>
@@ -925,12 +928,11 @@ const Home = () => {
                         className="btn1-know-2 btn-size-100"
                       >
                         <p className="btn-content">
-                          Boost Your Profit <br />{" "}
+                          Boost Your Profit <br />
                           <span className="btn-child-content">
                             Vestibulum dignissim.
-                          </span>{" "}
+                          </span>
                         </p>
-
                         <div className="box-know-more btn-price-position">
                           <div className="arrow-cross-know-more arrow-size">
                             <i className="fa-solid fa-arrow-up"></i>
@@ -941,23 +943,23 @@ const Home = () => {
                   </div>
                   <ul className="features">
                     <li>
-                      <i class="fa-regular fa-circle-check"></i>
+                      <i className="fa-regular fa-circle-check"></i>
                       <span className="list-card">24/7 Customer support</span>
                     </li>
                     <li>
-                      <i class="fa-regular fa-circle-check"></i>
+                      <i className="fa-regular fa-circle-check"></i>
                       <span className="list-card">
                         On-site training and workshops
                       </span>
                     </li>
                     <li>
-                      <i class="fa-regular fa-circle-check"></i>
+                      <i className="fa-regular fa-circle-check"></i>
                       <span className="list-card">
                         Complete recruiting and talent acquisition
                       </span>
                     </li>
                     <li>
-                      <i class="fa-regular fa-circle-check"></i>
+                      <i className="fa-regular fa-circle-check"></i>
                       <span className="list-card">
                         Customized benefits Programs
                       </span>
@@ -965,10 +967,10 @@ const Home = () => {
                   </ul>
                 </div>
               </div>
-              <div className="pricing-plans pro-plan">
+              <div className={`card-main-class pricing-plans pro-plan ${isOn ? 'animateX-popular' : 'animateY-popular'}`}>
                 {/* Pro Plan */}
-                <div className="popular-bedge">Popular</div>
                 <div className="pricing-card pro">
+                <div className="popular-bedge">Popular</div>
                   <div className="card-header">
                     <h6 className="plan-name pro-h6">Pro</h6>
                     <h3 className="basic-plan-h3">Pro HR Plan</h3>
@@ -982,7 +984,7 @@ const Home = () => {
                       <span>
                         <sup className="doller-Sym">$</sup>
                       </span>
-                      889.99
+                      {isOn ? '889.99' : '89.99'}
                     </h2>
                     <span className="price-duration">
                       <sub style={{ marginBottom: "0px" }}>/mo</sub>
@@ -1057,7 +1059,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="pricing-plans recomand-plan">
+              <div className={`card-main-class pricing-plans recomand-plan ${isOn ? 'animateX-recommended' : 'animateY-recommended'}`}>
                 {/* Enterprise Plan */}
                 <div className="pricing-card basic enterprise">
                   <div className="card-header">
@@ -1073,7 +1075,7 @@ const Home = () => {
                       <span>
                         <sup className="doller-Sym">$</sup>
                       </span>
-                      1120.99
+                      {isOn ? '1120.99' : '129.99'}
                     </h2>
                     <span className="price-duration">
                       <sub style={{ marginBottom: "0px" }}>/mo</sub>

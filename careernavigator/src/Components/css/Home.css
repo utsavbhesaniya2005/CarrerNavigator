@@ -1056,7 +1056,7 @@ a {
 .toggle-container {
     width: 60px;
     height: 32px;
-    background-color: #ccc;
+    background-color: rgb(17, 1, 1);
     border-radius: 30px;
     position: relative;
     cursor: pointer;
@@ -1073,22 +1073,111 @@ a {
 }
 
 .switch {
-
     width: 26px;
     height: 26px;
     background-color: blue;
     border-radius: 50%;
     position: absolute;
     top: 2px;
-    transition: left 0.3s ease;
-}
-
-.switch.on {
-    left: 30px;
-}
-
-.switch.off {
     left: 2px;
+    transition: left 0.3s ease;
+    cursor: pointer;
+}
+
+.toggle-container.on .switch {
+    left: 31px;
+}
+
+.toggle-container.off .switch {
+    left: 2px;
+}
+
+.pricing-plans.basic-plan {
+    transform: translateX(13%);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    border: 1px solid blue;
+    transition: transform 1s ease;
+}
+
+.recomand-plan {
+    transform: translateX(13%);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    border: 1px solid blue;
+    transition: transform 1s ease;
+}
+
+@keyframes animateX {
+    0% {
+        transform: translateX(13%);
+    }
+
+    50% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(13%);
+    }
+}
+
+@keyframes animateY {
+    0% {
+        transform: translateX(13%);
+    }
+
+    50% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(13%);
+    }
+}
+
+@keyframes animateX-recommended {
+    0% {
+        transform: translateX(-13%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(-13%);
+    }
+}
+
+@keyframes animateY-recommended {
+    0% {
+        transform: translateX(-13%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(-13%);
+    }
+}
+
+.pricing-plans.basic-plan.animateX {
+    animation: animateX 1s ease;
+}
+
+.pricing-plans.basic-plan.animateY {
+    animation: animateY 1s ease;
+}
+
+.pricing-plans.recomand-plan.animateX-recommended {
+    animation: animateX-recommended 1s ease;
+}
+
+.pricing-plans.recomand-plan.animateY-recommended {
+    animation: animateY-recommended 1s ease;
 }
 
 
@@ -1108,7 +1197,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
 
 .basic-plan {
@@ -1121,11 +1209,52 @@ a {
 }
 
 .pro-plan {
+    transform: translateY(0%);
     position: relative;
     z-index: 3;
     background-color: rgba(0, 0, 0, 1);
     border-radius: 30px;
     border: 1px solid blue;
+    transform: translateY(0%);
+    transition: transform 1s ease;
+}
+
+@keyframes animateX-popular {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateX(180deg);
+        background-color: #000;
+        display: none;
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+@keyframes animateY-popular {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateX(180deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+.pricing-plans.pro-plan.animateX-popular {
+    animation: animateX-popular .7s ease;
+}
+
+.pricing-plans.pro-plan.animateY-popular {
+    animation: animateY-popular .7s ease;
 }
 
 .recomand-plan {
@@ -1136,6 +1265,7 @@ a {
     border-radius: 30px;
     border: 1px solid blue;
 }
+
 .pricing-card {
     border-radius: 30px;
     padding: 30px;
@@ -1149,11 +1279,13 @@ a {
     width: 400px;
     transition: .3s ease-in-out;
 }
+
 .enterprise {
     width: 400px;
     padding: 60px 30px 60px 60px;
 }
-.plan-name{
+
+.plan-name {
     border: 1px solid blue;
     padding: 5px;
     width: 60px;
@@ -1163,35 +1295,42 @@ a {
     font-size: 15px;
     transition: .4s ease-in-out;
 }
-.basic-plan-h3{
+
+.basic-plan-h3 {
     font-weight: 700;
     font-size: 25px;
     margin-bottom: 13px;
 }
+
 .card-header p {
     font-size: 0.9em;
     color: #aaa;
 }
-.doller-Sym{
+
+.doller-Sym {
     font-size: 20px;
     color: #1268fb;
     margin-right: 3px;
     font-weight: bold;
 }
+
 .card-price {
     margin: 20px 0;
 }
+
 .card-price h2 {
     font-size: 2em;
     margin: 0;
     color: #00d1ff;
 }
-.price-duration{
+
+.price-duration {
     display: flex;
     align-items: end;
     margin-bottom: 0px;
     margin-left: 3px;
 }
+
 .btn-size-100 {
     width: 100%;
     background: linear-gradient(to right, rgb(19, 64, 143) 50%, rgba(0, 0, 0, 1) 50%);
@@ -1201,60 +1340,73 @@ a {
 }
 
 .basic:hover .btn-size-100 {
-    background-position: left; 
+    background-position: left;
 }
-.btn-price-position{
+
+.btn-price-position {
     width: 50px;
     height: 50px;
     right: 11px;
     top: 11px;
 }
-.basic:hover{
+
+.basic:hover {
     background-color: #01010e;
     transition: .3s ease-in-out;
 }
-.basic:hover .plan-name{
+
+.basic:hover .plan-name {
     background-color: #007bff;
     transition: .6s ease-in-out;
 }
-.basic:hover .btn-price-position{
+
+.basic:hover .btn-price-position {
     background: linear-gradient(140deg, #160345, #050336, #03000f);
     transition: background-position 0.6s ease-in-out;
 }
-.arrow-size i{
+
+.arrow-size i {
     font-size: 20px;
     font-weight: bold;
 }
-.btn-content{
+
+.btn-content {
     margin-bottom: 0px;
     font-size: 13px;
     font-weight: 600;
 }
-.btn-child-content{
-    font-size:10px;
+
+.btn-child-content {
+    font-size: 10px;
     font-weight: 300;
     text-transform: capitalize;
 }
-.list-card{
+
+.list-card {
     color: gray;
     font-size: 13px;
     margin-left: 5px;
 }
-.features li{
+
+.features li {
     text-align: left;
 }
-.features li i{
-    color:#0056b3;
+
+.features li i {
+    color: #0056b3;
     font-size: 13px;
 }
-.pro{
+
+.pro {
     padding: 40px 30px 20px;
     transition: .3s ease-in-out;
 }
-.pro-h6{
+
+.pro-h6 {
     background-color: #0056b3;
     width: 40px;
 }
+
 .pro-btn-back {
     width: 100%;
     background: linear-gradient(to right, rgb(9, 47, 112) 50%, rgb(29, 16, 210) 50%);
@@ -1262,11 +1414,13 @@ a {
     background-position: right;
     transition: background-position 0.6s ease-in-out;
 }
-.pro-price-position{
+
+.pro-price-position {
     background: linear-gradient(140deg, #160345, #050336, #03000f);
     transition: background-position 0.6s ease-in-out;
 }
-.popular-bedge{
+
+.popular-bedge {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1275,18 +1429,20 @@ a {
     height: 30px;
     background-color: blue;
     transform: rotate(270deg);
-    border-top-left-radius : 20px;
-    padding:5px;
-    top: 30px;
-    right: -280px;
+    border-top-left-radius: 20px;
+    padding: 5px;
+    top: -10px;
+    right: -220px;
     position: relative;
 }
-.enterprise{
+
+.enterprise {
     padding: 60px 30px 30px 80px;
     width: 400px;
     transition: .3s ease-in-out;
 }
-.recommended{
+
+.recommended {
     width: 120px;
 }
 
