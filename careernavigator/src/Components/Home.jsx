@@ -883,10 +883,10 @@ const Home = () => {
                 Billed Monthly
               </p>
               <div
-         className={`toggle-container ${isOn ? 'on' : 'off'}`}
-         onClick={toggleSwitch}
-        >
-          <div className="switch"></div>
+                className={`toggle-container ${isOn ? "on" : "off"}`}
+                onClick={toggleSwitch}
+              >
+                <div className="switch"></div>
               </div>
               <p style={{ marginBottom: "0px", marginLeft: "10px" }}>
                 Billed Annually
@@ -894,7 +894,9 @@ const Home = () => {
             </div>
             <div className="card-main-class">
               <div
-                  className={`card-main-class pricing-plans basic-plan ${isOn ? 'animateX' : 'animateY'}`}
+                className={`card-main-class pricing-plans basic-plan ${
+                  isOn ? "animateX" : "animateY"
+                }`}
               >
                 {/* Basic Plan */}
                 <div className="pricing-card basic">
@@ -911,7 +913,7 @@ const Home = () => {
                       <span>
                         <sup className="doller-Sym">$</sup>
                       </span>
-                      {isOn ? '369.99' : '69.99'}
+                      {isOn ? "369.99" : "69.99"}
                     </h2>
                     <span className="price-duration">
                       <sub style={{ marginBottom: "0px" }}>/mo</sub>
@@ -967,10 +969,14 @@ const Home = () => {
                   </ul>
                 </div>
               </div>
-              <div className={`card-main-class pricing-plans pro-plan ${isOn ? 'animateX-popular' : 'animateY-popular'}`}>
+              <div
+                className={`card-main-class pricing-plans pro-plan ${
+                  isOn ? "animateX-popular" : "animateY-popular"
+                }`}
+              >
                 {/* Pro Plan */}
                 <div className="pricing-card pro">
-                <div className="popular-bedge">Popular</div>
+                  <div className="popular-bedge">Popular</div>
                   <div className="card-header">
                     <h6 className="plan-name pro-h6">Pro</h6>
                     <h3 className="basic-plan-h3">Pro HR Plan</h3>
@@ -984,7 +990,7 @@ const Home = () => {
                       <span>
                         <sup className="doller-Sym">$</sup>
                       </span>
-                      {isOn ? '889.99' : '89.99'}
+                      {isOn ? "889.99" : "89.99"}
                     </h2>
                     <span className="price-duration">
                       <sub style={{ marginBottom: "0px" }}>/mo</sub>
@@ -1059,7 +1065,11 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className={`card-main-class pricing-plans recomand-plan ${isOn ? 'animateX-recommended' : 'animateY-recommended'}`}>
+              <div
+                className={`card-main-class pricing-plans recomand-plan ${
+                  isOn ? "animateX-recommended" : "animateY-recommended"
+                }`}
+              >
                 {/* Enterprise Plan */}
                 <div className="pricing-card basic enterprise">
                   <div className="card-header">
@@ -1075,7 +1085,7 @@ const Home = () => {
                       <span>
                         <sup className="doller-Sym">$</sup>
                       </span>
-                      {isOn ? '1120.99' : '129.99'}
+                      {isOn ? "1120.99" : "129.99"}
                     </h2>
                     <span className="price-duration">
                       <sub style={{ marginBottom: "0px" }}>/mo</sub>

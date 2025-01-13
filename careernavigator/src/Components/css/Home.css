@@ -1182,7 +1182,7 @@ a {
 
 
 .pricing-table {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0px 20px;
     text-align: center;
@@ -1853,6 +1853,48 @@ a {
         color: white;
     }
 
+    .card-main-class {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .basic {
+        padding: 40px 20px 30px;
+        width: 300px;
+    }
+
+    .pricing-plans.basic-plan {
+        transform: translateX(0%);
+    }
+
+    @keyframes animateX {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animateY {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
 }
 
 @media (min-width:373px) and (max-width: 425px) {
