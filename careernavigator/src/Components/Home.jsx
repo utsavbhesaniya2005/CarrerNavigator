@@ -923,7 +923,7 @@ const Home = () => {
                     className="know-more-center"
                     style={{ marginBottom: "15px" }}
                   >
-                    <div>
+                    <div className="btn-100-set">
                       <a
                         type="button"
                         href="#"

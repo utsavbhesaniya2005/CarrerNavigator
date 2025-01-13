@@ -1857,11 +1857,12 @@ a {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        margin-bottom: 20px;
     }
 
     .basic {
         padding: 40px 20px 30px;
-        width: 300px;
+        width: 90vw;
     }
 
     .pricing-plans.basic-plan {
@@ -1894,6 +1895,41 @@ a {
         100% {
             transform: translateX(0%);
         }
+    }
+    .btn-content {
+        font-size: 13px;
+        font-weight: 600;
+    }
+    
+    .btn-child-content {
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .btn-100-set{
+        width: 100%;
+    }
+    .btn-price-position{
+        position: relative;
+        right: 0px;
+        top: 0px;
+        height: 55px;
+        width: 55px;
+    }
+    .btn-size-100{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .pricing-card {
+        width: 90vw;
+    }
+    .pro {
+        padding: 40px 20px 30px;
+    }
+    .popular-bedge {
+        position: relative;
+        /* right: -190px; */
+        left: 170px;
     }
 }
 
@@ -2075,6 +2111,7 @@ a {
         transform: translateX(13px);
         color: white;
     }
+ 
 }
 
 @media (min-width: 425px) and (max-width: 576px) {
