@@ -746,10 +746,8 @@ const Home = () => {
           </Row>
         </Container>
       </div>
-      {/* <div style={{ backgroundColor: "#D9F1FF" }}>
-        <Container
-          style={{
-            margin: "0px auto",
+      <div style={{ backgroundColor: "#D9F1FF" }}>
+        <Container style={{ margin: "0px auto",
             padding: "80px 0px 80px 10px",
             overflow: "hidden",
           }}
@@ -785,14 +783,15 @@ const Home = () => {
               </a>
             </Col>
             <Col lg={5} md={5}>
-                <div className="slider-main-box">
-                  <div className="slider-img">
-                      <a href="#">
-                          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=900&h=500&s=1" alt="" />
-                      </a>
-                  </div>
-                  <div className="slider-img2"></div>
-            <Col lg={12} md={12} className="main-slider">
+              <div className="slider-main-box">
+                <div className="slider-img">
+                    <a href="#">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=900&h=500&s=1" alt="" />
+                    </a>
+                </div>
+                
+              <div className="slider-img2"></div>
+            {/* <Col lg={12} md={12} className="main-slider">
               <div class="slider slider-1 col-5">
                 <div class="slider-main-box"></div>
                 <div class="slider-heading">
@@ -841,11 +840,12 @@ const Home = () => {
                   </p>
                 </div>
               </div>
+            </Col> */}
+            </div>
             </Col>
-            </div></Col>
           </Row>
         </Container>
-      </div> */}
+      </div>
       <div className="card-background" style={{ padding: "70px 0px" }}>
         {/* <Container
           style={{

@@ -947,12 +947,12 @@ a {
     width: 100%;
     border-radius: 8px;
     clip-path: polygon(0% 100%, 0% 0%, 0% 0%, 100% 0%, 100% calc(100% - 80px), calc(100% - 80px) calc(100% - 80px), calc(100% - 80px) 100%);
+    position: relative;
     /* grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 4;
     border-radius: 10px; */
-
     height: 230px;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
     background-image: url('../assets/images/home-1-slider-03.jpg');
@@ -963,7 +963,14 @@ a {
     transition: 0.3s ease-in-out;
 
 }
-
+.slider-img a img::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    bottom: 0;
+    position: absolute;
+}
 .slider-h3 {
     font-weight: 600;
     letter-spacing: 1px;
