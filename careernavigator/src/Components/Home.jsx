@@ -1052,7 +1052,7 @@ const Home = () => {
                     className="know-more-center"
                     style={{ marginBottom: "15px" }}
                   >
-                    <div>
+                    <div className="btn-100-set">
                       <a
                         type="button"
                         href="#"
@@ -1146,11 +1146,11 @@ const Home = () => {
                     className="know-more-center"
                     style={{ marginBottom: "15px" }}
                   >
-                    <div>
+                    <div className="btn-100-set">
                       <a
                         type="button"
                         href="#"
-                        className="btn1-know-2 btn-size-100"
+                        className="btn1-know-2  btn-size-100"
                       >
                         <p className="btn-content">
                           Boost Your Profit <br />{" "}
