@@ -1272,6 +1272,7 @@ a {
     width: 370px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s;
+    position: relative;
 }
 
 .basic {
@@ -1333,7 +1334,7 @@ a {
 
 .btn-size-100 {
     width: 100%;
-    background: linear-gradient(to right, rgb(19, 64, 143) 50%, rgba(0, 0, 0, 1) 50%);
+    background: linear-gradient(to right, rgb(22, 3, 236) 50%, rgba(0, 0, 0, 1) 50%);
     background-size: 200% 100%;
     background-position: right;
     transition: background-position 0.6s ease-in-out;
@@ -1431,9 +1432,8 @@ a {
     transform: rotate(270deg);
     border-top-left-radius: 20px;
     padding: 5px;
-    top: -10px;
-    right: -220px;
-    position: relative;
+    top: 30px;
+    right: 7%;
 }
 
 .enterprise {
@@ -1649,6 +1649,119 @@ a {
         color: white;
     }
 
+    .card-main-class {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .basic,
+    .enterprise {
+        padding: 40px 20px 30px;
+        width: 90vw;
+    }
+
+    .pricing-plans.basic-plan {
+        transform: translateX(0%);
+    }
+
+    @keyframes animateX {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animateY {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    .btn-content {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .btn-child-content {
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-100-set {
+        width: 100%;
+    }
+
+    .btn-price-position {
+        position: relative;
+        right: 0px;
+        top: 0px;
+        height: 55px;
+        width: 55px;
+    }
+
+    .btn-size-100 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .pricing-card {
+        width: 90vw;
+    }
+
+    .pro {
+        padding: 40px 20px 30px;
+    }
+
+    .pricing-plans.recomand-plan {
+        transform: translateX(0%);
+    }
+
+    @keyframes animateX-recommended {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animateY-recommended {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
 }
 
 @media (min-width:250px) and (max-width:260px) {
@@ -1860,7 +1973,8 @@ a {
         margin-bottom: 20px;
     }
 
-    .basic {
+    .basic,
+    .enterprise {
         padding: 40px 20px 30px;
         width: 90vw;
     }
@@ -1896,40 +2010,73 @@ a {
             transform: translateX(0%);
         }
     }
+
     .btn-content {
         font-size: 13px;
         font-weight: 600;
     }
-    
+
     .btn-child-content {
         font-size: 10px;
         font-weight: 300;
     }
-    .btn-100-set{
+
+    .btn-100-set {
         width: 100%;
     }
-    .btn-price-position{
+
+    .btn-price-position {
         position: relative;
         right: 0px;
         top: 0px;
         height: 55px;
         width: 55px;
     }
-    .btn-size-100{
+
+    .btn-size-100 {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+
     .pricing-card {
         width: 90vw;
     }
+
     .pro {
         padding: 40px 20px 30px;
     }
-    .popular-bedge {
-        position: relative;
-        /* right: -190px; */
-        left: 170px;
+
+    .pricing-plans.recomand-plan {
+        transform: translateX(0%);
+    }
+
+    @keyframes animateX-recommended {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animateY-recommended {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
     }
 }
 
@@ -2111,7 +2258,120 @@ a {
         transform: translateX(13px);
         color: white;
     }
- 
+
+    .card-main-class {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .basic,
+    .enterprise {
+        padding: 40px 20px 30px;
+        width: 90vw;
+    }
+
+    .pricing-plans.basic-plan {
+        transform: translateX(0%);
+    }
+
+    @keyframes animateX {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animateY {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    .btn-content {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .btn-child-content {
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-100-set {
+        width: 100%;
+    }
+
+    .btn-price-position {
+        position: relative;
+        right: 0px;
+        top: 0px;
+        height: 55px;
+        width: 55px;
+    }
+
+    .btn-size-100 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .pricing-card {
+        width: 90vw;
+    }
+
+    .pro {
+        padding: 40px 20px 30px;
+    }
+
+    .pricing-plans.recomand-plan {
+        transform: translateX(0%);
+    }
+
+    @keyframes animateX-recommended {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animateY-recommended {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
 }
 
 @media (min-width: 425px) and (max-width: 576px) {
@@ -2296,6 +2556,119 @@ a {
 
     .work-main-box:hover {
         border-radius: 40px;
+    }
+
+    .card-main-class {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .basic,
+    .enterprise {
+        padding: 40px 20px 30px;
+        width: 90vw;
+    }
+
+    .pricing-plans.basic-plan {
+        transform: translateX(0%);
+    }
+
+    @keyframes animateX {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animateY {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    .btn-content {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .btn-child-content {
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .btn-100-set {
+        width: 100%;
+    }
+
+    .btn-price-position {
+        position: relative;
+        right: 0px;
+        top: 0px;
+        height: 55px;
+        width: 55px;
+    }
+
+    .btn-size-100 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .pricing-card {
+        width: 80vw;
+    }
+
+    .pro {
+        padding: 40px 20px 30px;
+    }
+
+    .pricing-plans.recomand-plan {
+        transform: translateX(0%);
+    }
+
+    @keyframes animateX-recommended {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animateY-recommended {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
     }
 }
 
@@ -2482,6 +2855,119 @@ a {
     .work-main-box:hover {
         border-radius: 40px;
     }
+
+    .card-main-class {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .basic,
+    .enterprise {
+        padding: 40px 20px 30px;
+        width: 90vw;
+    }
+
+    .pricing-plans.basic-plan {
+        transform: translateX(0%);
+    }
+
+    @keyframes animateX {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animateY {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    .btn-content {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .btn-child-content {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .btn-100-set {
+        width: 100%;
+    }
+
+    .btn-price-position {
+        position: relative;
+        right: 0px;
+        top: 0px;
+        height: 55px;
+        width: 55px;
+    }
+
+    .btn-size-100 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .pricing-card {
+        width: 70vw;
+    }
+
+    .pro {
+        padding: 40px 20px 30px;
+    }
+
+    .pricing-plans.recomand-plan {
+        transform: translateX(0%);
+    }
+
+    @keyframes animateX-recommended {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animateY-recommended {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -2609,6 +3095,119 @@ a {
     .work-main-box:hover .set-h2-box4 {
         transform: translate(-7%, 100%);
         font-size: 35px;
+    }
+
+    .card-main-class {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .basic,
+    .enterprise {
+        padding: 40px 20px 30px;
+        width: 90vw;
+    }
+
+    .pricing-plans.basic-plan {
+        transform: translateX(0%);
+    }
+
+    @keyframes animateX {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animateY {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    .btn-content {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .btn-child-content {
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .btn-100-set {
+        width: 100%;
+    }
+
+    .btn-price-position {
+        position: relative;
+        right: 0px;
+        top: 0px;
+        height: 55px;
+        width: 55px;
+    }
+
+    .btn-size-100 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .pricing-card {
+        width: 50vw;
+    }
+
+    .pro {
+        padding: 40px 20px 30px;
+    }
+
+    .pricing-plans.recomand-plan {
+        transform: translateX(0%);
+    }
+
+    @keyframes animateX-recommended {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animateY-recommended {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
     }
 
 }
@@ -2750,6 +3349,119 @@ a {
     .work-main-box:hover .set-h2-box4 {
         transform: translate(-25%, 90%);
     }
+
+    .card-main-class {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .basic,
+    .enterprise {
+        padding: 40px 20px 30px;
+        width: 90vw;
+    }
+
+    .pricing-plans.basic-plan {
+        transform: translateX(0%);
+    }
+
+    @keyframes animateX {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animateY {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    .btn-content {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .btn-child-content {
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .btn-100-set {
+        width: 100%;
+    }
+
+    .btn-price-position {
+        position: relative;
+        right: 0px;
+        top: 0px;
+        height: 55px;
+        width: 55px;
+    }
+
+    .btn-size-100 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .pricing-card {
+        width: 50vw;
+    }
+
+    .pro {
+        padding: 40px 20px 30px;
+    }
+
+    .pricing-plans.recomand-plan {
+        transform: translateX(0%);
+    }
+
+    @keyframes animateX-recommended {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animateY-recommended {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
@@ -2807,6 +3519,119 @@ a {
 
     .work-main-box:hover .set-h2-box4 {
         transform: translate(-25%, 90%);
+    }
+
+    .card-main-class {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .basic,
+    .enterprise {
+        padding: 40px 20px 30px;
+        width: 90vw;
+    }
+
+    .pricing-plans.basic-plan {
+        transform: translateX(0%);
+    }
+
+    @keyframes animateX {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animateY {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    .btn-content {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .btn-child-content {
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .btn-100-set {
+        width: 100%;
+    }
+
+    .btn-price-position {
+        position: relative;
+        right: 0px;
+        top: 0px;
+        height: 55px;
+        width: 55px;
+    }
+
+    .btn-size-100 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .pricing-card {
+        width: 40vw;
+    }
+
+    .pro {
+        padding: 40px 20px 30px;
+    }
+
+    .pricing-plans.recomand-plan {
+        transform: translateX(0%);
+    }
+
+    @keyframes animateX-recommended {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animateY-recommended {
+        0% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
     }
 
 }
@@ -2867,6 +3692,67 @@ a {
     .work-main-box:hover .set-h2-box4 {
         transform: translate(-43%, 90%);
     }
+
+}
+
+@media (min-width :1270px) {
+    .pricing-card {
+        width: 440px;
+    }
+
+    .basic,
+    .enterprise {
+        width: 430PX;
+    }
+
+    .btn-size-100 {
+        width: 100%;
+        background: linear-gradient(to right, rgb(22, 3, 236) 50%, rgba(0, 0, 0, 1) 50%);
+        background-size: 200% 100%;
+        background-position: right;
+        transition: background-position 0.6s ease-in-out;
+    }
+
+    .basic:hover .btn-size-100 {
+        background-position: left;
+    }
+
+    .btn-price-position {
+        width: 50px;
+        height: 50px;
+        right: 11px;
+        top: 11px;
+    }
+}
+
+@media (min-width :1400px) {
+    .pricing-card {
+        width: 450px;
+    }
+
+    .basic,
+    .enterprise {
+        width: 490PX;
+    }
+
+    .btn-size-100 {
+        width: 100%;
+        background: linear-gradient(to right, rgb(22, 3, 236) 50%, rgba(0, 0, 0, 1) 50%);
+        background-size: 200% 100%;
+        background-position: right;
+        transition: background-position 0.6s ease-in-out;
+    }
+
+    .basic:hover .btn-size-100 {
+        background-position: left;
+    }
+
+    .btn-price-position {
+        width: 50px;
+        height: 50px;
+        right: 11px;
+        top: 11px;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -2903,5 +3789,187 @@ a {
 
     .work-main-box:hover .set-h2-box4 {
         transform: translate(-63%, 90%);
+    }
+
+    .pricing-card {
+        width: 440px;
+    }
+
+    .basic,
+    .enterprise {
+        width: 430PX;
+    }
+
+    .btn-size-100 {
+        width: 100%;
+        background: linear-gradient(to right, rgb(22, 3, 236) 50%, rgba(0, 0, 0, 1) 50%);
+        background-size: 200% 100%;
+        background-position: right;
+        transition: background-position 0.6s ease-in-out;
+    }
+
+    .basic:hover .btn-size-100 {
+        background-position: left;
+    }
+
+    .btn-price-position {
+        width: 50px;
+        height: 50px;
+        right: 11px;
+        top: 11px;
+    }
+
+   
+    @keyframes animateX-popular {
+        0% {
+            transform: rotateX(0deg);
+        }
+    
+        50% {
+            transform: rotateX(180deg);
+            background-color: #000;
+            display: none;
+        }
+    
+        100% {
+            transform: rotateX(0deg);
+        }
+    }
+    
+    @keyframes animateY-popular {
+        0% {
+            transform: rotateX(0deg);
+        }
+    
+        50% {
+            transform: rotateX(180deg);
+        }
+    
+        100% {
+            transform: rotateX(0deg);
+        }
+    }
+    @keyframes animateX {
+        0% {
+            transform: translateX(23%);
+        }
+    
+        50% {
+            transform: translateX(100%);
+        }
+    
+        100% {
+            transform: translateX(23%);
+        }
+    }
+    
+    @keyframes animateY {
+        0% {
+            transform: translateX(23%);
+        }
+    
+        50% {
+            transform: translateX(100%);
+        }
+    
+        100% {
+            transform: translateX(23%);
+        }
+    }
+    @keyframes animateX-recommended {
+        0% {
+            transform: translateX(-23%);
+        }
+    
+        50% {
+            transform: translateX(-100%);
+        }
+    
+        100% {
+            transform: translateX(-23%);
+        }
+    }
+    
+    @keyframes animateY-recommended {
+        0% {
+            transform: translateX(-23%);
+        }
+    
+        50% {
+            transform: translateX(-100%);
+        }
+    
+        100% {
+            transform: translateX(-23%);
+        }
+    }
+    .recomand-plan{
+        transform: translateX(-23%);
+    }
+    .pricing-plans.basic-plan {
+        transform: translateX(23%);
+    }
+}
+@media (min-width: 1500px) {
+
+    .recomand-plan{
+        transform: translateX(-30%);
+    }
+    .pricing-plans.basic-plan {
+        transform: translateX(30%);
+    }
+}
+@media (min-width: 1650px) {
+
+    .recomand-plan{
+        transform: translateX(-40%);
+    }
+    .pricing-plans.basic-plan {
+        transform: translateX(40%);
+    }
+}
+@media (min-width: 1750px) {
+
+    .recomand-plan{
+        transform: translateX(-50%);
+    }
+    .pricing-plans.basic-plan {
+        transform: translateX(50%);
+    }
+}
+@media (min-width: 1950px) {
+
+    .recomand-plan{
+        transform: translateX(-65%);
+    }
+    .pricing-plans.basic-plan {
+        transform: translateX(65%);
+    }
+}
+@media (min-width: 2050px) {
+
+    .recomand-plan{
+        transform: translateX(-80%);
+    }
+    .pricing-plans.basic-plan {
+        transform: translateX(80%);
+    }
+}
+@media (min-width: 2200px) {
+
+    .recomand-plan{
+        transform: translateX(-90%);
+    }
+    .pricing-plans.basic-plan {
+        transform: translateX(90%);
+    }
+}
+@media (min-width: 2400px) {
+
+    .recomand-plan{
+        transform: translateX(-100%);
+    }
+    .pricing-plans.basic-plan {
+        transform: translateX(100%);
     }
 }
