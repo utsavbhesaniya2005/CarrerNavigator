@@ -4,6 +4,12 @@ import "./css/Home.css";
 import img from "./assets/images/Hrhub-icon-img.png";
 import video from "./Video/home1.mp4";
 
+// Swiper
+import { A11y, Autoplay, EffectCoverflow } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css';
+
 const PercentageCol = ({ iconClass, title, targetPercentage, description }) => {
   const [percentage, setPercentage] = useState(0);
   useEffect(() => {
@@ -747,11 +753,7 @@ const Home = () => {
         </Container>
       </div>
       <div style={{ backgroundColor: "#D9F1FF" }}>
-        <Container style={{ margin: "0px auto",
-            padding: "80px 0px 80px 10px",
-            overflow: "hidden",
-          }}
-        >
+        <Container style={{ margin: "0px auto", padding: "80px 0px 80px 10px", overflow: "hidden", }} >
           <div className="emp-expr flex">
             Empolyee Experience{" "}
             <i
@@ -782,66 +784,118 @@ const Home = () => {
                 </div>
               </a>
             </Col>
-            <Col lg={5} md={5}>
-              <div className="slider-main-box">
-                <div className="slider-img">
-                    <a href="#">
-                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=900&h=500&s=1" alt="" />
-                    </a>
-                </div>
-                
-              <div className="slider-img2"></div>
-            {/* <Col lg={12} md={12} className="main-slider">
-              <div class="slider slider-1 col-5">
-                <div class="slider-main-box"></div>
-                <div class="slider-heading">
-                  <h3 class="slider-h3">Monthly Innovation Idea Days</h3>
-                </div>
-                <div class="slider-paragraph">
-                  <p class="slider-p">
-                    Venenatis phasellus in dapibus nostra eros sociosqu cursus
-                    ut.
-                  </p>
-                </div>
-              </div>
-
-              <div class="slider slider-2 col-5">
-                <div class="slider-main-box"></div>
-                <div class="slider-heading">
-                  <h3 class="slider-h3">Tailored Employee Growth Plans</h3>
-                </div>
-                <div class="slider-paragraph">
-                  <p class="slider-p">
-                    Venenatis phasellus in dapibus nostra eros sociosqu cursus
-                    ut.
-                  </p>
-                </div>
-              </div>
-
-              <div class="slider slider-3 col-5">
-                <div class="slider-main-box"></div>
-                <div class="slider-heading">
-                  <h3 class="slider-h3">Dynamic Flexible Work</h3>
-                </div>
-                <div class="slider-paragraph">
-                  <p class="slider-p">
-                    Habitant hac habitasse augue dictum dui nec cursus.
-                  </p>
-                </div>
-              </div>
-              <div class="slider slider-4 col-5">
-                <div class="slider-main-box"></div>
-                <div class="slider-heading">
-                  <h3 class="slider-h3">Dynamic Flexible Work</h3>
-                </div>
-                <div class="slider-paragraph">
-                  <p class="slider-p">
-                    Habitant hac habitasse augue dictum dui nec cursus.
-                  </p>
-                </div>
-              </div>
-            </Col> */}
-            </div>
+            <Col lg={12} md={12} className="main-slider">
+              <Swiper
+                effect={'coverflow'}
+                coverflowEffect={{
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: true,
+                }}
+                loop={true}
+                modules={[Autoplay, EffectCoverflow, A11y]}
+                spaceBetween={50}
+                slidesPerView={3}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                onSwiper={(swiper) => console.log(swiper)} >
+                <SwiperSlide>
+                  <div class="slider slider-1">
+                    <div class="slider-main-box">
+                      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=900&h=500&s=1" alt="Slider-Image" />
+                    </div>
+                    <div class="slider-heading">
+                      <h3 class="slider-h3">Monthly Innovation Idea Days</h3>
+                    </div>
+                    <div class="slider-paragraph">
+                      <p class="slider-p">
+                        Venenatis phasellus in dapibus nostra eros sociosqu cursus
+                        ut.
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div class="slider slider-2">
+                    <div class="slider-main-box">
+                      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=900&h=500&s=1" alt="Slider-Image" />
+                    </div>
+                    <div class="slider-heading">
+                      <h3 class="slider-h3">Tailored Employee Growth Plans</h3>
+                    </div>
+                    <div class="slider-paragraph">
+                      <p class="slider-p">
+                        Venenatis phasellus in dapibus nostra eros sociosqu cursus
+                        ut.
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div class="slider slider-3">
+                    <div class="slider-main-box">
+                      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=900&h=500&s=1" alt="Slider-Image" />
+                    </div>
+                    <div class="slider-heading">
+                      <h3 class="slider-h3">Dynamic Flexible Work</h3>
+                    </div>
+                    <div class="slider-paragraph">
+                      <p class="slider-p">
+                        Habitant hac habitasse augue dictum dui nec cursus.
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div class="slider slider-4">
+                    <div class="slider-main-box">
+                      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=900&h=500&s=1" alt="Slider-Image" />
+                    </div>
+                    <div class="slider-heading">
+                      <h3 class="slider-h3">Dynamic Flexible Work</h3>
+                    </div>
+                    <div class="slider-paragraph">
+                      <p class="slider-p">
+                        Habitant hac habitasse augue dictum dui nec cursus.
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div class="slider slider-4">
+                    <div class="slider-main-box">
+                      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=900&h=500&s=1" alt="Slider-Image" />
+                    </div>
+                    <div class="slider-heading">
+                      <h3 class="slider-h3">Dynamic Flexible Work</h3>
+                    </div>
+                    <div class="slider-paragraph">
+                      <p class="slider-p">
+                        Habitant hac habitasse augue dictum dui nec cursus.
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div class="slider slider-4">
+                    <div class="slider-main-box">
+                      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=900&h=500&s=1" alt="Slider-Image" />
+                    </div>
+                    <div class="slider-heading">
+                      <h3 class="slider-h3">Dynamic Flexible Work</h3>
+                    </div>
+                    <div class="slider-paragraph">
+                      <p class="slider-p">
+                        Habitant hac habitasse augue dictum dui nec cursus.
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
             </Col>
           </Row>
         </Container>
@@ -894,9 +948,8 @@ const Home = () => {
             </div>
             <div className="card-main-class">
               <div
-                className={`card-main-class pricing-plans basic-plan ${
-                  isOn ? "animateX" : "animateY"
-                }`}
+                className={`card-main-class pricing-plans basic-plan ${isOn ? "animateX" : "animateY"
+                  }`}
               >
                 {/* Basic Plan */}
                 <div className="pricing-card basic">
@@ -970,9 +1023,8 @@ const Home = () => {
                 </div>
               </div>
               <div
-                className={`card-main-class pricing-plans pro-plan ${
-                  isOn ? "animateX-popular" : "animateY-popular"
-                }`}
+                className={`card-main-class pricing-plans pro-plan ${isOn ? "animateX-popular" : "animateY-popular"
+                  }`}
               >
                 {/* Pro Plan */}
                 <div className="pricing-card pro">
@@ -1066,9 +1118,8 @@ const Home = () => {
               </div>
 
               <div
-                className={`card-main-class pricing-plans recomand-plan ${
-                  isOn ? "animateX-recommended" : "animateY-recommended"
-                }`}
+                className={`card-main-class pricing-plans recomand-plan ${isOn ? "animateX-recommended" : "animateY-recommended"
+                  }`}
               >
                 {/* Enterprise Plan */}
                 <div className="pricing-card basic enterprise">

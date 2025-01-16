@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/swiper": "^5.4.3",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
@@ -10,6 +11,7 @@
     "react-bootstrap": "^2.10.7",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
+    "swiper": "^11.2.1",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
@@ -35,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
   }
 }

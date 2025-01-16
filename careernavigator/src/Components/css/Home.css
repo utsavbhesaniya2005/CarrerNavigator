@@ -893,6 +893,7 @@ a {
     display: flex;
     padding-top: 40px;
     justify-content: space-between;
+    cursor: grab;
 }
 
 .slider {
@@ -943,7 +944,7 @@ a {
     border-radius: 8px;
 }
 
-.slider-img a img {
+.slider-main-box img {
     width: 100%;
     border-radius: 8px;
     clip-path: polygon(0% 100%, 0% 0%, 0% 0%, 100% 0%, 100% calc(100% - 80px), calc(100% - 80px) calc(100% - 80px), calc(100% - 80px) 100%);
@@ -955,21 +956,38 @@ a {
     border-radius: 10px; */
     height: 230px;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
-    background-image: url('../assets/images/home-1-slider-03.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 20px;
     margin-bottom: 20px;
     transition: 0.3s ease-in-out;
-
 }
-.slider-img a img::after{
+
+.slider-img a img::after {
     content: '';
     width: 20px;
     height: 20px;
     background-color: white;
     bottom: 0;
     position: absolute;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
 }
 .slider-h3 {
     font-weight: 600;
@@ -1903,36 +1921,43 @@ a {
             transform: translateX(0%);
         }
     }
+
     .btn-content {
         font-size: 13px;
         font-weight: 600;
     }
-    
+
     .btn-child-content {
         font-size: 10px;
         font-weight: 300;
     }
-    .btn-100-set{
+
+    .btn-100-set {
         width: 100%;
     }
-    .btn-price-position{
+
+    .btn-price-position {
         position: relative;
         right: 0px;
         top: 0px;
         height: 55px;
         width: 55px;
     }
-    .btn-size-100{
+
+    .btn-size-100 {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+
     .pricing-card {
         width: 90vw;
     }
+
     .pro {
         padding: 40px 20px 30px;
     }
+
     .popular-bedge {
         position: relative;
         /* right: -190px; */
@@ -2118,7 +2143,7 @@ a {
         transform: translateX(13px);
         color: white;
     }
- 
+
 }
 
 @media (min-width: 425px) and (max-width: 576px) {
