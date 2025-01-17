@@ -5,10 +5,10 @@ import img from "./assets/images/Hrhub-icon-img.png";
 import video from "./Video/home1.mp4";
 
 // Swiper
-import { A11y, Autoplay, EffectCoverflow } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css';
+// import { A11y, Autoplay, EffectCoverflow } from 'swiper/modules';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css/effect-coverflow';
+// import 'swiper/css';
 
 const PercentageCol = ({ iconClass, title, targetPercentage, description }) => {
   const [percentage, setPercentage] = useState(0);
@@ -784,7 +784,7 @@ const Home = () => {
                 </div>
               </a>
             </Col>
-            <Col lg={12} md={12} className="main-slider">
+            {/* <Col lg={12} md={12} className="main-slider">
               <Swiper
                 effect={'coverflow'}
                 coverflowEffect={{
@@ -896,7 +896,7 @@ const Home = () => {
                   </div>
                 </SwiperSlide>
               </Swiper>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </div>
