@@ -5,10 +5,10 @@ import img from "./assets/images/Hrhub-icon-img.png";
 import video from "./Video/home1.mp4";
 
 // Swiper
-import { A11y, Autoplay, EffectCoverflow } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css';
+// import { A11y, Autoplay, EffectCoverflow } from 'swiper/modules';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css/effect-coverflow';
+// import 'swiper/css';
 
 const PercentageCol = ({ iconClass, title, targetPercentage, description }) => {
   const [percentage, setPercentage] = useState(0);
@@ -753,7 +753,13 @@ const Home = () => {
         </Container>
       </div>
       <div style={{ backgroundColor: "#D9F1FF" }}>
-        <Container style={{ margin: "0px auto", padding: "80px 0px 80px 10px", overflow: "hidden", }} >
+        <Container
+          style={{
+            margin: "0px auto",
+            padding: "80px 0px 80px 0px",
+            overflow: "hidden",
+          }}
+        >
           <div className="emp-expr flex">
             Empolyee Experience{" "}
             <i
@@ -785,7 +791,7 @@ const Home = () => {
               </a>
             </Col>
             <Col lg={12} md={12} className="main-slider">
-              <Swiper
+              {/* <Swiper
                 effect={'coverflow'}
                 coverflowEffect={{
                   rotate: 50,
@@ -895,307 +901,349 @@ const Home = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-              </Swiper>
+              </Swiper> */}
             </Col>
           </Row>
         </Container>
       </div>
       <div className="card-background" style={{ padding: "70px 0px" }}>
         <Container
-          style={{ margin: "0px auto", padding: "80px 0px 80px 0px", overflow: "hidden", }}
+          style={{
+            margin: "0px auto",
+            padding: "80px 0px 80px 0px",
+            overflow: "hidden",
+          }}
           className="flex"
         >
-        <Row>
-          <Col
-            className="flex content-wrapper"
-            md={12}
-            lg={12}
-            sm={12}
-            xm={12}
-            style={{ marginBottom: "20px" }}
-          >
-            <div className="emp-expr-2 flex choice-back">
-              <i
-                class="fa-solid fa-arrow-left"
-                style={{ marginRight: "8px" }}
-              ></i>
-              <p className="tranforming-p">Optimal Pricing Choice</p>{" "}
-              <i
-                class="fa-solid fa-arrow-right"
-                style={{ marginLeft: "8px" }}
-              ></i>
-            </div>
-          </Col>
-          <Col md={12} lg={12} sm={12} xm={12} className="flex content-wrapper">
-            <h1 className="video-h1 price-h1">Pick The Best Pricing Plan</h1>
-          </Col>
-          <div className="pricing-table">
-            <div className="app-container">
-              <p style={{ marginBottom: "0px", marginRight: "10px" }}>
-                Billed Monthly
-              </p>
-              <div
-                className={`toggle-container ${isOn ? "on" : "off"}`}
-                onClick={toggleSwitch}
-              >
-                <div className="switch"></div>
+          <Row>
+            <Col
+              className="flex content-wrapper"
+              md={12}
+              lg={12}
+              sm={12}
+              xm={12}
+              style={{ marginBottom: "20px" }}
+            >
+              <div className="emp-expr-2 flex choice-back">
+                <i
+                  class="fa-solid fa-arrow-left"
+                  style={{ marginRight: "8px" }}
+                ></i>
+                <p className="tranforming-p">Optimal Pricing Choice</p>{" "}
+                <i
+                  class="fa-solid fa-arrow-right"
+                  style={{ marginLeft: "8px" }}
+                ></i>
               </div>
-              <p style={{ marginBottom: "0px", marginLeft: "10px" }}>
-                Billed Annually
-              </p>
-            </div>
-            <div className="card-main-class">
-              <div
-                className={`card-main-class pricing-plans basic-plan ${isOn ? "animateX" : "animateY"
+            </Col>
+            <Col
+              md={12}
+              lg={12}
+              sm={12}
+              xm={12}
+              className="flex content-wrapper"
+            >
+              <h1 className="video-h1 price-h1">Pick The Best Pricing Plan</h1>
+            </Col>
+            <div className="pricing-table">
+              <div className="app-container">
+                <p style={{ marginBottom: "0px", marginRight: "10px" }}>
+                  Billed Monthly
+                </p>
+                <div
+                  className={`toggle-container ${isOn ? "on" : "off"}`}
+                  onClick={toggleSwitch}
+                >
+                  <div className="switch"></div>
+                </div>
+                <p style={{ marginBottom: "0px", marginLeft: "10px" }}>
+                  Billed Annually
+                </p>
+              </div>
+              <div className="card-main-class">
+                <div
+                  className={`card-main-class pricing-plans basic-plan ${
+                    isOn ? "animateX" : "animateY"
                   }`}
-              >
-                {/* Basic Plan */}
-                <div className="pricing-card basic">
-                  <div className="card-header">
-                    <h6 className="plan-name">Basic</h6>
-                    <h3 className="basic-plan-h3">Basic HR Plan</h3>
-                    <p>
-                      Parturient elementum in, rutrum tristique inceptos sit
-                      suspendisse faucibus velit.
-                    </p>
-                  </div>
-                  <div className="card-price flex">
-                    <h2>
-                      <span>
-                        <sup className="doller-Sym">$</sup>
-                      </span>
-                      {isOn ? "369.99" : "69.99"}
-                    </h2>
-                    <span className="price-duration">
-                      <sub style={{ marginBottom: "0px" }}>/mo</sub>
-                    </span>
-                  </div>
-                  <div
-                    className="know-more-center"
-                    style={{ marginBottom: "15px" }}
-                  >
-                    <div className="btn-100-set">
-                      <a
-                        type="button"
-                        href="#"
-                        className="btn1-know-2 btn-size-100"
-                      >
-                        <p className="btn-content">
-                          Boost Your Profit <br />
-                          <span className="btn-child-content">
-                            Vestibulum dignissim.
-                          </span>
-                        </p>
-                        <div className="box-know-more btn-price-position">
-                          <div className="arrow-cross-know-more arrow-size">
-                            <i className="fa-solid fa-arrow-up"></i>
-                          </div>
-                        </div>
-                      </a>
+                >
+                  {/* Basic Plan */}
+                  <div className="pricing-card basic">
+                    <div className="card-header">
+                      <h6 className="plan-name">Basic</h6>
+                      <h3 className="basic-plan-h3">Basic HR Plan</h3>
+                      <p>
+                        Parturient elementum in, rutrum tristique inceptos sit
+                        suspendisse faucibus velit.
+                      </p>
                     </div>
+                    <div className="card-price flex">
+                      <h2>
+                        <span>
+                          <sup className="doller-Sym">$</sup>
+                        </span>
+                        {isOn ? "369.99" : "69.99"}
+                      </h2>
+                      <span className="price-duration">
+                        <sub style={{ marginBottom: "0px" }}>/mo</sub>
+                      </span>
+                    </div>
+                    <div
+                      className="know-more-center"
+                      style={{ marginBottom: "15px" }}
+                    >
+                      <div className="btn-100-set">
+                        <a
+                          type="button"
+                          href="#"
+                          className="btn1-know-2 btn-size-100"
+                        >
+                          <p className="btn-content">
+                            Boost Your Profit <br />
+                            <span className="btn-child-content">
+                              Vestibulum dignissim.
+                            </span>
+                          </p>
+                          <div className="box-know-more btn-price-position">
+                            <div className="arrow-cross-know-more arrow-size">
+                              <i className="fa-solid fa-arrow-up"></i>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <ul className="features">
+                      <li>
+                        <i className="fa-regular fa-circle-check"></i>
+                        <span className="list-card">24/7 Customer support</span>
+                      </li>
+                      <li>
+                        <i className="fa-regular fa-circle-check"></i>
+                        <span className="list-card">
+                          On-site training and workshops
+                        </span>
+                      </li>
+                      <li>
+                        <i className="fa-regular fa-circle-check"></i>
+                        <span className="list-card">
+                          Complete recruiting and talent acquisition
+                        </span>
+                      </li>
+                      <li>
+                        <i className="fa-regular fa-circle-check"></i>
+                        <span className="list-card">
+                          Customized benefits Programs
+                        </span>
+                      </li>
+                    </ul>
                   </div>
-                  <ul className="features">
-                    <li>
-                      <i className="fa-regular fa-circle-check"></i>
-                      <span className="list-card">24/7 Customer support</span>
-                    </li>
-                    <li>
-                      <i className="fa-regular fa-circle-check"></i>
-                      <span className="list-card">
-                        On-site training and workshops
+                </div>
+                <div
+                  className={`card-main-class pricing-plans pro-plan ${
+                    isOn ? "animateX-popular" : "animateY-popular"
+                  }`}
+                >
+                  {/* Pro Plan */}
+                  <div className="pricing-card pro">
+                    <div className="popular-bedge">Popular</div>
+                    <div className="card-header">
+                      <h6 className="plan-name pro-h6">Pro</h6>
+                      <h3 className="basic-plan-h3">Pro HR Plan</h3>
+                      <p>
+                        Parturient elementum in, rutrum tristique inceptos sit
+                        suspendisse faucibus velit.
+                      </p>
+                    </div>
+                    <div className="card-price flex">
+                      <h2>
+                        <span>
+                          <sup className="doller-Sym">$</sup>
+                        </span>
+                        {isOn ? "889.99" : "89.99"}
+                      </h2>
+                      <span className="price-duration">
+                        <sub style={{ marginBottom: "0px" }}>/mo</sub>
                       </span>
-                    </li>
-                    <li>
-                      <i className="fa-regular fa-circle-check"></i>
-                      <span className="list-card">
-                        Complete recruiting and talent acquisition
+                    </div>
+                    <div
+                      className="know-more-center"
+                      style={{ marginBottom: "15px" }}
+                    >
+                      <div className="btn-100-set">
+                        <a
+                          type="button"
+                          href="#"
+                          className="btn1-know-2 btn-size-100 pro-btn-back"
+                        >
+                          <p className="btn-content">
+                            Elevate Your Growth
+                            <br />{" "}
+                            <span className="btn-child-content">
+                              Vestibulum nisi em dignissi ultrices.
+                            </span>{" "}
+                          </p>
+
+                          <div className="box-know-more btn-price-position pro-price-position">
+                            <div className="arrow-cross-know-more arrow-size">
+                              <i className="fa-solid fa-arrow-up"></i>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <ul className="features">
+                      <li>
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span className="list-card">24/7 Customer support</span>
+                      </li>
+                      <li>
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span className="list-card">
+                          On-site training and workshops
+                        </span>
+                      </li>
+                      <li>
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span className="list-card">
+                          Complete recruiting and talent acquisition
+                        </span>
+                      </li>
+                      <li>
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span className="list-card">
+                          Customized benefits Programs
+                        </span>
+                      </li>
+                      <li>
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span className="list-card">
+                          Access to advanced HRIS
+                        </span>
+                      </li>
+                      <li>
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span className="list-card">
+                          Legal support for conflicts
+                        </span>
+                      </li>
+                      <li>
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span className="list-card">
+                          Leadership training programs
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div
+                  className={`card-main-class pricing-plans recomand-plan ${
+                    isOn ? "animateX-recommended" : "animateY-recommended"
+                  }`}
+                >
+                  {/* Enterprise Plan */}
+                  <div className="pricing-card basic enterprise">
+                    <div className="card-header">
+                      <h6 className="plan-name recommended">Recommended</h6>
+                      <h3 className="basic-plan-h3">Enterprise HR Plan</h3>
+                      <p>
+                        Parturient elementum in, rutrum tristique inceptos sit
+                        suspendisse faucibus velit.
+                      </p>
+                    </div>
+                    <div className="card-price flex">
+                      <h2>
+                        <span>
+                          <sup className="doller-Sym">$</sup>
+                        </span>
+                        {isOn ? "1120.99" : "129.99"}
+                      </h2>
+                      <span className="price-duration">
+                        <sub style={{ marginBottom: "0px" }}>/mo</sub>
                       </span>
-                    </li>
-                    <li>
-                      <i className="fa-regular fa-circle-check"></i>
-                      <span className="list-card">
-                        Customized benefits Programs
-                      </span>
-                    </li>
-                  </ul>
+                    </div>
+                    <div
+                      className="know-more-center"
+                      style={{ marginBottom: "15px" }}
+                    >
+                      <div className="btn-100-set">
+                        <a
+                          type="button"
+                          href="#"
+                          className="btn1-know-2  btn-size-100"
+                        >
+                          <p className="btn-content">
+                            Boost Your Profit <br />{" "}
+                            <span className="btn-child-content">
+                              Vestibulum dignissim.
+                            </span>{" "}
+                          </p>
+
+                          <div className="box-know-more btn-price-position">
+                            <div className="arrow-cross-know-more arrow-size">
+                              <i className="fa-solid fa-arrow-up"></i>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <ul className="features">
+                      <li>
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span className="list-card">
+                          Leadership training programs
+                        </span>
+                      </li>
+                      <li>
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span className="list-card">
+                          Legal support for conflicts
+                        </span>
+                      </li>
+                      <li>
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span className="list-card">
+                          Customized benefits Progarams
+                        </span>
+                      </li>
+                      <li>
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span className="list-card">
+                          Complete recruiting and talent acquisition
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div
-                className={`card-main-class pricing-plans pro-plan ${isOn ? "animateX-popular" : "animateY-popular"
-                  }`}
-              >
-                {/* Pro Plan */}
-                <div className="pricing-card pro">
-                  <div className="popular-bedge">Popular</div>
-                  <div className="card-header">
-                    <h6 className="plan-name pro-h6">Pro</h6>
-                    <h3 className="basic-plan-h3">Pro HR Plan</h3>
-                    <p>
-                      Parturient elementum in, rutrum tristique inceptos sit
-                      suspendisse faucibus velit.
-                    </p>
-                  </div>
-                  <div className="card-price flex">
-                    <h2>
-                      <span>
-                        <sup className="doller-Sym">$</sup>
-                      </span>
-                      {isOn ? "889.99" : "89.99"}
-                    </h2>
-                    <span className="price-duration">
-                      <sub style={{ marginBottom: "0px" }}>/mo</sub>
-                    </span>
-                  </div>
-                  <div
-                    className="know-more-center"
-                    style={{ marginBottom: "15px" }}
-                  >
-                    <div className="btn-100-set">
-                      <a
-                        type="button"
-                        href="#"
-                        className="btn1-know-2 btn-size-100 pro-btn-back"
-                      >
-                        <p className="btn-content">
-                          Elevate Your Growth
-                          <br />{" "}
-                          <span className="btn-child-content">
-                            Vestibulum nisi em dignissi ultrices.
-                          </span>{" "}
-                        </p>
-
-                        <div className="box-know-more btn-price-position pro-price-position">
-                          <div className="arrow-cross-know-more arrow-size">
-                            <i className="fa-solid fa-arrow-up"></i>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <ul className="features">
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i>
-                      <span className="list-card">24/7 Customer support</span>
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i>
-                      <span className="list-card">
-                        On-site training and workshops
-                      </span>
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i>
-                      <span className="list-card">
-                        Complete recruiting and talent acquisition
-                      </span>
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i>
-                      <span className="list-card">
-                        Customized benefits Programs
-                      </span>
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i>
-                      <span className="list-card">Access to advanced HRIS</span>
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i>
-                      <span className="list-card">
-                        Legal support for conflicts
-                      </span>
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i>
-                      <span className="list-card">
-                        Leadership training programs
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div
-                className={`card-main-class pricing-plans recomand-plan ${isOn ? "animateX-recommended" : "animateY-recommended"
-                  }`}
-              >
-                {/* Enterprise Plan */}
-                <div className="pricing-card basic enterprise">
-                  <div className="card-header">
-                    <h6 className="plan-name recommended">Recommended</h6>
-                    <h3 className="basic-plan-h3">Enterprise HR Plan</h3>
-                    <p>
-                      Parturient elementum in, rutrum tristique inceptos sit
-                      suspendisse faucibus velit.
-                    </p>
-                  </div>
-                  <div className="card-price flex">
-                    <h2>
-                      <span>
-                        <sup className="doller-Sym">$</sup>
-                      </span>
-                      {isOn ? "1120.99" : "129.99"}
-                    </h2>
-                    <span className="price-duration">
-                      <sub style={{ marginBottom: "0px" }}>/mo</sub>
-                    </span>
-                  </div>
-                  <div
-                    className="know-more-center"
-                    style={{ marginBottom: "15px" }}
-                  >
-                    <div className="btn-100-set">
-                      <a
-                        type="button"
-                        href="#"
-                        className="btn1-know-2  btn-size-100"
-                      >
-                        <p className="btn-content">
-                          Boost Your Profit <br />{" "}
-                          <span className="btn-child-content">
-                            Vestibulum dignissim.
-                          </span>{" "}
-                        </p>
-
-                        <div className="box-know-more btn-price-position">
-                          <div className="arrow-cross-know-more arrow-size">
-                            <i className="fa-solid fa-arrow-up"></i>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <ul className="features">
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i>
-                      <span className="list-card">
-                        Leadership training programs
-                      </span>
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i>
-                      <span className="list-card">
-                        Legal support for conflicts
-                      </span>
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i>
-                      <span className="list-card">
-                        Customized benefits Progarams
-                      </span>
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-circle-check"></i>
-                      <span className="list-card">
-                        Complete recruiting and talent acquisition
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
-          </div>
-        </Row>
+          </Row>
+        </Container>
+      </div>
+      <div style={{ backgroundColor: "#D9F1FF" }}>
+        <Container style={{ margin: "0px auto", padding: "80px 0px" }}>
+          <Row>
+            <Col md={6} lg={6} sm={12} xs={12} style={{ padding: "0px" }}>
+              <div className="blog" >
+                <div className="mainLatestNew">
+                  <div className="blog-z-index">
+                    <div className="emp-expr-2 flex choice-back btn-blog">
+                      <p className="tranforming-p">23 October 2024</p>{" "}
+                      <i
+                        class="fa-solid fa-arrow-right"
+                        style={{ marginLeft: "8px" }}
+                      ></i>
+                    </div>
+                      <h3 className="h3-blog">
+                        Mindfulness techniques for reducing workplace stress and
+                        work disputes
+                      </h3>
+                      <p className="para-blog">Arcu ad interdum taciti lacinia tellus suspendisse proin. Egestas natoque sit vivamus dignissim non;...</p>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col md={6} lg={6} sm={12} xs={12}></Col>
+          </Row>
         </Container>
       </div>
     </div>
