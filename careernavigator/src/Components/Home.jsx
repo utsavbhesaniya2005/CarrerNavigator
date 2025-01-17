@@ -126,7 +126,7 @@ const Home = () => {
   return (
     <div>
       {/* Main Content */}
-      <main className="main">
+      <div className="main">
         <div className="content-val">
           <div className="video">
             <video
@@ -191,7 +191,7 @@ const Home = () => {
             </Container>
           </div>
         </div>
-      </main>
+      </div>
       <div style={{ backgroundColor: "#D9F1FF" }}>
         <Container
           style={{
@@ -1220,29 +1220,101 @@ const Home = () => {
         </Container>
       </div>
       <div style={{ backgroundColor: "#D9F1FF" }}>
-        <Container style={{ margin: "0px auto", padding: "80px 0px" }}>
+        <Container
+          style={{ margin: "0 auto", padding: "80px 0", overflow: "hidden" }}
+        >
           <Row>
-            <Col md={6} lg={6} sm={12} xs={12} style={{ padding: "0px" }}>
-              <div className="blog" >
+            {/* Blog Section */}
+            <Col md={12} lg={6} sm={12} xs={12} style={{ padding: "0 20px" }}>
+              <div className="blog">
                 <div className="mainLatestNew">
                   <div className="blog-z-index">
                     <div className="emp-expr-2 flex choice-back btn-blog">
-                      <p className="tranforming-p">23 October 2024</p>{" "}
+                      <p className="tranforming-p">23 October 2024</p>
                       <i
-                        class="fa-solid fa-arrow-right"
+                        className="fa-solid fa-arrow-right"
                         style={{ marginLeft: "8px" }}
                       ></i>
                     </div>
-                      <h3 className="h3-blog">
-                        Mindfulness techniques for reducing workplace stress and
-                        work disputes
-                      </h3>
-                      <p className="para-blog">Arcu ad interdum taciti lacinia tellus suspendisse proin. Egestas natoque sit vivamus dignissim non;...</p>
+                    <h3 className="h3-blog">
+                      Mindfulness techniques for reducing workplace stress and
+                      work disputes
+                    </h3>
+                    <p className="para-blog">
+                      Arcu ad interdum taciti lacinia tellus suspendisse proin.
+                      Egestas natoque sit vivamus dignissim non;...
+                    </p>
                   </div>
                 </div>
               </div>
             </Col>
-            <Col md={6} lg={6} sm={12} xs={12}></Col>
+            {/* Explore Ideas Section */}
+            <Col
+              md={12}
+              lg={6}
+              sm={12}
+              xs={12}
+              style={{ padding: "50px 20px 20px" }}
+            >
+              <div>
+                <div className="main-blog-transform">
+                  <div className="padding-transform">
+                    <div className="emp-expr-2 flex blog-transform">
+                      <p className="tranforming-p">
+                        Explore Ideas, Share Insights
+                      </p>
+                      <i
+                        className="fa-solid fa-arrow-right"
+                        style={{ marginLeft: "8px" }}
+                      ></i>
+                    </div>
+                    <h1 className="blog-transform-h1 ">Latest news & Blog</h1>
+                  </div>
+                </div>
+                <div className="flex box-1-transform">
+                  <div className="">
+                    <div className="emp-expr-2 flex choice-back btn-blog">
+                      <p className="tranforming-p">23 October 2024</p>
+                      <i
+                        className="fa-solid fa-arrow-right"
+                        style={{ marginLeft: "8px" }}
+                      ></i>
+                    </div>
+                    <div style={{ marginBottom: "10px" }}>
+                      <a href="#" className="box-1-a-transform">
+                        Developing a stronger company work culture: 10 Powerful
+                        key success strategies
+                      </a>
+                    </div>
+                    <p className="box-1-p-transform">
+                      Fusce amet platea metus libero dictumst. Tincidunt sapien
+                      quam efficitur mus interdum sit.Nec sodales...
+                    </p>
+                  </div>
+                </div>
+                <div className="box-1-transform flex">
+                  <div>
+                    <div className="emp-expr-2 flex choice-back btn-blog">
+                      <p className="tranforming-p">23 October 2024</p>
+                      <i
+                        className="fa-solid fa-arrow-right"
+                        style={{ marginLeft: "8px" }}
+                      ></i>
+                    </div>
+                    <div style={{ marginBottom: "10px" }}>
+                      <a href="#" className="box-1-a-transform">
+                        The importance of continuous learning in the workplace
+                        for personal society growth
+                      </a>
+                    </div>
+                    <p className="box-1-p-transform">
+                      Ultricies ipsum quam luctus lobortis etiam. Fermentum
+                      dictumst class; conubia mattis varius.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Col>
           </Row>
         </Container>
       </div>
