@@ -1596,28 +1596,15 @@ a {
 
 /* contact form design ------------------ */
 .contact-form-container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
-    font-family: Arial, sans-serif;
+    max-width: 1200px;
 }
 
 .header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 20px 0;
-}
-
-.reach-out-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.contact-form {
-    padding: 20px;
 }
 
 .form-group {
@@ -1637,6 +1624,7 @@ textarea {
     outline: none;
     font-size: 1rem;
     transition: border-color 0.3s ease;
+    margin: 0px 5px !important;
 }
 
 input:focus,
@@ -1686,26 +1674,30 @@ textarea:focus {
     font-weight: 300;
 }
 
+.contact-label {
+    background-color: #D9F1FF;
+    width: 150px;
+    margin-bottom: 13px;
+}
+
+.contact-Heading {
+    width: 150px;
+    margin-bottom: 13px;
+}
+
 .upload-form {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.send-msg-form-btn {
-    display: inline-flex;
-    color: var(--white);
-    padding: 20px;
-    border: 1px solid #1a6945;
-    border-radius: 18px;
-    text-align: left;
-    background-image: unset;
-    background-color: #100d7a;
-    width: 200px;
-    text-transform: capitalize;
-    letter-spacing: 0px;
-    position: relative;
+.sendMsg-FormBtn {
+    width: 210px !important;
+    text-transform: capitalize !important;
+    letter-spacing: 0px !important;
+    margin-top: 0px !important;
 }
+
 
 
 
@@ -1868,7 +1860,6 @@ textarea:focus {
         width: 100%;
         display: grid;
         align-items: center;
-        /* justify-content: space-between; */
         border: none;
         height: 150px;
     }
@@ -2065,6 +2056,84 @@ textarea:focus {
 
     .box-1-p-transform {
         font-size: 15px;
+    }
+
+    .contact-form-container {
+        width: 100%;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+        margin: 10px 0;
+    }
+
+    .contact-form {
+        padding: 0px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    textarea {
+        height: 80px;
+        /* Adjust textarea height */
+    }
+
+    .upload-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 180px;
+        padding: 10px;
+    }
+
+    .file-text {
+        font-size: 0.8rem;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .file-info {
+        font-size: 0.7rem;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+    .contact-btn {
+        width: 100px;
+        height: auto;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .upload-form {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .sendMsg-FormBtn {
+        width: 180px !important;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .contact-label,
+    .contact-Heading {
+        width: 150px;
+        text-align: center;
+        margin-bottom: 10px;
     }
 
 }
@@ -2402,6 +2471,84 @@ textarea:focus {
     .box-1-transform {
         height: 290px;
     }
+
+    .contact-form-container {
+        width: 100%;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+        margin: 10px 0;
+    }
+
+    .contact-form {
+        padding: 0px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    textarea {
+        height: 80px;
+        /* Adjust textarea height */
+    }
+
+    .upload-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 220px;
+        padding: 10px;
+    }
+
+    .file-text {
+        font-size: 0.8rem;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .file-info {
+        font-size: 0.7rem;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+    .contact-btn {
+        width: 100px;
+        height: auto;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .upload-form {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .sendMsg-FormBtn {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .contact-label,
+    .contact-Heading {
+        width: 150px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
 
 @media (min-width:250px) and (max-width:260px) {
@@ -2732,6 +2879,83 @@ textarea:focus {
         padding: 0px 15px;
     }
 
+    .contact-form-container {
+        width: 100%;
+    }
+
+    .header h1 {
+        font-size: 2.4rem;
+        margin: 10px 0;
+    }
+
+    .contact-form {
+        padding: 0px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    textarea {
+        height: 90px;
+        /* Adjust textarea height */
+    }
+
+    .upload-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 240px;
+        padding: 10px;
+    }
+
+    .file-text {
+        font-size: 1rem;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .file-info {
+        font-size: 1rem;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+    .contact-btn {
+        width: 100px;
+        height: auto;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .upload-form {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .sendMsg-FormBtn {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .contact-label,
+    .contact-Heading {
+        width: 150px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
 
 @media (min-width: 425px) and (max-width: 576px) {
@@ -3056,6 +3280,84 @@ textarea:focus {
     .padding-transform {
         padding: 0px 15px;
     }
+
+    .contact-form-container {
+        width: 100%;
+    }
+
+    .header h1 {
+        font-size: 2.4rem;
+        margin: 10px 0;
+    }
+
+    .contact-form {
+        padding: 0px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    textarea {
+        height: 90px;
+        /* Adjust textarea height */
+    }
+
+    .upload-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 240px;
+        padding: 10px;
+    }
+
+    .file-text {
+        font-size: 1rem;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .file-info {
+        font-size: 1rem;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+    .contact-btn {
+        width: 100px;
+        height: auto;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .upload-form {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .sendMsg-FormBtn {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .contact-label,
+    .contact-Heading {
+        width: 150px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -3379,6 +3681,84 @@ textarea:focus {
     .padding-transform {
         padding: 0px 15px;
     }
+
+    .contact-form-container {
+        width: 100%;
+    }
+
+    .header h1 {
+        font-size: 2.4rem;
+        margin: 10px 0;
+    }
+
+    .contact-form {
+        padding: 0px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    textarea {
+        height: 90px;
+        /* Adjust textarea height */
+    }
+
+    .upload-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 240px;
+        padding: 10px;
+    }
+
+    .file-text {
+        font-size: 1rem;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .file-info {
+        font-size: 1rem;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+    .contact-btn {
+        width: 100px;
+        height: auto;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .upload-form {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .sendMsg-FormBtn {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .contact-label,
+    .contact-Heading {
+        width: 150px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -3653,6 +4033,84 @@ textarea:focus {
 
     .box-1-p-transform {
         font-size: 17px;
+    }
+
+    .contact-form-container {
+        width: 100%;
+    }
+
+    .header h1 {
+        font-size: 3rem;
+        margin: 10px 0;
+    }
+
+    .contact-form {
+        padding: 0px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    textarea {
+        height: 90px;
+        /* Adjust textarea height */
+    }
+
+    .upload-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 240px;
+        padding: 10px;
+    }
+
+    .file-text {
+        font-size: 1rem;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .file-info {
+        font-size: 1rem;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+    .contact-btn {
+        width: 100px;
+        height: auto;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .upload-form {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .sendMsg-FormBtn {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .contact-label,
+    .contact-Heading {
+        width: 150px;
+        text-align: center;
+        margin-bottom: 10px;
     }
 
 }
