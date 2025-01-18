@@ -4,6 +4,16 @@ import "./css/Home.css";
 import img from "./assets/images/Hrhub-icon-img.png";
 import video from "./Video/home1.mp4";
 
+import { FaAngleRight } from "react-icons/fa6";
+import { FaTwitterSquare } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaRegCopyright } from "react-icons/fa";
+import { IoLocationSharp } from "react-icons/io5";
+import { MdAddIcCall } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
+
 // Swiper
 // import { A11y, Autoplay, EffectCoverflow } from 'swiper/modules';
 // import { Swiper, SwiperSlide } from 'swiper/react';
@@ -1399,6 +1409,264 @@ const Home = () => {
               </form>
             </div>
           </Row>
+        </Container>
+      </div>
+      <div className="card-background" style={{ padding: "70px 0px 0px" }}>
+        <Container
+          style={{
+            margin: "0px auto",
+            overflow: "hidden",
+          }}
+          className="flex"
+        >
+          <div style={{ color: "white" }} className="footer-Main-Class">
+            <div className="">
+              <div className="footerData">
+                <Row>
+                  <Col md="6" sm="12" lg="3">
+                    <div>
+                      <div className="borderleft">
+                        <h3 className="footerLogo flex">BizaPage</h3>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Eos blanditiis, veniam inventore reprehenderit excepturi
+                        libero eius ipsa accusamus temporibus! Harum hic illum
+                        magnam rem odit inventore nisi dolore ea aliquid!
+                      </p>
+                    </div>
+                  </Col>
+                  <Col md="6" sm="12" lg="3">
+                    <div>
+                      <h4 style={{ fontSize: "14px" }}>USEFUL LINKS</h4>
+                      <div className="lineFlex">
+                        <div className="line4"></div>
+                        <div className="line5"></div>
+                        <div className="line5"></div>
+                        <div className="line5"></div>
+                        <div className="line5"></div>
+                        <div className="line5"></div>
+                      </div>
+                      <div
+                        style={{
+                          borderBottom: "1px solid rgba(158, 157, 157, 0.65)",
+                          marginBottom: "10px",
+                        }}
+                      >
+                        <div
+                          style={{
+                            paddingBottom: "10px",
+                            display: "flex",
+                            alignItems: "center",
+                          }}
+                          className="footer-hover"
+                        >
+                          <FaAngleRight className="rightArrow-footer" />
+                          <h5
+                            style={{
+                              marginBottom: "0px",
+                              fontSize: "14px",
+                              marginLeft: "10px",
+                            }}
+                          >
+                            Home
+                          </h5>
+                        </div>
+                      </div>
+                      <div
+                        style={{
+                          borderBottom: "1px solid rgba(158, 157, 157, 0.65)",
+                          marginBottom: "10px",
+                        }}
+                      >
+                        <div
+                          style={{
+                            paddingBottom: "10px",
+                            display: "flex",
+                            alignItems: "center",
+                          }}
+                          className="footer-hover"
+                        >
+                          <FaAngleRight className="rightArrow-footer" />
+                          <h5
+                            style={{
+                              marginBottom: "0px",
+                              fontSize: "14px",
+                              marginLeft: "10px",
+                            }}
+                          >
+                            Abot uS
+                          </h5>
+                        </div>
+                      </div>
+                      <div
+                        style={{
+                          borderBottom: "1px solid rgba(158, 157, 157, 0.65)",
+                          marginBottom: "10px",
+                        }}
+                      >
+                        <div
+                          style={{
+                            paddingBottom: "10px",
+                            display: "flex",
+                            alignItems: "center",
+                          }}
+                          className="footer-hover"
+                        >
+                          <FaAngleRight className="rightArrow-footer" />
+                          <h5
+                            style={{
+                              marginBottom: "0px",
+                              fontSize: "14px",
+                              marginLeft: "10px",
+                            }}
+                          >
+                            Services
+                          </h5>
+                        </div>
+                      </div>
+                      <div
+                        style={{
+                          borderBottom: "1px solid rgba(158, 157, 157, 0.65)",
+                          marginBottom: "10px",
+                        }}
+                      >
+                        <div
+                          style={{
+                            paddingBottom: "10px",
+                            display: "flex",
+                            alignItems: "center",
+                          }}
+                          className="footer-hover"
+                        >
+                          <FaAngleRight className="rightArrow-footer" />
+                          <h5
+                            style={{
+                              marginBottom: "0px",
+                              fontSize: "14px",
+                              marginLeft: "10px",
+                            }}
+                          >
+                            Term of service
+                          </h5>
+                        </div>
+                      </div>
+                      <div
+                        style={{
+                          borderBottom: "1px solid rgba(158, 157, 157, 0.65)",
+                          marginBottom: "10px",
+                        }}
+                      >
+                        <div
+                          style={{
+                            paddingBottom: "10px",
+                            display: "flex",
+                            alignItems: "center",
+                          }}
+                          className="footer-hover"
+                        >
+                          <FaAngleRight className="rightArrow-footer" />
+                          <h5
+                            style={{
+                              marginBottom: "0px",
+                              fontSize: "14px",
+                              marginLeft: "10px",
+                            }}
+                          >
+                            Privacy policy
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col md="6" sm="12" lg="3">
+                    <h4 style={{ fontSize: "14px" }}>CONTACT US</h4>
+                    <div className="lineFlex">
+                      <div className="line4"></div>
+                      <div className="line5"></div>
+                      <div className="line5"></div>
+                      <div className="line5"></div>
+                      <div className="line5"></div>
+                      <div className="line5"></div>
+                    </div>
+                    <div>
+                      <div
+                        style={{ marginBottom: "10px",cursor:"pointer" }}
+                        className="space-around"
+                      >
+                        <div style={{ marginRight: "5px", fontSize: "20px" }}>
+                          <IoLocationSharp />
+                        </div>
+                        A108 Adam Street New York, NY 535022
+                      </div>
+                      <div style={{ marginBottom: "10px",cursor:"pointer"  }}  className="space-around">
+                        <div style={{ marginRight: "5px", fontSize: "20px" }}>
+                          <MdAddIcCall />
+                        </div>
+                        <div className="flex">+1 5589 55488 55</div>
+                      </div>
+                      <div style={{ marginBottom: "10px",cursor:"pointer"  }}  className="space-around">
+                        <div style={{ marginRight: "5px", fontSize: "20px" }}>
+                          <MdEmail />
+                        </div>
+                        <div className="flex">info@example.com</div>
+                      </div>
+                    </div>
+                    <div style={{ display: "flex" }}>
+                      <div style={{ fontSize: "35px", marginRight: "5px" }} className="icon-Hover">
+                        <FaTwitterSquare />
+                      </div>
+                      <div style={{ fontSize: "35px", marginRight: "5px" }} className="icon-Hover">
+                        <FaFacebookSquare />
+                      </div>
+                      <div style={{ fontSize: "35px", marginRight: "5px" }} className="icon-Hover">
+                        <FaInstagramSquare />
+                      </div>
+                      <div style={{ fontSize: "35px", marginRight: "5px" }} className="icon-Hover">
+                        <FaLinkedin />
+                      </div>
+                    </div>
+                  </Col>
+                  <Col md="6" sm="12" lg="3">
+                    <h4 style={{ fontSize: "14px" }}>OUR NEWSLETTER</h4>
+                    <div className="lineFlex">
+                      <div className="line4"></div>
+                      <div className="line5"></div>
+                      <div className="line5"></div>
+                      <div className="line5"></div>
+                      <div className="line5"></div>
+                      <div className="line5"></div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eos blanditiis, veniam inventore reprehenderit excepturi
+                      libero eius ipsa accusamus temporibus!
+                    </p>
+                  </Col>
+                </Row>
+              </div>
+            </div>
+            <hr className="footer-horizontal" />
+            <div
+              style={{
+                color: "white",
+                padding: "20px",
+              }}
+            >
+              <p className="flex" style={{ marginBottom: "5px" }}>
+                {" "}
+                <FaRegCopyright style={{ marginRight: "5px" }} /> Copyright{" "}
+                <strong style={{ margin: "0px 5px" }}>BizPage.</strong> All
+                Rights Reserved{" "}
+              </p>
+              <p className="flex" style={{ marginBottom: "5px" }}>
+                Designed by{" "}
+                <strong style={{ color: "#3e5dc2", marginLeft: "5px" }}>
+                  Career Guidance Team
+                </strong>{" "}
+              </p>
+            </div>
+          </div>
         </Container>
       </div>
     </div>
