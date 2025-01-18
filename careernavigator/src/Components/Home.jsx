@@ -1318,6 +1318,167 @@ const Home = () => {
           </Row>
         </Container>
       </div>
+      <div style={{ backgroundColor: "var(--body-bg)" }}>
+        <Container
+          style={{ margin: "0 auto", padding: "80px 0", overflow: "hidden" }}
+        >
+          <Row>
+            <Col md={12} sm={12} lg={12} xs={12}>
+              <div className="emp-expr flex contact-btn">
+                Reach Out To Us{" "}
+                <i
+                  class="fa-solid fa-arrow-right"
+                  style={{ marginLeft: "8px" }}
+                ></i>
+              </div>
+            </Col>
+            <Col md={12} sm={12} lg={12} xs={12}>
+              {" "}
+              <h1
+                style={{
+                  textTransform: "capitalize",
+                  fontWeight: "700",
+                  letterSpacing: "2px",
+                }}
+                className="col-h1"
+              >
+                Don't Hesitate To Reach Us
+              </h1>{" "}
+            </Col>
+            <div className="contact-form-container">
+              <form className="contact-form">
+                <Col>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      placeholder="Your Name*"
+                      required
+                      style={{ margin: "0px 10px" }}
+                    />
+                    <input
+                      type="email"
+                      placeholder="Email Address*"
+                      required
+                      style={{ margin: "0px 10px" }}
+                    />
+                  </div>
+                </Col>
+                <Col>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      placeholder="Mobile Number*"
+                      required
+                      style={{ margin: "0px 10px" }}
+                    />
+                    <select required style={{ margin: "0px 10px" }}>
+                      <option value="" disabled selected>
+                        Choose types of service*
+                      </option>
+                      <option value="service1">Service 1</option>
+                      <option value="service2">Service 2</option>
+                    </select>
+                  </div>
+                </Col>
+                <Col>
+                  <div style={{ margin: "0px 10px" }}>
+                    <textarea placeholder="Additional Message"></textarea>
+                  </div>
+                </Col>
+                <Col style={{ marginTop: "20px" }} className="upload-form">
+                  <div>
+                    <div
+                      className="upload-section"
+                      style={{ margin: "0px 10px" }}
+                    >
+                      <label htmlFor="file-upload" className="contact-btn">
+                        <span>
+                          <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                          <span style={{ marginLeft: "10px" }}>upload</span>
+                        </span>
+                        <input
+                          id="file-upload"
+                          type="file"
+                          accept=".pdf,.jpg,.png,.doc"
+                          style={{ display: "none" }}
+                        />
+                      </label>
+                      <span className="file-text">No file chosen</span>
+                    </div>
+                    <p className="file-info">
+                      *Upload your resume in pdf, jpg, png, or doc format.
+                    </p>
+                  </div>
+                  <div>
+                    <a type="button" href="#" className="btn1 send-msg-form-btn">
+                      <span>send Message</span>
+                      <div className="box">
+                        <div className="arrow-cross">
+                          <i className="fa-solid fa-arrow-up"></i>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </Col>
+              </form>
+            </div>
+          </Row>
+        </Container>
+        {/* <div className="contact-form-container">
+          <form className="contact-form">
+            <div className="form-group">
+              <input
+                type="text"
+                placeholder="Your Name*"
+                required
+                style={{ margin: "0px 10px" }}
+              />
+              <input
+                type="email"
+                placeholder="Email Address*"
+                required
+                style={{ margin: "0px 10px" }}
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                placeholder="Mobile Number*"
+                required
+                style={{ margin: "0px 10px" }}
+              />
+              <select required style={{ margin: "0px 10px" }}>
+                <option value="" disabled selected>
+                  Choose types of service*
+                </option>
+                <option value="service1">Service 1</option>
+                <option value="service2">Service 2</option>
+              </select>
+            </div>
+            <div style={{ margin: "0px 10px" }}>
+              <textarea placeholder="Additional Message"></textarea>
+            </div>
+            <div className="upload-section" style={{ margin: "0px 10px" }}>
+              <label htmlFor="file-upload" className="upload-button">
+                <span>Upload</span>
+                <input
+                  id="file-upload"
+                  type="file"
+                  accept=".pdf,.jpg,.png,.doc"
+                  style={{ display: "none" }}
+                />
+              </label>
+              <span className="file-text">No file chosen</span>
+            </div>
+            <p className="file-info">
+              *Upload your resume in pdf, jpg, png, or doc format.
+            </p>
+            <button type="submit" className="send-message-button">
+              SEND MESSAGE
+            </button>
+          </form>
+        </div> */}
+      </div>
     </div>
   );
 };
