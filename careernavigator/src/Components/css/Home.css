@@ -176,7 +176,7 @@ a {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 85px;
     height: 2px;
     background-color: white;
     transform-origin: left;
@@ -1700,11 +1700,13 @@ textarea:focus {
 }
 
 /* footer csss------------- */
+/* General styles */
 .footerLogo {
     font-size: 40px;
     width: 170px;
     background-size: cover;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .borderleft {
@@ -1720,14 +1722,18 @@ textarea:focus {
     margin-bottom: 20px;
 }
 
-.line4 {
-    border-bottom: 3px solid #0056b3;
+.line4,
+.line5 {
+    border-bottom: 3px solid;
     width: 3.5rem;
 }
 
+.line4 {
+    border-color: #0056b3;
+}
+
 .line5 {
-    border-bottom: 3px solid #9e9e9e7d;
-    width: 3.5rem;
+    border-color: #9e9e9e7d;
 }
 
 .footer-Main-Class {
@@ -1738,45 +1744,127 @@ textarea:focus {
     margin: 0px;
 }
 
-.footerLogo {
+.footer-hover {
+    transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 
-.footer-hover {
-    transition: .3s ease-in-out;
-    cursor: pointer;
+.footer-hover h5 {
+    transition: 0.3s ease-in-out;
 }
 
 .rightArrow-footer {
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     cursor: pointer;
-    /* color: gray; */
 }
 
 .footer-hover:hover .rightArrow-footer {
     color: gray !important;
-    transition: .3s ease-in-out;
     transform: translateX(10px);
 }
 
 .footer-hover:hover h5 {
     letter-spacing: 2px;
-    transition: .3s ease-in-out;
-    font-size: 20px !important;
+    transform: translateX(10px);
+    transition: 0.3s ease-in-out;
     color: gray;
 }
 
 .space-around {
+    margin-bottom: 10px;
+    cursor: pointer;
     display: flex;
-    align-items: top;
+
 }
-.icon-Hover{
-    transition: .3s ease-in-out;
-    cursor:pointer;
+
+.icon-Hover {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
-.icon-Hover:hover{
-    transition: .3s ease-in-out;
+
+.icon-Hover:hover {
     color: #0056b3;
+}
+
+.summary-footer {
+    margin-bottom: 0px;
+}
+
+.heading-h4-footer {
+    font-size: 15px;
+}
+.icon-footer-flex{
+    display: flex;
+}
+
+/* Responsive styles */
+
+@media (max-width: 991px) {
+    .footerLogo {
+        font-size: 30px;
+        width: 140px;
+    }
+
+    .footerData {
+        padding: 30px 10px 15px;
+    }
+
+    .line4,
+    .line5 {
+        width: 100%;
+    }
+    .footer-hover:hover h5 {
+        font-size: 18px !important;
+    }
+    .icon-footer-flex{
+        display: flex;
+        align-items: center;
+    }
+    .summary-footer {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .second-col-footer {
+        margin-top: 30px !important;
+    }
+
+    .second-col-footer h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footerLogo {
+        font-size: 25px;
+        width: 120px;
+    }
+
+    .footerData {
+        padding: 20px 5px 10px;
+    }
+
+    .line4,
+    .line5 {
+        width: 100%;
+    }
+
+    h5 {
+        font-size: 16px !important;
+    }
+
+    .summary-footer {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .second-col-footer {
+        margin-top: 30px !important;
+    }
+
+    .second-col-footer h4 {
+        font-size: 20px;
+    }
 }
 
 

@@ -1423,12 +1423,12 @@ const Home = () => {
             <div className="">
               <div className="footerData">
                 <Row>
-                  <Col md="6" sm="12" lg="3">
+                  <Col md="6" sm="12" lg="3" className="second-col-footer">
                     <div>
                       <div className="borderleft">
                         <h3 className="footerLogo flex">BizaPage</h3>
                       </div>
-                      <p>
+                      <p className="summary-footer">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Eos blanditiis, veniam inventore reprehenderit excepturi
                         libero eius ipsa accusamus temporibus! Harum hic illum
@@ -1436,9 +1436,9 @@ const Home = () => {
                       </p>
                     </div>
                   </Col>
-                  <Col md="6" sm="12" lg="3">
+                  <Col md="6" sm="12" lg="3" className="second-col-footer">
                     <div>
-                      <h4 style={{ fontSize: "14px" }}>USEFUL LINKS</h4>
+                      <h4 className="heading-h4-footer">USEFUL LINKS</h4>
                       <div className="lineFlex">
                         <div className="line4"></div>
                         <div className="line5"></div>
@@ -1579,8 +1579,8 @@ const Home = () => {
                       </div>
                     </div>
                   </Col>
-                  <Col md="6" sm="12" lg="3">
-                    <h4 style={{ fontSize: "14px" }}>CONTACT US</h4>
+                  <Col md="6" sm="12" lg="3" className="second-col-footer">
+                    <h4 className="heading-h4-footer">CONTACT US</h4>
                     <div className="lineFlex">
                       <div className="line4"></div>
                       <div className="line5"></div>
@@ -1590,45 +1590,60 @@ const Home = () => {
                       <div className="line5"></div>
                     </div>
                     <div>
-                      <div
-                        style={{ marginBottom: "10px",cursor:"pointer" }}
-                        className="space-around"
-                      >
+                      <div className="space-around">
                         <div style={{ marginRight: "5px", fontSize: "20px" }}>
                           <IoLocationSharp />
                         </div>
                         A108 Adam Street New York, NY 535022
                       </div>
-                      <div style={{ marginBottom: "10px",cursor:"pointer"  }}  className="space-around">
+                      <div
+                        style={{ marginBottom: "10px", cursor: "pointer" }}
+                        className="space-around"
+                      >
                         <div style={{ marginRight: "5px", fontSize: "20px" }}>
                           <MdAddIcCall />
                         </div>
                         <div className="flex">+1 5589 55488 55</div>
                       </div>
-                      <div style={{ marginBottom: "10px",cursor:"pointer"  }}  className="space-around">
+                      <div
+                        style={{ marginBottom: "10px", cursor: "pointer" }}
+                        className="space-around"
+                      >
                         <div style={{ marginRight: "5px", fontSize: "20px" }}>
                           <MdEmail />
                         </div>
                         <div className="flex">info@example.com</div>
                       </div>
                     </div>
-                    <div style={{ display: "flex" }}>
-                      <div style={{ fontSize: "35px", marginRight: "5px" }} className="icon-Hover">
+                    <div className="icon-footer-flex">
+                      <div
+                        style={{ fontSize: "35px", marginRight: "5px" }}
+                        className="icon-Hover"
+                      >
                         <FaTwitterSquare />
                       </div>
-                      <div style={{ fontSize: "35px", marginRight: "5px" }} className="icon-Hover">
+                      <div
+                        style={{ fontSize: "35px", marginRight: "5px" }}
+                        className="icon-Hover"
+                      >
                         <FaFacebookSquare />
                       </div>
-                      <div style={{ fontSize: "35px", marginRight: "5px" }} className="icon-Hover">
+                      <div
+                        style={{ fontSize: "35px", marginRight: "5px" }}
+                        className="icon-Hover"
+                      >
                         <FaInstagramSquare />
                       </div>
-                      <div style={{ fontSize: "35px", marginRight: "5px" }} className="icon-Hover">
+                      <div
+                        style={{ fontSize: "35px", marginRight: "5px" }}
+                        className="icon-Hover"
+                      >
                         <FaLinkedin />
                       </div>
                     </div>
                   </Col>
-                  <Col md="6" sm="12" lg="3">
-                    <h4 style={{ fontSize: "14px" }}>OUR NEWSLETTER</h4>
+                  <Col md="6" sm="12" lg="3" className="second-col-footer">
+                    <h4 className="heading-h4-footer">OUR NEWSLETTER</h4>
                     <div className="lineFlex">
                       <div className="line4"></div>
                       <div className="line5"></div>
@@ -1637,7 +1652,7 @@ const Home = () => {
                       <div className="line5"></div>
                       <div className="line5"></div>
                     </div>
-                    <p>
+                    <p className="summary-footer">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Eos blanditiis, veniam inventore reprehenderit excepturi
                       libero eius ipsa accusamus temporibus!
@@ -1651,20 +1666,17 @@ const Home = () => {
               style={{
                 color: "white",
                 padding: "20px",
+                textAlign: "center",
               }}
             >
-              <p className="flex" style={{ marginBottom: "5px" }}>
-                {" "}
-                <FaRegCopyright style={{ marginRight: "5px" }} /> Copyright{" "}
-                <strong style={{ margin: "0px 5px" }}>BizPage.</strong> All
-                Rights Reserved{" "}
-              </p>
-              <p className="flex" style={{ marginBottom: "5px" }}>
+                <FaRegCopyright style={{ marginRight: "7px" }} /> Copyright{" "}
+                BizPage.All Rights Reserved
+              <div>
                 Designed by{" "}
                 <strong style={{ color: "#3e5dc2", marginLeft: "5px" }}>
                   Career Guidance Team
-                </strong>{" "}
-              </p>
+                </strong>
+              </div>
             </div>
           </div>
         </Container>
