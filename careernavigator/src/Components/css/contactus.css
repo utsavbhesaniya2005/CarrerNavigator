@@ -6,7 +6,7 @@
     .mainBg {
         background-image: url('../assets/images/breadcrumb-img.jpg');
         width: 100%;
-        height: 57vh;
+        height: 87vh;
         background-size: cover;
         background-position: center;
         position: relative;
@@ -27,14 +27,15 @@
     .Content-txt {
         position: absolute;
         z-index: 3;
-        /* margin: auto 10px; */
         text-align: center;
     }
 
     .Content-h3 {
         position: relative;
-        top: 22vh;
-        /* left: 5vw; */
+        top: 50vh;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 50px !important;
     }
 
     .make-btn {
@@ -42,8 +43,7 @@
         height: 2rem;
         border: 1px solid blue;
         position: relative;
-        top: 24vh;
-        /* left: 5vw; */
+        top: 51vh;
         border-radius: 7px;
         background-color: rgb(3, 3, 43);
         display: flex;
@@ -52,15 +52,38 @@
         color: white;
     }
 
-    .make-btn2 {
-        width: 8rem;
-        height: 2rem;
-        border: 1px solid rgba(18, 104, 251, .3);
-        border-radius: 7px;
-        background-color: #d9f1ff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgba(0, 0, 255, 0.573);
-        font-weight: 600;
+    .icon-below-box {
+        width: 80px;
+        height: 80px;
+        border: 1px solid #82d1ff;
+        border-radius: 20px;
+        background-color: #D9F1FF;
+    }
+
+    .icon-box {
+        width: 60px;
+        height: 60px;
+        background-color: #1268fb;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .icon-meaning {
+        font-weight: 700;
+        margin: 15px 0px 0px 0px;
+    }
+
+    .icon-description {
+        margin-bottom: 0px;
+        margin-top: 10px;
+        color: rgb(99, 98, 98);
+        font-weight: 500;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+        display: inline;
+    }
+
+    .description-contactUs-icon:hover p {
+        color: #1268fb;
+        transition: .3s ease-in-out;
     }
