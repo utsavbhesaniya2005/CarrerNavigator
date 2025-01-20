@@ -267,7 +267,7 @@ function Contactus() {
                 class="fa-solid fa-arrow-left"
                 style={{ marginRight: "8px" }}
               ></i>
-              <p className="tranforming-p">Transforming Workplaces</p>{" "}
+              <p className="tranforming-p">Tour Our Various Sites</p>{" "}
               <i
                 class="fa-solid fa-arrow-right"
                 style={{ marginLeft: "8px" }}
@@ -290,14 +290,20 @@ function Contactus() {
               data-aos-mirror="true"
               data-aos-once="false"
             >
-              <h1 className="video-h1">
-                Building Better Teams, One Hire At A Time
-              </h1>
+              <h1 className="video-h1">Explore Our Other Locations</h1>
             </div>
           </Col>
           <Col>
             <div className="map-main-box">
-
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3087.540813253558!2d-76.61411630048937!3d39.29866302513345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8049765e14a59%3A0xdc8161350711f86e!2sSciTechSyndicate!5e0!3m2!1sen!2sin!4v1737386206861!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: "0" }}
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </Col>
         </Row>
