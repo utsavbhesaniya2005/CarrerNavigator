@@ -87,3 +87,10 @@
         color: #1268fb;
         transition: .3s ease-in-out;
     }
+    .below-box-contact-form{
+        width: 100%;
+        height: 100%;
+        border: 1px solid #82d1ff;
+        background-color: #D9F1FF;
+        border-radius: 40px;
+    }

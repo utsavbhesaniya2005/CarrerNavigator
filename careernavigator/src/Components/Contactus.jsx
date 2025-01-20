@@ -190,7 +190,61 @@ function Contactus() {
               </Col>
             </Row>
           </Col>
-          <Col lg={6} md={12} sm={12} xs={12}></Col>
+          <Col lg={6} md={12} sm={12} xs={12}>
+            <div className="below-box-contact-form flex">
+              <div className="contact-form-container">
+                <form className="contact-form">
+                  <Col>
+                    <div className="form-group">
+                      <input type="text" placeholder="Your Name*" required />
+                      <input
+                        type="email"
+                        placeholder="Email Address*"
+                        required
+                      />
+                    </div>
+                  </Col>
+                  <Col>
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        placeholder="Mobile Number*"
+                        required
+                      />
+                      <select required>
+                        <option value="" disabled selected>
+                          Choose types of service*
+                        </option>
+                        <option value="service1">Service 1</option>
+                        <option value="service2">Service 2</option>
+                      </select>
+                    </div>
+                  </Col>
+                  <Col>
+                    <div className="form-group">
+                      <textarea placeholder="Additional Message"></textarea>
+                    </div>
+                  </Col>
+                  <Col style={{ marginTop: "20px" }}>
+                    <div>
+                      <a
+                        type="button"
+                        href="#"
+                        className="btn1 sendMsg-FormBtn "
+                      >
+                        <span>Send Message</span>
+                        <div className="box">
+                          <div className="arrow-cross">
+                            <i className="fa-solid fa-arrow-up"></i>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </Col>
+                </form>
+              </div>
+            </div>
+          </Col>
         </Row>
       </Container>
     </div>

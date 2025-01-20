@@ -15,10 +15,10 @@ import { MdAddIcCall } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
 
 // Swiper
-// import { A11y, Autoplay, EffectCoverflow } from 'swiper/modules';
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import 'swiper/css/effect-coverflow';
-// import 'swiper/css';
+import { A11y, Autoplay, EffectCoverflow } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css';
 
 const PercentageCol = ({ iconClass, title, targetPercentage, description }) => {
   const [percentage, setPercentage] = useState(0);
@@ -801,7 +801,7 @@ const Home = () => {
               </a>
             </Col>
             <Col lg={12} md={12} className="main-slider">
-              {/* <Swiper
+              <Swiper
                 effect={'coverflow'}
                 coverflowEffect={{
                   rotate: 50,
@@ -911,7 +911,7 @@ const Home = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-              </Swiper> */}
+              </Swiper>
             </Col>
           </Row>
         </Container>
