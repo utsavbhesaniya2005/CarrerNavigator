@@ -1,7 +1,7 @@
 import React from "react";
+import "./css/Home.css";
 import "../Components/css/contactus.css";
 import { Col, Container, Row } from "react-bootstrap";
-import "./css/Home.css";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
@@ -192,7 +192,10 @@ function Contactus() {
           </Col>
           <Col lg={6} md={12} sm={12} xs={12}>
             <div className="below-box-contact-form flex">
-              <div className="contact-form-container">
+              <div className="contact-form-container ">
+                <div className="feedBack-heading flex">
+                  <h2>Feedback Form</h2>
+                </div>
                 <form className="contact-form">
                   <Col>
                     <div className="form-group">
@@ -226,11 +229,11 @@ function Contactus() {
                     </div>
                   </Col>
                   <Col style={{ marginTop: "20px" }}>
-                    <div>
+                    <div style={{ marginTop: "30px" }}>
                       <a
                         type="button"
                         href="#"
-                        className="btn1 sendMsg-FormBtn "
+                        className="btn1 sendMsg-FormBtn"
                       >
                         <span>Send Message</span>
                         <div className="box">
@@ -247,6 +250,58 @@ function Contactus() {
           </Col>
         </Row>
       </Container>
+      <div
+        style={{ overflow: "hidden", margin: "0px auto", padding: "40px 0px" }}
+      >
+        <Row>
+          <Col
+            className="flex"
+            md={12}
+            lg={12}
+            sm={12}
+            xm={12}
+            style={{ marginBottom: "20px" }}
+          >
+            <div className="emp-expr-2 flex">
+              <i
+                class="fa-solid fa-arrow-left"
+                style={{ marginRight: "8px" }}
+              ></i>
+              <p className="tranforming-p">Transforming Workplaces</p>{" "}
+              <i
+                class="fa-solid fa-arrow-right"
+                style={{ marginLeft: "8px" }}
+              ></i>
+            </div>
+          </Col>
+          <Col
+            md={12}
+            lg={12}
+            sm={12}
+            xm={12}
+            className="flex"
+            style={{ marginBottom: "40px" }}
+          >
+            <div
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              <h1 className="video-h1">
+                Building Better Teams, One Hire At A Time
+              </h1>
+            </div>
+          </Col>
+          <Col>
+            <div className="map-main-box">
+
+            </div>
+          </Col>
+        </Row>
+      </div>
     </div>
   );
 }
