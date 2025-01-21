@@ -1,0 +1,29 @@
+* .logo-main-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    height: 20vh;
+}
+
+.logoBox {
+    background-color: rgb(247, 246, 246);
+    width: 250px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo1 {
+    /* background-image: url('../assets/images/home3-clientlogo-img-01.png'); */
+    width: 250px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

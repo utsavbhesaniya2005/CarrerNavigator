@@ -7,13 +7,15 @@ import 'aos/dist/aos.css';
 import './Components/assets/css/style.css';
 import './App.css';
 import Header from './Components/Header/Header';
+import About from './Components/About';
 
 function App() {
   return (
     <>
       {/* <Header /> */}
-      {/* <Home></Home> */}
-      <Contactus></Contactus>
+      <Home></Home>
+      {/* <Contactus></Contactus> */}
+      <About></About>
     </>
   );
 }
