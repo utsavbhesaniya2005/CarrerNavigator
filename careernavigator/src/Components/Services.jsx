@@ -2,9 +2,9 @@ import React from "react";
 import "./css/Home.css";
 import "../Components/css/contactus.css";
 import { Col, Container, Row } from "react-bootstrap";
-import "../Components/css/about.css";
+import "../Components/css/services.css";
 
-function About() {
+function Services() {
   return (
     <div style={{ height: "auto" }}>
       <div className="mainBg">
@@ -15,7 +15,7 @@ function About() {
                 style={{ color: "white", fontSize: "45px", margin: "0px" }}
                 className="Content-h3"
               >
-                Contact Us
+                Our Services
               </h3>
               <div className="make-btn">
                 <span style={{ marginRight: "5px", cursor: "pointer" }}>
@@ -25,7 +25,7 @@ function About() {
                   className="fa-solid fa-arrow-right"
                   style={{ marginLeft: "8px" }}
                 ></i>
-                <span style={{ marginLeft: "8px" }}>Contact Us</span>
+                <span style={{ marginLeft: "8px" }}>Our Services</span>
               </div>
             </div>
           </Container>
@@ -350,7 +350,7 @@ function About() {
           </Row>
         </Container>
       </div>
-      <div style={{backgroundColor:"#D9F1FF"}}>
+      <div style={{ backgroundColor: "#D9F1FF" }}>
         <Container
           style={{
             margin: "0px auto",
@@ -358,13 +358,14 @@ function About() {
             overflow: "hidden",
           }}
         >
-            <div className="logo-main-row">
-                <div className="logoBox"><div className="logo1"></div></div>
+          <div className="logo-main-row">
+            <div className="logoBox">
+              <div className="logo1"></div>
             </div>
+          </div>
         </Container>
       </div>
     </div>
   );
 }
-
-export default About;
+export default Services;
