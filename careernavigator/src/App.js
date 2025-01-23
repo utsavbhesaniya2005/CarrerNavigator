@@ -5,16 +5,18 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Components/assets/css/style.css';
 import './App.css';
-import Header from './Components/Header/Header';
+import Header from './Components/css/Header/Header';
 import Services from './Components/Services';
+import Pricing from './Components/Pricing';
 
 function App() {
   return (
     <>
       {/* <Header /> */}
-      {/* <Home></Home> */}
+      <Home></Home>
       {/* <Contactus></Contactus> */}
-      <Services></Services>
+      {/* <Services></Services> */}
+      {/* <Pricing></Pricing> */}
     </>
   );
 }

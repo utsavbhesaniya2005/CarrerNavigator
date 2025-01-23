@@ -3,27 +3,182 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     width: 100%;
-    height: 20vh;
+    height: 100%;
 }
 
 .logoBox {
     background-color: rgb(247, 246, 246);
-    width: 250px;
+    width: 280px;
     height: 100px;
-    border-radius: 20px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    border: 1px solid #b3e2fd;
+    transition: .3s ease-in-out;
+}
+
+.logoBox-Small {
+    background-color: rgb(247, 246, 246);
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid #b3e2fd;
+    transition: .3s ease-in-out;
+}
+
+.logoBox:hover,
+.logoBox-Small:hover {
+    box-shadow: 0 4px 8px rgba(179, 226, 253, 0.8);
+    transition: .3s ease-in-out;
 }
 
 .logo1 {
-    /* background-image: url('../assets/images/home3-clientlogo-img-01.png'); */
+    background-image: url('../assets/images/home3-clientlogo-img-01.png');
     width: 250px;
-    height: 120px;
+    height: 100px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.s-logo {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo2 {
+    background-image: url('../assets/images/home3-clientlogo-img-02.png');
+}
+
+.logo3 {
+    background-image: url('../assets/images/home3-clientlogo-img-08.png');
+}
+
+.logo4 {
+    background-image: url('../assets/images/home3-clientlogo-img-03.png');
+}
+
+.logo5 {
+    background-image: url('../assets/images/home3-clientlogo-img-09.png');
+}
+
+.logo6 {
+    background-image: url('../assets/images/home3-clientlogo-img-10.png');
+}
+
+.logo7 {
+    background-image: url('../assets/images/home3-clientlogo-img-04.png');
+}
+
+.logo8 {
+    background-image: url('../assets/images/home3-clientlogo-img-05.png');
+}
+
+.logo9 {
+    background-image: url('../assets/images/home3-clientlogo-img-07.png');
+}
+
+.logo10 {
+    background-image: url('../assets/images/home3-clientlogo-img-06.png');
+}
+
+.logo11 {
+    background-image: url('../assets/images/home3-clientlogo-img-11.png');
+}
+
+.logo12 {
+    background-image: url('../assets/images/home3-clientlogo-img-13.png');
+}
+
+.logo13 {
+    background-image: url('../assets/images/home3-clientlogo-img-15.png');
+}
+
+.logo14 {
+    background-image: url('../assets/images/home3-clientlogo-img-12.png');
+}
+
+.logo15 {
+    background-image: url('../assets/images/home3-clientlogo-img-14.png');
+}
+
+.email-container {
+    text-align: center;
+}
+
+.inputBox {
+    display: flex;
+    align-items: center;
+    background-color: #0c1424;
+    /* Input background color */
+    border: 1px solid #0e0af3;
+    /* Border color */
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.inputBox input {
+    flex: 1;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #d1d8e0;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.inputBox button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3366ff;
+    /* Button background */
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 15px 25px;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.inputBox button:hover {
+    background-color: #1a50c1;
+    /* Hover effect */
+}
+
+.inputBox .arrow {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #a1a7b2;
+}
+
+p a {
+    color: #3366ff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+.width-feedBack{
+    width: 130px !important;
 }

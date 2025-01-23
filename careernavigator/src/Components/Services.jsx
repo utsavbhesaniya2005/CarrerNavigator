@@ -358,12 +358,175 @@ function Services() {
             overflow: "hidden",
           }}
         >
+          <Row>
+            <Col
+              className="flex"
+              md={12}
+              lg={12}
+              sm={12}
+              xm={12}
+              style={{ marginBottom: "20px" }}
+            >
+              <div className="emp-expr-2 flex" style={{ width: "12rem" }}>
+                <i
+                  class="fa-solid fa-arrow-left"
+                  style={{ marginRight: "8px" }}
+                ></i>
+                <p className="tranforming-p">Client Excellence</p>{" "}
+                <i
+                  class="fa-solid fa-arrow-right"
+                  style={{ marginLeft: "8px" }}
+                ></i>
+              </div>
+            </Col>
+            <Col
+              md={12}
+              lg={12}
+              sm={12}
+              xm={12}
+              className="flex"
+              style={{ marginBottom: "20px" }}
+            >
+              <div
+                data-aos="zoom-in"
+                data-aos-offset="200"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+              >
+                <h1 className="video-h1">
+                  What drives us: Passion for <br /> People, Dedication to
+                  Results
+                </h1>
+              </div>
+            </Col>
+            <Col
+              md={12}
+              lg={12}
+              sm={12}
+              xm={12}
+              className="flex"
+              style={{ marginBottom: "40px" }}
+            >
+              <p
+                style={{
+                  marginBottom: "0px",
+                  fontSize: "20px",
+                  color: "gray",
+                  fontWeight: "500",
+                }}
+              >
+                Consequat orci urna ridiculus blandit urna non leo magnis
+                aptent.
+              </p>
+            </Col>
+          </Row>
           <div className="logo-main-row">
             <div className="logoBox">
               <div className="logo1"></div>
             </div>
+            <div className="logoBox">
+              <div className="logo1 logo2"></div>
+            </div>
+            <div className="logoBox-Small">
+              <div className="s-logo logo3"></div>
+            </div>
+            <div className="logoBox">
+              <div className="logo1 logo4"></div>
+            </div>
+            <div className="logoBox-Small">
+              <div className="s-logo logo5"></div>
+            </div>
+            <div className="logoBox-Small">
+              <div className="s-logo logo6"></div>
+            </div>
+            <div className="logoBox">
+              <div className="logo1 logo7"></div>
+            </div>
+            <div className="logoBox">
+              <div className="logo1 logo8"></div>
+            </div>
+            <div className="logoBox-Small">
+              <div className="s-logo logo9"></div>
+            </div>
+            <div className="logoBox">
+              <div className="logo1 logo10"></div>
+            </div>
+            <div className="logoBox">
+              <div className="logo1 logo11"></div>
+            </div>
+            <div className="logoBox">
+              <div className="logo1 logo12"></div>
+            </div>
+            <div className="logoBox-Small">
+              <div className="s-logo logo13"></div>
+            </div>
+            <div className="logoBox">
+              <div className="logo1 logo14"></div>
+            </div>
+            <div className="logoBox-Small">
+              <div className="s-logo logo15"></div>
+            </div>
           </div>
         </Container>
+      </div>
+      <div
+        style={{
+          backgroundColor: "#030333",
+          overflow: "hidden",
+          margin: "0px auto",
+          padding: "60px 30px",
+        }}
+      >
+        <Row>
+          <Col lg={6} md={12} sm={12} xs={12} className="flex">
+            <div>
+              <div className="center-responsive">
+                <div className="emp-expr-3 flex" style={{ width: "220px" }}>
+                  Newsletter Subscription{" "}
+                  <i
+                    class="fa-solid fa-arrow-right"
+                    style={{ marginLeft: "8px" }}
+                  ></i>
+                </div>
+              </div>
+              <div className="All-in-one">
+                <h1 className="col-2-h1" style={{ fontSize: "35px" }}>
+                  Don't Miss Out On Exclusive <br /> Insights And Special
+                  Promotions
+                </h1>
+              </div>
+            </div>
+          </Col>
+          <Col lg={6} md={12} sm={12} xs={12} className="flex">
+            <div className="flex">
+              <div class="email-container">
+                <div class="inputBox">
+                  <input
+                    type="email"
+                    placeholder="Enter Your Mail address Here"
+                  />
+                  <div>
+                    <a type="button" href="#" className="btn1 sendMsg-FormBtn width-feedBack" style={{background:"#0c4ed0"}}>
+                      <span>Send</span>
+                      <div className="box" style={{background:"#010e37"}}>
+                        <div className="arrow-cross">
+                          <i className="fa-solid fa-arrow-up"></i>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <p>
+                  By subscribing you agree to our{" "}
+                  <a href="#">Terms & Conditions</a> and <a href="#">Privacy</a>
+                  .
+                </p>
+              </div>
+            </div>
+          </Col>
+        </Row>
       </div>
     </div>
   );

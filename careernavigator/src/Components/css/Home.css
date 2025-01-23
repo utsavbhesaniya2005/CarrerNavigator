@@ -741,6 +741,8 @@ a {
 
 .tranforming-p {
     margin-bottom: 0px;
+    margin-top: 0px;
+    color:#007bff;
 }
 
 .horizontal {
@@ -1436,7 +1438,7 @@ a {
 
 .pro-btn-back {
     width: 100%;
-    background: linear-gradient(to right, rgb(9, 47, 112) 50%, rgb(29, 16, 210) 50%);
+    background: rgb(29, 16, 210) !important;
     background-size: 200% 100%;
     background-position: right;
     transition: background-position 0.6s ease-in-out;
