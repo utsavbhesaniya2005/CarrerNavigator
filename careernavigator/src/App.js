@@ -8,15 +8,18 @@ import './App.css';
 import Header from './Components/css/Header/Header';
 import Services from './Components/Services';
 import Pricing from './Components/Pricing';
+import { Route, Routes } from 'react-router';
 
 function App() {
   return (
     <>
       <Header />
-      <Home></Home>
-      {/* <Contactus></Contactus> */}
-      {/* <Services></Services> */}
-      {/* <Pricing></Pricing> */}
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/contactUs' element={<Contactus />}></Route>
+        <Route path='/services' element={<Services />}></Route>
+        <Route path='/pricing' element={<Pricing />}></Route>
+      </Routes>
     </>
   );
 }

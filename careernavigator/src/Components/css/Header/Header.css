@@ -38,10 +38,10 @@ hr{
     margin: 0 !important; 
 }
 
-.btn1 {
+.btn1{
     display: inline-flex;
     color: var(--white);
-    padding: 20px 24px;
+    padding: 15px 25px;
     border: 1px solid #1268fb;
     border-radius: 18px;
     text-align: left;
@@ -58,15 +58,15 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 44px;
+    line-height: 40px;
     text-align: center;
-    height: 44px;
-    width: 44px;
+    height: 40px;
+    width: 40px;
     font-size: 18px;
     color: var(--white);
     background: linear-gradient(140deg, #1268fb, #2C3E97, #1268fb);
-    right: 5px;
-    top: 10px;
+    right: 10px;
+    top: 7px;
     background-size: 250%;
     background-position: top left;
     overflow: hidden;
@@ -123,8 +123,8 @@ hr{
 }
 
 /* Header */
-header {
-    padding: 5px 30px;
+header{
+    padding: 8px 30px;
     background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     width: 100%;
@@ -164,7 +164,7 @@ header {
     transform: rotate(90deg);
 }
 
-.menu-dropdown{
+.menu-dropdown, .pagesMenu-dropdown{
     position: absolute;
     left: 0;
     top: 5px;
@@ -176,12 +176,12 @@ header {
     opacity: 0;
     transition: all 0.3s linear;
 }
-.menu-dropdown::after{
+.menu-dropdown::after, .pagesMenu-dropdown::after{
     content: '';
-    background: linear-gradient(5deg,#1268fb, #2C3E97, #1268fb);
-    filter: blur(10px);
+    background: linear-gradient(145deg,#35445e, #12162f, #3c495f);
+    filter: blur(20px);
     left: 0;
-    top: 5px;
+    top: 0;
     width: 230px;
     position: absolute;
     height: 100%;
@@ -192,8 +192,17 @@ header {
     opacity: 1;
     animation: fade-up .2s ease-in 1 forwards;
 }
+.pagesDropdown:hover .pagesMenu-dropdown{
+    opacity: 1;
+    animation: fade-up .2s ease-in 1 forwards;  
+}
 
 .dropdown:not(:hover) .menu-dropdown {
+    visibility: hidden;
+    animation: fade-down .2s ease-out 1 forwards;
+}
+
+.pagesDropdown:not(:hover) .pagesMenu-dropdown {
     visibility: hidden;
     animation: fade-down .2s ease-out 1 forwards;
 }
@@ -232,7 +241,7 @@ header {
     }
 }
 
-.menu-dropdown li a{
+.menu-dropdown li a, .pagesMenu-dropdown li a{
     display: block;
     text-transform: uppercase;
     color: var(--white);
@@ -244,7 +253,7 @@ header {
     margin: 8px 0;
 }
 
-.menu-dropdown li a:hover{
+.menu-dropdown li a:hover, .pagesMenu-dropdown li a:hover{
     background: linear-gradient(345deg,#1268fb, #2C3E97, #1268fb);
 }
 

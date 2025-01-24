@@ -1,5 +1,6 @@
 import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -70,8 +71,8 @@ function Header() {
                                     <Navbar.Toggle aria-controls="navbarScroll" />
                                     <Navbar.Collapse id="navbarScroll">
                                         <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll >
-                                            <Nav.Link href="#action1" className='nav-link'>Home</Nav.Link>
-                                            <Nav.Link href="#action2" className='nav-link'>About</Nav.Link>
+                                            <Link to="/" className='nav-link'>Home</Link>
+                                            <Nav.Link className='nav-link'>About</Nav.Link>
                                             {/* <NavDropdown title="Blog" id="navbarScrollingDropdown">
                                                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                                                 <NavDropdown.Item href="#action4">
@@ -82,7 +83,7 @@ function Header() {
                                                     Something else here
                                                 </NavDropdown.Item>
                                             </NavDropdown> */}
-                                            <Nav.Link href="#action2" className='nav-link dropdown'>
+                                            <Nav.Link className='nav-link dropdown'>
                                                 <span className='me-2'>Blog</span>
                                                 <i className="fa-solid fa-plus"></i>
                                                 <ul className="menu-dropdown">
@@ -100,9 +101,35 @@ function Header() {
                                                     </li>
                                                 </ul>
                                             </Nav.Link>
-                                            <Nav.Link href="#action2" className='nav-link'>Services</Nav.Link>
-                                            <Nav.Link href="#action2" className='nav-link'>Pages</Nav.Link>
-                                            <Nav.Link href="#action2" className='nav-link'>Contact Us</Nav.Link>
+                                            <Link to="/services" className='nav-link'>Services</Link>
+                                            <Nav.Link className='nav-link pagesDropdown'>
+                                                <span className='me-2'>Pages</span>
+                                                <i className="fa-solid fa-plus"></i>
+                                                <ul className="pagesMenu-dropdown">
+                                                    <li>
+                                                        <a href="#">Careers</a>
+                                                    </li><hr />
+                                                    <li>
+                                                        <a href="#">Case Studies</a>
+                                                    </li><hr />
+                                                    <li>
+                                                        <a href="#">Events</a>
+                                                    </li><hr />
+                                                    <li>
+                                                        <a href="#">Frequent QA's</a>
+                                                    </li><hr />
+                                                    <li>
+                                                        <a href="#">Our Team</a>
+                                                    </li><hr />
+                                                    <li>
+                                                        <Link to="/pricing">Pricing Plans</Link>
+                                                    </li><hr />
+                                                    <li>
+                                                        <a href="#">404 Error Page</a>
+                                                    </li>
+                                                </ul>
+                                            </Nav.Link>
+                                            <Link to="contactUs" className='nav-link'>Contact Us</Link>
                                         </Nav>
                                     </Navbar.Collapse>
                                 </Container>

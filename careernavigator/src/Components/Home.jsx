@@ -817,8 +817,7 @@ const Home = () => {
                 autoplay={{
                   delay: 2500,
                   disableOnInteraction: false,
-                }}
-                onSwiper={(swiper) => console.log(swiper)} >
+                }}>
                 <SwiperSlide>
                   <div class="slider slider-1">
                     <div class="slider-main-box">
