@@ -12,7 +12,7 @@ import Pricing from './Components/Pricing';
 function App() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Home></Home>
       {/* <Contactus></Contactus> */}
       {/* <Services></Services> */}

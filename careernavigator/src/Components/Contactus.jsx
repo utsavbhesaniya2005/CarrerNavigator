@@ -7,36 +7,28 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdWatchLater } from "react-icons/md";
 
-function Contactus() {
-  return (
+function Contactus(){
+  return(
     <div style={{ height: "auto" }}>
       <div className="mainBg">
         <div className="colorGradiant">
           <Container>
             <div className="Content-txt">
-              <h3
-                style={{ color: "white", fontSize: "45px", margin: "0px" }}
-                className="Content-h3"
-              >
+              <h3 style={{ color: "white", fontSize: "45px", margin: "0px" }} className="Content-h3" >
                 Contact Us
               </h3>
               <div className="make-btn">
                 <span style={{ marginRight: "5px", cursor: "pointer" }}>
                   Home
                 </span>
-                <i
-                  className="fa-solid fa-arrow-right"
-                  style={{ marginLeft: "8px" }}
-                ></i>
+                <i className="fa-solid fa-arrow-right" style={{ marginLeft: "8px" }} ></i>
                 <span style={{ marginLeft: "8px" }}>Contact Us</span>
               </div>
             </div>
           </Container>
         </div>
       </div>
-      <Container
-        style={{ margin: "0 auto", padding: "80px 20px", overflow: "hidden" }}
-      >
+      <Container style={{ margin: "0 auto", padding: "80px 20px", overflow: "hidden" }} >
         <Row>
           <Col lg={6} md={12} sm={12} xs={12}>
             <div className="contact-page-heading">
