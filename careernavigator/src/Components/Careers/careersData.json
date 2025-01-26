@@ -1,0 +1,267 @@
+{
+    "standards": [
+      {
+        "standard": "1",
+        "subjects": ["Language", "Mathematics", "Science", "Social Studies"],
+        "url": "standard-1"
+      },
+      {
+        "standard": "2",
+        "subjects": ["Language", "Mathematics", "Science", "Social Studies"],
+        "url": "standard-2"
+      },
+      {
+        "standard": "3",
+        "subjects": ["Language", "Mathematics", "Science", "Social Studies"],
+        "url": "standard-3"
+      },
+      {
+        "standard": "4",
+        "subjects": ["Language", "Mathematics", "Science", "Social Studies"],
+        "url": "standard-4"
+      },
+      {
+        "standard": "5",
+        "subjects": ["Language", "Mathematics", "Science", "Social Studies"],
+        "url": "standard-5"
+      },
+      {
+        "standard": "6",
+        "subjects": ["Language", "Mathematics", "Science", "Social Studies", "Computer Science"],
+        "url": "standard-6"
+      },
+      {
+        "standard": "7",
+        "subjects": ["Language", "Mathematics", "Science", "Social Studies", "Computer Science"],
+        "url": "standard-7"
+      },
+      {
+        "standard": "8",
+        "subjects": ["Language", "Mathematics", "Science", "Social Studies", "Computer Science"],
+        "url": "standard-8"
+      },
+      {
+        "standard": "9",
+        "subjects": ["Language", "Mathematics", "Science", "Social Studies", "Computer Science"],
+        "url": "standard-9"
+      },
+      {
+        "standard": "10",
+        "subjects": [
+          "Mathematics", 
+          "Science (Physics, Chemistry, Biology)", 
+          "Social Science", 
+          "Language (English and/or Hindi)", 
+          "Additional Subjects (Optional)"
+        ],
+        "url": "standard-10"
+      },
+      {
+        "standard": "11",
+        "subjects": [
+          "Arts", 
+          "Commerce", 
+          "Science (with different combinations)"
+        ],
+        "url": "standard-11"
+      },
+      {
+        "standard": "12",
+        "subjects": [
+          "Arts", 
+          "Commerce", 
+          "Science (with specific focus subjects)"
+        ],
+        "url": "standard-12"
+      }
+    ],
+    "streams": {
+      "commerce": {
+        "undergraduate": [
+          {
+            "course": "B.Com (Bachelor of Commerce)",
+            "subjects": ["Accounts", "Economics", "Business Studies", "Taxation"],
+            "fees": "₹20,000 to ₹80,000",
+            "jobOpportunities": ["Accountant", "Tax Consultant", "Auditor"],
+            "salaryPackage": "₹3-5 LPA",
+            "url": "b-com-bachelor-of-commerce"
+          },
+          {
+            "course": "B.Com (Hons.)",
+            "subjects": ["Advanced Accounting", "Business Law", "Auditing", "Economics"],
+            "fees": "₹30,000 to ₹1,00,000",
+            "jobOpportunities": ["Financial Analyst", "Tax Expert", "Auditor"],
+            "salaryPackage": "₹4-6 LPA",
+            "url": "b-com-hons"
+          },
+          {
+            "course": "BBA (Bachelor of Business Administration)",
+            "subjects": ["Business Management", "Marketing", "Finance", "HR"],
+            "fees": "₹50,000 to ₹2,00,000",
+            "jobOpportunities": ["Business Analyst", "Marketing Manager", "HR Manager"],
+            "salaryPackage": "₹4-8 LPA",
+            "url": "bba-bachelor-of-business-administration"
+          },
+          {
+            "course": "BMS (Bachelor of Management Studies)",
+            "subjects": ["Marketing", "Management", "Business Law", "Economics"],
+            "fees": "₹40,000 to ₹1,50,000",
+            "jobOpportunities": ["Manager", "Entrepreneur", "HR Specialist"],
+            "salaryPackage": "₹5-9 LPA",
+            "url": "bms-bachelor-of-management-studies"
+          },
+          {
+            "course": "BCA (Bachelor of Computer Applications)",
+            "subjects": ["Programming Languages", "Data Structures", "Networking"],
+            "fees": "₹40,000 to ₹2,00,000",
+            "jobOpportunities": ["Software Developer", "Network Administrator"],
+            "salaryPackage": "₹5-7 LPA",
+            "url": "bca-bachelor-of-computer-applications"
+          }
+        ],
+        "postgraduate": [
+          {
+            "course": "M.Com (Master of Commerce)",
+            "subjects": ["Advanced Accounting", "Business Management", "Economics"],
+            "fees": "₹30,000 to ₹1,00,000",
+            "jobOpportunities": ["Finance Manager", "Senior Accountant", "Auditor"],
+            "salaryPackage": "₹6-12 LPA",
+            "url": "m-com-master-of-commerce"
+          },
+          {
+            "course": "MBA (Master of Business Administration)",
+            "subjects": ["Management", "Marketing", "Finance", "Operations", "HR"],
+            "fees": "₹1,00,000 to ₹25,00,000",
+            "jobOpportunities": ["CEO", "Senior Manager", "Business Consultant"],
+            "salaryPackage": "₹10-40 LPA",
+            "url": "mba-master-of-business-administration"
+          },
+          {
+            "course": "MCA (Master of Computer Applications)",
+            "subjects": ["Software Engineering", "Data Analytics", "Cloud Computing"],
+            "fees": "₹50,000 to ₹2,00,000",
+            "jobOpportunities": ["Software Engineer", "Data Scientist", "IT Consultant"],
+            "salaryPackage": "₹6-15 LPA",
+            "url": "mca-master-of-computer-applications"
+          }
+        ]
+      },
+      "science": {
+        "undergraduate": [
+          {
+            "course": "B.Sc. (Bachelor of Science)",
+            "subjects": ["Physics", "Chemistry", "Biology", "Mathematics (depending on specialization)"],
+            "fees": "₹20,000 to ₹1,00,000",
+            "jobOpportunities": ["Research Scientist", "Lab Technician", "Teacher"],
+            "salaryPackage": "₹3-7 LPA",
+            "url": "b-sc-bachelor-of-science"
+          },
+          {
+            "course": "B.Tech / B.E. (Bachelor of Technology / Engineering)",
+            "subjects": ["Engineering (Computer Science, Mechanical, Electrical, Civil, etc.)"],
+            "fees": "₹50,000 to ₹5,00,000",
+            "jobOpportunities": ["Software Engineer", "Mechanical Engineer", "Electrical Engineer"],
+            "salaryPackage": "₹6-15 LPA",
+            "url": "b-tech-b-e-bachelor-of-technology-engineering"
+          },
+          {
+            "course": "BDS (Bachelor of Dental Surgery)",
+            "subjects": ["Dentistry", "Human Anatomy", "Pathology"],
+            "fees": "₹50,000 to ₹2,50,000",
+            "jobOpportunities": ["Dentist", "Oral Surgeon", "Dental Consultant"],
+            "salaryPackage": "₹4-10 LPA",
+            "url": "bds-bachelor-of-dental-surgery"
+          },
+          {
+            "course": "MBBS (Bachelor of Medicine, Bachelor of Surgery)",
+            "subjects": ["Anatomy", "Physiology", "Medicine", "Surgery", "Obstetrics"],
+            "fees": "₹1,00,000 to ₹15,00,000",
+            "jobOpportunities": ["Doctor", "Surgeon", "Medical Consultant"],
+            "salaryPackage": "₹10-30 LPA",
+            "url": "mbbs-bachelor-of-medicine-bachelor-of-surgery"
+          }
+        ],
+        "postgraduate": [
+          {
+            "course": "M.Sc. (Master of Science)",
+            "subjects": ["Specializations in Physics, Chemistry, Biology, Mathematics"],
+            "fees": "₹40,000 to ₹2,00,000",
+            "jobOpportunities": ["Research Scientist", "Lab Assistant", "Lecturer"],
+            "salaryPackage": "₹6-12 LPA",
+            "url": "m-sc-master-of-science"
+          },
+          {
+            "course": "M.Tech (Master of Technology)",
+            "subjects": ["Engineering (Computer Science, Mechanical, Electrical, etc.)"],
+            "fees": "₹50,000 to ₹3,00,000",
+            "jobOpportunities": ["Engineer", "Research and Development", "IT Consultant"],
+            "salaryPackage": "₹8-20 LPA",
+            "url": "m-tech-master-of-technology"
+          },
+          {
+            "course": "MD (Doctor of Medicine)",
+            "subjects": ["Specializations in different medical fields"],
+            "fees": "₹1,00,000 to ₹10,00,000",
+            "jobOpportunities": ["Doctor", "Medical Consultant", "Specialist"],
+            "salaryPackage": "₹15-40 LPA",
+            "url": "md-doctor-of-medicine"
+          }
+        ]
+      },
+      "arts": {
+        "undergraduate": [
+          {
+            "course": "BA (Bachelor of Arts)",
+            "subjects": ["English", "History", "Political Science", "Sociology", "Psychology"],
+            "fees": "₹15,000 to ₹1,00,000",
+            "jobOpportunities": ["Teacher", "Journalist", "Content Writer"],
+            "salaryPackage": "₹2-5 LPA",
+            "url": "ba-bachelor-of-arts"
+          },
+          {
+            "course": "BFA (Bachelor of Fine Arts)",
+            "subjects": ["Painting", "Sculpture", "Applied Arts", "Photography"],
+            "fees": "₹30,000 to ₹1,50,000",
+            "jobOpportunities": ["Artist", "Graphic Designer", "Art Teacher"],
+            "salaryPackage": "₹3-6 LPA",
+            "url": "bfa-bachelor-of-fine-arts"
+          },
+          {
+            "course": "BJMC (Bachelor of Journalism and Mass Communication)",
+            "subjects": ["Journalism", "Media Studies", "Public Relations", "Advertising"],
+            "fees": "₹30,000 to ₹1,50,000",
+            "jobOpportunities": ["Journalist", "Public Relations Officer", "Editor"],
+            "salaryPackage": "₹4-7 LPA",
+            "url": "bjmc-bachelor-of-journalism-and-mass-communication"
+          }
+        ],
+        "postgraduate": [
+          {
+            "course": "MA (Master of Arts)",
+            "subjects": ["Political Science", "Sociology", "History", "Psychology", "English"],
+            "fees": "₹20,000 to ₹1,00,000",
+            "jobOpportunities": ["Lecturer", "Researcher", "Content Writer"],
+            "salaryPackage": "₹3-7 LPA",
+            "url": "ma-master-of-arts"
+          },
+          {
+            "course": "MFA (Master of Fine Arts)",
+            "subjects": ["Painting", "Sculpture", "Applied Arts", "Photography"],
+            "fees": "₹30,000 to ₹1,50,000",
+            "jobOpportunities": ["Art Director", "Visual Artist", "Art Critic"],
+            "salaryPackage": "₹5-8 LPA",
+            "url": "mfa-master-of-fine-arts"
+          },
+          {
+            "course": "MJMC (Master of Journalism and Mass Communication)",
+            "subjects": ["Media Studies", "Journalism", "Advertising", "Public Relations"],
+            "fees": "₹40,000 to ₹1,50,000",
+            "jobOpportunities": ["Senior Journalist", "Media Consultant", "PR Head"],
+            "salaryPackage": "₹6-10 LPA",
+            "url": "mjmc-master-of-journalism-and-mass-communication"
+          }
+        ]
+      }
+    }
+  }
+  

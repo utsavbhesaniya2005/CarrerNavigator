@@ -1,0 +1,95 @@
+/* General Styles for Main Container */
+
+.colorGradiant {
+    color: white;
+}
+
+/* Content Text Styles */
+.Content-txt h3 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.make-btn {
+    margin-top: 10px;
+}
+
+.make-btn span {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.make-btn i {
+    color: white;
+}
+
+/* Card Styles */
+.career-card:hover{
+    background-color: rgb(1, 14, 55);
+    color: white;
+}
+.career-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 20px;
+}
+
+.career-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.career-card-body {
+    text-align: center;
+}
+
+.career-card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+.career-card:hover .career-card-title{
+    color: white;
+}
+.career-card:hover .career-card-subtitle{
+    color: white;
+}
+
+.career-card-subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.career-card-btn {
+    margin-top: 20px;
+}
+
+.career-card-btn .btn {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.career-card-btn .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+    .career-card-title {
+        font-size: 18px;
+    }
+    .career-card-subtitle {
+        font-size: 14px;
+    }
+}
