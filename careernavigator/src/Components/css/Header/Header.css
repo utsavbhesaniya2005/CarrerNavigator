@@ -190,21 +190,21 @@ header{
 
 .dropdown:hover .menu-dropdown {
     opacity: 1;
-    animation: fade-up .2s ease-in 1 forwards;
+    animation: fade-up .4s ease-in 1 forwards;
 }
 .pagesDropdown:hover .pagesMenu-dropdown{
     opacity: 1;
-    animation: fade-up .2s ease-in 1 forwards;  
+    animation: fade-up .4s ease-in 1 forwards;  
 }
 
 .dropdown:not(:hover) .menu-dropdown {
     visibility: hidden;
-    animation: fade-down .2s ease-out 1 forwards;
+    animation: fade-down .4s ease-out 1 forwards;
 }
 
 .pagesDropdown:not(:hover) .pagesMenu-dropdown {
     visibility: hidden;
-    animation: fade-down .2s ease-out 1 forwards;
+    animation: fade-down .4s ease-out 1 forwards;
 }
 
 @keyframes fade-up {
