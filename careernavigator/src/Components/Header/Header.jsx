@@ -12,7 +12,6 @@ function Header() {
                             <div className="logo">
                                 <h1>Carrer</h1>
                             </div>
-                            {/* <img src="./assets/images/home/logo/logo.jpg" alt="Logo" /> */}
                         </div>
 
                         <div className="col-7">
@@ -22,17 +21,7 @@ function Header() {
                                     <Navbar.Collapse id="navbarScroll">
                                         <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll >
                                             <Link to="/" className='nav-link'>Home</Link>
-                                            <Link to="/about" className='nav-link'>About</Link>
-                                            {/* <NavDropdown title="Blog" id="navbarScrollingDropdown">
-                                                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                                                <NavDropdown.Item href="#action4">
-                                                    Another action
-                                                </NavDropdown.Item>
-                                                <NavDropdown.Divider />
-                                                <NavDropdown.Item href="#action5">
-                                                    Something else here
-                                                </NavDropdown.Item>
-                                            </NavDropdown> */}
+                                            <Link to="/aboutUs" className='nav-link'>About</Link>
                                             <Nav.Link className='nav-link dropdown'>
                                                 <span className='me-2'>Blog</span>
                                                 <i className="fa-solid fa-plus"></i>

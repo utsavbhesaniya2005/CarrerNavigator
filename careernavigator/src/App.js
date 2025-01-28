@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Components/assets/css/style.css';
 import './App.css';
-import Header from './Components/css/Header/Header';
+import Header from './Components/Header/Header';
 import Services from './Components/Services';
 import Pricing from './Components/Pricing';
 import { Route, Routes } from 'react-router';
@@ -15,6 +15,7 @@ import ApplyForm from './Components/Careers/ApplyForm';
 import OurTeam from './Components/OurTeam';
 import P404 from './Components/css/P404';
 import Faq from './Components/Faq';
+import AboutUs from './Components/AboutUs';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />}></Route>
+        <Route path='/aboutUs' element={<AboutUs />}></Route>
         <Route path='/contact-Us' element={<Contactus />}></Route>
         <Route path='/services' element={<Services />}></Route>
         <Route path='/pricing' element={<Pricing />}></Route>
@@ -29,10 +31,8 @@ function App() {
         <Route path="/course/:courseUrl" element={<CareerDetailPage />} />
         <Route path="/apply/:courseUrl" element={<ApplyForm />} />
         <Route path="/our-team" element={<OurTeam />} />
-        <Route path="/404" element={<P404 />} />
         <Route path="/faq" element={<Faq />} />
-
-
+        <Route path="/404" element={<P404 />} />
 
       </Routes>
     </>

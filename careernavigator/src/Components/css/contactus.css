@@ -1,113 +1,122 @@
-    * {
-        margin: 0;
-        padding: 0;
-    }
+* {
+    margin: 0;
+    padding: 0;
+}
 
-    .mainBg {
-        background-image: url('../assets/images/breadcrumb-img.jpg');
-        width: 100%;
-        height: 70vh;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        z-index: 0;
-    }
+.mainBg {
+    background-image: url('../assets/images/breadcrumb-img.jpg');
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
 
-    .colorGradiant {
-        background-color: rgba(4, 13, 84, 0.642);
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-    }
+.colorGradiant {
+    background-color: rgba(4, 13, 84, 0.642);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
 
-    .Content-txt {
-        position: absolute;
-        z-index: 3;
-        text-align: center;
-    }
+.Content-txt {
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+}
 
-    .Content-h3 {
-        position: relative;
-        top: 40vh;
-        font-weight: bold;
-        letter-spacing: 1px;
-        font-size: 50px !important;
-    }
+.Content-h3 {
+    position: relative;
+    top: 40vh;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 50px !important;
+}
 
-    .make-btn {
-        width: 11.5rem;
-        height: 2rem;
-        border: 1px solid blue;
-        position: relative;
-        top: 41vh;
-        border-radius: 7px;
-        background-color: rgb(3, 3, 43);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-    }
+.make-btn {
+    width: 11.5rem;
+    height: 2rem;
+    padding: 0 15px;
+    border: 1px solid blue;
+    position: relative;
+    top: 41vh;
+    border-radius: 7px;
+    background-color: rgb(3, 3, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
 
-    .icon-below-box {
-        width: 80px;
-        height: 80px;
-        border: 1px solid #82d1ff;
-        border-radius: 20px;
-        background-color: #D9F1FF;
-    }
+.icon-below-box {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #82d1ff;
+    border-radius: 20px;
+    background-color: #D9F1FF;
+}
 
-    .icon-box {
-        width: 60px;
-        height: 60px;
-        background-color: #1268fb;
-        border-radius: 15px;
-        cursor: pointer;
-    }
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: #1268fb;
+    border-radius: 15px;
+    cursor: pointer;
+}
 
-    .icon-meaning {
-        font-weight: 700;
-        margin: 15px 0px 0px 0px;
-    }
+.icon-meaning {
+    font-weight: 700;
+    margin: 15px 0px 0px 0px;
+}
 
-    .icon-description {
-        margin-bottom: 0px;
-        margin-top: 10px;
-        color: rgb(99, 98, 98);
-        font-weight: 500;
-        transition: .3s ease-in-out;
-        cursor: pointer;
-        display: inline;
-    }
+.icon-description {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    color: rgb(99, 98, 98);
+    font-weight: 500;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    display: inline;
+}
 
-    .description-contactUs-icon:hover p {
-        color: #1268fb;
-        transition: .3s ease-in-out;
-    }
-    .below-box-contact-form{
-        width: 100%;
-        height: 100%;
-        border: 1px solid #82d1ff;
-        background-color: #c3e8fe;
-        border-radius: 40px;
-    }
-    input,select,textarea{
-        border-bottom: 2px solid #989595;
-        line-height: 30px;
-    }
-    textarea{
-        line-height: 50px;
-    }
-    .feedBack-heading{
-        margin-bottom: 20px;
-    }
-    .feedBack-heading h2{
-        font-size: 50px;
-    }
-    .map-main-box{
-        width: 100%;
-        height: 35rem;
-    }
+.description-contactUs-icon:hover p {
+    color: #1268fb;
+    transition: .3s ease-in-out;
+}
+
+.below-box-contact-form {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #82d1ff;
+    background-color: #c3e8fe;
+    border-radius: 40px;
+}
+
+input,
+select,
+textarea {
+    border-bottom: 2px solid #989595;
+    line-height: 30px;
+}
+
+textarea {
+    line-height: 50px;
+}
+
+.feedBack-heading {
+    margin-bottom: 20px;
+}
+
+.feedBack-heading h2 {
+    font-size: 50px;
+}
+
+.map-main-box {
+    width: 100%;
+    height: 35rem;
+}
