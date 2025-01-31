@@ -70,7 +70,7 @@ const ShowAlbum = () => {
                                         <div className="col-3" key={data.id}>
                                             <div className="album-card p-[5px]">
                                                 <div className="album-image">
-                                                    <img src={ data.coverImage || '../src/assets/images/default-img/default-img.png'} alt={data.aname} />
+                                                     src={ data.coverImage || '../src/assets/images/default-img/default-img.png'} alt={data.aname} />
                                                     <div className="album-duration">{data.albumDura} Mins</div>
                                                     <button className="play-button">▶</button>
                                                     <div className="black-shade"></div>

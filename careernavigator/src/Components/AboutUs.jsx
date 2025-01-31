@@ -98,6 +98,7 @@ const AboutUs = () => {
 
     return (
         <>
+            {/* about-bg */}
             <section className="about-bg">
                 <div className="mainBg">
                     <div className="colorGradiant">
@@ -124,6 +125,7 @@ const AboutUs = () => {
                 </div>
             </section>
 
+            {/* Workplace */}
             <section className="workplace">
                 <div style={{ backgroundColor: "var(--body-bg)" }}>
                     <Container style={{ margin: "0px auto", padding: "80px 20px", overflow: "hidden", }} >
@@ -167,13 +169,13 @@ const AboutUs = () => {
                                         </h1>
                                         <div className="btn-2-2">
                                             TALK WITH EXPERTS
-                                            <a type="button" href="#" className="read-more">
+                                            <Link type="button" className="read-more">
                                                 <div class="box-read-more">
                                                     <div class="arrow-cross-read-more">
                                                         <i class="fa-solid fa-arrow-up read-arrow" style={{ marginLeft: "6px", color: "black" }} ></i>
                                                     </div>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -193,6 +195,7 @@ const AboutUs = () => {
                 </div>
             </section>
 
+            {/* About Counter */}
             <section className="aboutCounter">
                 <div className="counter" style={{ backgroundColor: "#D9F1FF" }}>
                     <Container style={{ padding: "80px 10px" }}>
@@ -207,10 +210,11 @@ const AboutUs = () => {
                 </div>
             </section>
 
-            <section className="smartSolutions" style={{ backgroundColor : "white", padding : "100px 0" }}>
+            {/* Smart Solutions */}
+            <section className="smartSolutions" style={{ backgroundColor : "white", padding : "100px 0" }}  data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" >
                 <Container>
                     <Row>
-                        <div className="col-12">
+                        <Col className="col-12">
                             <div className="heading-part d-flex align-items-center flex-column">
                                 <div className="heading-subtitle d-flex align-items-center" style={{ padding: "4px 8px", marginBottom: "18px" }}>
                                     <p className="tranforming-p">Smart Solutions for Tomorrow’s Talent</p>{" "}
@@ -224,9 +228,133 @@ const AboutUs = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </Col>
+
+                        <Col lg={4} md={4} className="mt-5">
+                            <div className="solutionFeature">
+                                <h2>Our Mission</h2>
+                                <p>Tempor dignissim phasellus rutrum mus posuere lacinia neque turpis porttitor sociosqu.</p>
+                            </div>
+                        </Col>
+
+                        <Col lg={4} md={4} className="mt-5">
+                            <div className="solutionFeature">
+                                <h2>Our Vision</h2>
+                                <p>Rhoncus gravida turpis nunc aliquet tristique sem nascetur dis sagittis facilisis felis.</p>
+                            </div>
+                        </Col>
+
+                        <Col lg={4} md={4} className="mt-5">
+                            <div className="solutionFeature">
+                                <h2>Our Core Value</h2>
+                                <p>Purus molestie nullam class vivamus erat senectus mus mi. Dis per conubia est eu ligula.</p>
+                            </div>
+                        </Col>
+
+                        <Col>
+                            <div className="call-section d-flex align-items-center mt-5">
+                                <div className="get-started-btn">
+                                    <Link to="/read-more" className="btn1 readMore">
+                                        <span>Read More</span>
+                                        <div className="box readMore-box">
+                                            <div className="arrow-cross">
+                                                <i className="fa-solid fa-arrow-up"></i>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                </div>
+                                <div className="mno-section ms-5 d-flex align-items-center">
+                                    <div className="mno-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style={{height: '20px', fill : 'white'}}>
+                                            <path d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"/>
+                                        </svg>
+                                    </div>
+                                    <div className="mno-content ms-3">
+                                        <h3>Call 24hrs / 7 Days</h3>
+                                        <h5>000-123-176875</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </Col>
                     </Row>
                 </Container>
+            </section>
+
+            {/* Parnership */}
+            <section className="partnership" style={{ padding: "100px 0",backgroundColor: "#F3FAFF" }}>
+                <Container>
+                    <Row>
+                        <Col className="flex flex-column row-gap-4" md={12} lg={12} sm={12} xm={12} style={{ marginBottom: "20px" }} >
+                            <div className="emp-expr-2 flex">
+                                <i class="fa-solid fa-arrow-left" style={{ marginRight: "8px" }} ></i>
+                                <p className="tranforming-p">Empowering Partnerships</p>{" "}
+                                <i class="fa-solid fa-arrow-right" style={{ marginLeft: "8px" }} ></i>
+                            </div>
+                            <div data-aos="zoom-in-left" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" >
+                                <h1 className="video-h1">
+                                    Stronger Together, Thriving Through Collaborative Efforts
+                                </h1>
+                            </div>
+                            <div className="partnership-content">
+                                <p>Tempus nisi luctus vitae tristique varius ex curabitur magna quis.</p>
+                            </div>
+                        </Col>
+                    </Row>
+
+                </Container>
+                <div className="company-imgs-group" style={{ margin : "0 50p" }}>
+                    <Row>
+                        <Col>
+                            <div className="company-imgs">
+                                <span className="company-img-box">
+                                    <img src="https://wdthrhub.wpengine.com/wp-content/uploads/2024/10/home3-clientlogo-img-01.png" className="h-100" alt="Company-Image" />
+                                </span>
+                                <span className="company-img-box">
+                                    <img src="https://wdthrhub.wpengine.com/wp-content/uploads/2024/10/home3-clientlogo-img-02.png" className="h-100" alt="Company-Image" />
+                                </span>
+                                <span className="company-img-box">
+                                    <img src="https://wdthrhub.wpengine.com/wp-content/uploads/2024/10/home3-clientlogo-img-08.png" className="h-100" alt="Company-Image" />
+                                </span>
+                                <span className="company-img-box">
+                                    <img src="https://wdthrhub.wpengine.com/wp-content/uploads/2024/10/home3-clientlogo-img-03.png" className="h-100" alt="Company-Image" />
+                                </span>
+                                <span className="company-img-box">
+                                    <img src="https://wdthrhub.wpengine.com/wp-content/uploads/2024/10/home3-clientlogo-img-09.png" className="h-100" alt="Company-Image" />
+                                </span>
+                                <span className="company-img-box">
+                                    <img src="https://wdthrhub.wpengine.com/wp-content/uploads/2024/10/home3-clientlogo-img-10.png" className="h-100" alt="Company-Image" />
+                                </span>
+                                <span className="company-img-box">
+                                    <img src="https://wdthrhub.wpengine.com/wp-content/uploads/2024/10/home3-clientlogo-img-04.png" className="h-100" alt="Company-Image" />
+                                </span>
+                                <span className="company-img-box">
+                                    <img src="https://wdthrhub.wpengine.com/wp-content/uploads/2024/10/home3-clientlogo-img-05.png" className="h-100" alt="Company-Image" />
+                                </span>
+                                <span className="company-img-box">
+                                    <img src="https://wdthrhub.wpengine.com/wp-content/uploads/2024/10/home3-clientlogo-img-07.png" className="h-100" alt="Company-Image" />
+                                </span>
+                                <span className="company-img-box">
+                                    <img src="https://wdthrhub.wpengine.com/wp-content/uploads/2024/10/home3-clientlogo-img-06.png" className="h-100" alt="Company-Image" />
+                                </span>
+                                <span className="company-img-box">
+                                    <img src="https://wdthrhub.wpengine.com/wp-content/uploads/2024/10/home3-clientlogo-img-11.png" className="h-100" alt="Company-Image" />
+                                </span>
+                                <span className="company-img-box">
+                                    <img src="https://wdthrhub.wpengine.com/wp-content/uploads/2024/10/home3-clientlogo-img-13.png" className="h-100" alt="Company-Image" />
+                                </span>
+                                <span className="company-img-box">
+                                    <img src="https://wdthrhub.wpengine.com/wp-content/uploads/2024/10/home3-clientlogo-img-15.png" className="h-100" alt="Company-Image" />
+                                </span>
+                                <span className="company-img-box">
+                                    <img src="https://wdthrhub.wpengine.com/wp-content/uploads/2024/10/home3-clientlogo-img-12.png" className="h-100" alt="Company-Image" />
+                                </span>
+                                <span className="company-img-box">
+                                    <img src="https://wdthrhub.wpengine.com/wp-content/uploads/2024/10/home3-clientlogo-img-14.png" className="h-100" alt="Company-Image" />
+                                </span>
+                            </div>
+                        </Col>
+                    </Row>
+                </div>
             </section>
         </> 
     )
