@@ -173,7 +173,9 @@ header{
     background: var(--main-color);
     text-align: left;
     border-radius: 20px;
-    opacity: 0;
+    /* opacity: 0;
+    visibility: hidden; */
+    pointer-events: none;
     transition: all 0.3s linear;
 }
 .menu-dropdown::after, .pagesMenu-dropdown::after{
@@ -188,23 +190,18 @@ header{
     z-index: -1;
 }
 
-.dropdown:hover .menu-dropdown {
-    opacity: 1;
-    animation: fade-up .4s ease-in 1 forwards;
-}
-.pagesDropdown:hover .pagesMenu-dropdown{
-    opacity: 1;
-    animation: fade-up .4s ease-in 1 forwards;  
+.dropdown:hover .menu-dropdown, .pagesDropdown:hover .pagesMenu-dropdown {
+    /* opacity: 1;
+    visibility: visible; */
+    pointer-events: auto;
+    animation: fade-up .3s ease-in 1 forwards;
 }
 
-.dropdown:not(:hover) .menu-dropdown {
-    visibility: hidden;
-    animation: fade-down .4s ease-out 1 forwards;
-}
-
-.pagesDropdown:not(:hover) .pagesMenu-dropdown {
-    visibility: hidden;
-    animation: fade-down .4s ease-out 1 forwards;
+.dropdown:not(:hover) .menu-dropdown, .pagesDropdown:not(:hover) .pagesMenu-dropdown {
+    /* opacity: 0;
+    visibility: hidden; */
+    pointer-events: none;
+    animation: fade-down .6s ease-out 1 forwards;
 }
 
 @keyframes fade-up {
@@ -220,6 +217,7 @@ header{
 
     100% {
         opacity: 1;
+        /* pointer-events: all; */
         top: 55px;
     }
 }
@@ -227,6 +225,7 @@ header{
 @keyframes fade-down {
     0% {
         opacity: 1;
+        /* pointer-events: all; */
         top: 55px;
     }
 
